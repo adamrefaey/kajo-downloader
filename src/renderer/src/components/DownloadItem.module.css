@@ -1,0 +1,469 @@
+.root {
+    border: 1px solid #49505c;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #1b212a, #181e27);
+    padding: 10px;
+    min-height: 372px;
+}
+
+.previewItem {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.previewTrimWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(255 255 255 / 8%);
+    min-width: 0;
+}
+
+.previewTrimToggle {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 4px 10px 4px 8px;
+    box-sizing: border-box;
+    min-height: 34px;
+    border: 1px solid #454d5a;
+    border-radius: 6px;
+    background: #151a21;
+    color: rgb(175 190 210 / 92%);
+    font: inherit;
+    text-align: start;
+    cursor: pointer;
+    transition:
+        background 0.12s ease,
+        color 0.12s ease,
+        border-color 0.12s ease,
+        box-shadow 0.12s ease;
+    box-shadow: none;
+}
+
+.previewTrimToggle:hover {
+    color: rgb(230 238 250 / 98%);
+    background: #1a212a;
+    border-color: #5c6575;
+}
+
+.previewTrimToggle:active {
+    background: #151a21;
+    border-color: #454d5a;
+}
+
+.previewTrimToggle:focus-visible {
+    outline: none;
+    border-color: #6784b4;
+    box-shadow: 0 0 0 2px rgb(103 132 180 / 45%);
+}
+
+.previewTrimChevron {
+    flex-shrink: 0;
+    opacity: 0.95;
+    transition: transform 0.15s ease;
+}
+
+.previewTrimWrapOpen .previewTrimChevron {
+    transform: rotate(90deg);
+}
+
+.previewTrimWrapOpen .previewTrimToggle {
+    color: rgb(230 238 250 / 96%);
+    background: #1c232d;
+    border-color: #5a6378;
+}
+
+.previewTrimToggleTitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+/* Padding only; pair with .trimFields + .trimFieldsRow (same row layout as queue item trim). */
+.previewTrimFields {
+    align-self: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 0 2px;
+}
+
+.artworkWrap {
+    margin-bottom: 4px;
+}
+
+.artwork {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #4a515d;
+}
+
+.copy {
+    margin-bottom: 5px;
+}
+
+.title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.channel {
+    margin: 1px 0 0;
+    font-size: 12px;
+    color: #cfd5df;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.artworkPlaceholder {
+    background:
+        linear-gradient(140deg, #343942 0%, #20252e 60%),
+        repeating-linear-gradient(-35deg, #1c2129 0 8px, #262c36 8px 16px);
+}
+
+.progressShell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.progressRing {
+    position: relative;
+    width: 82px;
+    height: 82px;
+}
+
+.progressRing svg {
+    width: 82px;
+    height: 82px;
+    transform: rotate(-90deg);
+}
+
+.ringTrack,
+.ringFill {
+    fill: none;
+    stroke-width: 3.4;
+}
+
+.ringTrack {
+    stroke: #414955;
+}
+
+.ringFill {
+    stroke: #31cd7e;
+}
+
+.progressRing > span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    font-size: 20px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.stats {
+    margin-top: 2px;
+}
+
+.stats p {
+    margin: 0;
+    color: #dce2ea;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.errorDetail {
+    color: #f0a8a8;
+    margin: 0 0 4px;
+    overflow-wrap: anywhere;
+}
+
+.actions {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding-inline-end: 3px;
+}
+
+.trim {
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(255 255 255 / 8%);
+    min-width: 0;
+}
+
+.trimLegend {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+}
+
+.trimFields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trimFieldsRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px 12px;
+}
+
+.trimField {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 120px;
+    min-width: 0;
+}
+
+.trimEyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+}
+
+.trimInput {
+    width: 100%;
+    min-height: 34px;
+    font-size: 13px;
+}
+
+.trimCompact .trimFields {
+    margin-top: 8px;
+}
+
+.compact .trim {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+.iconAction {
+    border: 0;
+    background: transparent;
+    color: #d0d7e1;
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+    .root {
+        min-height: 280px;
+        padding: 9px;
+    }
+
+    .previewItem {
+        min-height: auto;
+        gap: 8px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .channel,
+    .stats p {
+        font-size: 12px;
+    }
+
+    .progressRing {
+        width: 84px;
+        height: 84px;
+    }
+
+    .progressRing svg {
+        width: 84px;
+        height: 84px;
+    }
+
+    .progressRing > span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .root {
+        min-height: 236px;
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .channel,
+    .stats p {
+        font-size: 11px;
+    }
+
+    .progressRing {
+        width: 72px;
+        height: 72px;
+    }
+
+    .progressRing svg {
+        width: 72px;
+        height: 72px;
+    }
+
+    .progressRing > span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .root {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .root {
+        padding: 8px;
+    }
+
+    .progressRing {
+        width: 82px;
+        height: 82px;
+    }
+
+    .progressRing svg {
+        width: 82px;
+        height: 82px;
+    }
+
+    .progressRing > span {
+        font-size: 20px;
+    }
+
+    .title {
+        white-space: normal;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .channel {
+        white-space: normal;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* After base + responsive rules (higher specificity; avoids noDescendingSpecificity). */
+.compact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 12px;
+    min-height: 0;
+    padding: 8px 10px;
+}
+
+.compact .artworkWrap {
+    width: 112px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.compact .compactText {
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.compact .copy {
+    margin-bottom: 0;
+}
+
+.compact .title {
+    white-space: normal;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2;
+}
+
+.compact .channel {
+    white-space: nowrap;
+}
+
+.compact .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin: 0;
+}
+
+.compact .stats p {
+    margin: 0;
+    font-size: 11px;
+}
+
+.compact .progressShell {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.compact .progressRing {
+    width: 68px;
+    height: 68px;
+}
+
+.compact .progressRing svg {
+    width: 68px;
+    height: 68px;
+}
+
+.compact .ringTrack,
+.compact .ringFill {
+    stroke-width: 3;
+}
+
+.compact .progressRing > span {
+    font-size: 12px;
+    letter-spacing: -0.02em;
+}
+
+.compact .actions {
+    margin-left: auto;
+}

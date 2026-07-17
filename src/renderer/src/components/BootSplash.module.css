@@ -1,0 +1,50 @@
+/* Host section wrapping BootSplash during app init (App.tsx) */
+.host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: min(64vh, 400px);
+    padding: 32px 20px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    user-select: none;
+}
+
+.spinner {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid var(--border-subtle);
+    border-top-color: var(--accent);
+    animation: bootSplashSpin 0.8s linear infinite;
+}
+
+@keyframes bootSplashSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.label {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+}

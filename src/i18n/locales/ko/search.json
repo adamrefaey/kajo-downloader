@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "YouTube 검색",
+        "placeholder": "YouTube 검색...",
+        "noResults": "결과 없음",
+        "searching": "검색 중...",
+        "addToQueue": "다운로드",
+        "added": "추가됨",
+        "loadMore": "결과 더 보기",
+        "usageUnlimited": "무제한 검색",
+        "failed": "검색 실패",
+        "inputLabel": "YouTube 검색"
+    }
+}

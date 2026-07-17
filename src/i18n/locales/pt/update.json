@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "Atualizações automáticas se aplicam ao release instalado. Builds de desenvolvimento não usam o canal de atualização.",
+    "disabledMessage": "Verificações de atualização estão desativadas para esta instalação.",
+    "linuxPackageManagedMessage": "Atualizações no app estão disponíveis para AppImage. Atualize pacotes .deb/.rpm pelo gerenciador de pacotes do sistema.",
+    "latestMessage": "Você está na versão mais recente.",
+    "availablePrefix": "A versão {{version}} está disponível.",
+    "availableTailAuto": " Ela está sendo baixada em segundo plano; você será avisado quando estiver pronta para instalar.",
+    "availableTailManual": " Ative downloads automáticos ou instale a atualização pelo seu processo de release.",
+    "checkFailedTitle": "Falha ao verificar atualizações",
+    "readyTitle": "Atualização pronta — {{appName}}",
+    "readyMessage": "Uma nova versão foi baixada. Reinicie agora para concluir a instalação ou escolha Depois para instalar ao sair.",
+    "restart": "Reiniciar",
+    "later": "Depois"
+}

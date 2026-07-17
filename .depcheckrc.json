@@ -1,0 +1,9 @@
+{
+    "ignores": [
+        "@vitest/coverage-v8",
+        "babel-plugin-react-compiler",
+        "lightningcss",
+        "@resources/icon.png?url"
+    ],
+    "ignorePatterns": ["**/resources/**"]
+}

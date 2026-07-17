@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "Строка {{line}}: введите корректный URL http(s).",
+    "multilineBatchLineProhibited": "Строка {{line}}: загрузки с этого хоста не разрешены.",
+    "multilineBatchLineUnsupported": "Строка {{line}}: неподдерживаемый формат URL для этого сайта.",
+    "multilineBatchLineYoutubeUnsupported": "Строка {{line}}: неподдерживаемый формат URL YouTube.",
+    "mediaUrlRequired": "Введите корректный URL http(s), чтобы продолжить.",
+    "mediaUrlProhibitedContent": "Скачивание с сайтов для взрослых в этом приложении недоступно.",
+    "mediaUrlUnsupported": "Неподдерживаемый формат URL для этого сайта. Попробуйте прямую ссылку на видео или плейлист.",
+    "youtubeUrlUnsupported": "Неподдерживаемый формат URL YouTube. Используйте ссылки watch, shorts, youtu.be, плейлистов или каналов."
+}

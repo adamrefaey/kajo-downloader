@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "Ligne {{line}} : saisissez une URL http(s) valide.",
+    "multilineBatchLineProhibited": "Ligne {{line}} : les téléchargements depuis cet hôte ne sont pas autorisés.",
+    "multilineBatchLineUnsupported": "Ligne {{line}} : format d'URL non pris en charge pour ce site.",
+    "multilineBatchLineYoutubeUnsupported": "Ligne {{line}} : format d'URL YouTube non pris en charge.",
+    "mediaUrlRequired": "Saisissez une URL http(s) valide pour continuer.",
+    "mediaUrlProhibitedContent": "Les sites vidéo pour adultes ne peuvent pas être téléchargés avec cette application.",
+    "mediaUrlUnsupported": "Format d’URL non pris en charge pour ce site. Essayez un lien vidéo ou playlist direct.",
+    "youtubeUrlUnsupported": "Format d’URL YouTube non pris en charge. Utilisez des liens watch, shorts, youtu.be, playlist ou chaîne."
+}

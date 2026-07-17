@@ -1,0 +1,18 @@
+.narrow {
+    max-width: min(520px, 100%);
+}
+
+.subtitle {
+    margin: 8px 0 0;
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}

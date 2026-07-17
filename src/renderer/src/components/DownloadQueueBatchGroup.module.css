@@ -1,0 +1,134 @@
+.root {
+    grid-column: 1 / -1;
+    border: 1px solid #49505c;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #222933, #181e27);
+    padding: 0;
+    min-width: 0;
+}
+
+.root > summary {
+    list-style: none;
+}
+
+.root > summary::-webkit-details-marker {
+    display: none;
+}
+
+.summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+.summary:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.chevron {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    border-right: 2px solid #9aa3b0;
+    border-bottom: 2px solid #9aa3b0;
+    transform: rotate(45deg);
+    transition: transform 0.15s ease;
+}
+
+.root[open] .chevron {
+    margin-top: 8px;
+    transform: rotate(225deg);
+}
+
+.summaryText {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: min(100%, 12rem);
+}
+
+.toolbar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.toolbarBtn {
+    border: 0;
+    background: transparent;
+    color: #d0d7e1;
+}
+
+.toolbarBtn:disabled {
+    opacity: 0.45;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #e8ecf2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.subtitle {
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--text-faint, #7a8494);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.count {
+    font-size: 12px;
+    color: var(--text-dim, #9aa3b0);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 10px 12px 12px;
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    border-top: 1px solid rgba(73, 80, 92, 0.65);
+}
+
+.itemsScroll {
+    max-height: min(65vh, 720px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.virtualInner {
+    min-height: 0;
+}
+
+.virtualRow {
+    box-sizing: border-box;
+}

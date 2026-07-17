@@ -1,0 +1,206 @@
+/* ────────────────────────────────────────────────
+   Shared utility / primitive classes
+   Used across multiple components as global classNames.
+   ──────────────────────────────────────────────── */
+
+/* Screen-reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Form primitives ── */
+
+.input,
+.compact-folder-path {
+    min-height: 40px;
+    border: 1px solid #454d5a;
+    border-radius: 5px;
+    background: #151a21;
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    text-align: start;
+}
+
+.input::placeholder {
+    color: #7f8793;
+}
+
+.input:focus-visible,
+.compact-folder-path:focus-visible {
+    outline: none;
+    border-color: #6784b4;
+}
+
+.select {
+    appearance: none;
+    padding-inline-end: 28px;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #8c95a3 50%),
+        linear-gradient(135deg, #8c95a3 50%, transparent 50%);
+    background-position:
+        calc(100% - 15px) 55%,
+        calc(100% - 10px) 55%;
+    background-size:
+        5px 5px,
+        5px 5px;
+    background-repeat: no-repeat;
+}
+
+html[dir="rtl"] .select {
+    background-position:
+        15px 55%,
+        10px 55%;
+}
+
+/* ── Buttons ── */
+
+.primary-button,
+.ghost-button {
+    min-height: 36px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0 12px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: linear-gradient(180deg, #27d684, var(--green));
+    color: #032612;
+}
+
+.primary-button:hover:not(:disabled) {
+    background: linear-gradient(180deg, #43d88f, #27be77);
+}
+
+.ghost-button {
+    background: #161b22;
+    border-color: #39414c;
+    color: #dfe4ed;
+}
+
+.ghost-button:hover:not(:disabled) {
+    background: #1d232b;
+}
+
+.primary-button:disabled,
+.ghost-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.primary-button.is-success,
+.primary-button.is-success:disabled {
+    background: linear-gradient(180deg, #3ecf8e, #1aaa67);
+    opacity: 1;
+    cursor: default;
+}
+
+.icon-button {
+    width: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Small UI elements ── */
+
+.action-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.action-icon-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.badge {
+    padding: 6px 10px;
+    border: 1px solid #4a505a;
+    border-radius: 6px;
+    background: #2a2f36;
+    color: #e9edf3;
+    font-size: 11px;
+}
+
+.panel {
+    border: 1px solid #353d49;
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, rgb(24 28 34 / 96%), rgb(19 23 29 / 96%)),
+        radial-gradient(130% 120% at 0% 0%, rgb(255 255 255 / 3%), transparent 45%);
+    padding: 12px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.hint,
+.inline-error {
+    margin: 7px 0 0;
+    font-size: 12px;
+    color: var(--text-dim);
+}
+
+.inline-error,
+.download-error {
+    color: #ff828a;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--text-dim);
+    font-size: 13px;
+}
+
+.status-chip {
+    padding: 5px 8px;
+    border-radius: 999px;
+    border: 1px solid #444b56;
+    background: #1d2127;
+    color: #d6dbe3;
+    font-size: 12px;
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--text-dim);
+}
+
+/* Top bar / preferences text buttons */
+.topbar-text-action {
+    min-width: 78px;
+}
+
+.panel-inset {
+    background: rgb(0 0 0 / 22%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+@media (max-width: 768px) {
+    .topbar-text-action {
+        min-width: 68px;
+    }
+}

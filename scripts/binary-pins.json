@@ -1,0 +1,73 @@
+{
+    "policyVersion": 1,
+    "updateCadence": "Bump pins before each release or when fixing CVEs; review at least monthly. Regenerate SHA256 after changing any tag (download assets and verify).",
+    "minimumYtDlpCalver": "2025.03.26",
+    "ytdlp": {
+        "owner": "yt-dlp",
+        "repo": "yt-dlp",
+        "tag": "2026.07.04",
+        "sha256": {
+            "yt-dlp_linux": "6bbb3d314cde4febe36e5fa1d55462e29c974f63444e707871834f6d8cc210ae",
+            "yt-dlp_linux_aarch64": "b6ce97646773070d7a7ffd6bbbdcaecb47c48483909c54c915bf08a7a9b5e0b1",
+            "yt-dlp.exe": "52fe3c26dcf71fbdc85b528589020bb0b8e383155cfa81b64dd447bbe35e24b8",
+            "yt-dlp_macos.zip": "b0724470a0cf6dae5175a87eee05d6e75c5a0c10d2c3015166bd4d34e92b1b7b"
+        }
+    },
+    "ffmpegBtbn": {
+        "owner": "BtbN",
+        "repo": "FFmpeg-Builds",
+        "tag": "autobuild-2026-06-20-13-30",
+        "targets": {
+            "linux-x64": {
+                "assetName": "ffmpeg-N-125136-gb57ff00bcf-linux64-gpl.tar.xz",
+                "sha256": "e73c0658d2b778e92d5367d3b47368c86f1589ae93764ea74cdca9e213fbba59"
+            },
+            "linux-arm64": {
+                "assetName": "ffmpeg-N-125136-gb57ff00bcf-linuxarm64-gpl.tar.xz",
+                "sha256": "7c1cee1d20f08caf4537fd0979664331aab49462fd5e13d6f742a62ceb349330"
+            },
+            "win32-x64": {
+                "assetName": "ffmpeg-N-125136-gb57ff00bcf-win64-gpl.zip",
+                "sha256": "3efa0e23b63b4a5bb1c7298b4737be6f8f01f3b773ead9aac586ccebece73bf4"
+            },
+            "win32-arm64": {
+                "assetName": "ffmpeg-N-125136-gb57ff00bcf-winarm64-gpl.zip",
+                "sha256": "a5c77193bc42d8a44b1da3e5231adfe3ac54eca47c8b9a3158734308dff42e29"
+            }
+        }
+    },
+    "ffmpegDarwinStatic": {
+        "owner": "eugeneware",
+        "repo": "ffmpeg-static",
+        "tag": "b6.1.1",
+        "sha256": {
+            "ffmpeg-darwin-arm64.gz": "8923876afa8db5585022d7860ec7e589af192f441c56793971276d450ed3bbfa",
+            "ffmpeg-darwin-x64.gz": "929b375c1182d956c51f7ac25e0b2b0411fb01f6f407aa15c9758efeb4242106",
+            "ffprobe-darwin-arm64.gz": "d986a8ec7b030899fe66a8a288ed809a3543338705a3ce178cfb85869c5d80be",
+            "ffprobe-darwin-x64.gz": "d4da574d6e2e197bd259b47d69cf262df9e312af24ad960444f6d806d3d4c186"
+        }
+    },
+    "deno": {
+        "owner": "denoland",
+        "repo": "deno",
+        "tag": "v2.8.3",
+        "minimumVersion": "2.0.0",
+        "comment": "yt-dlp's recommended JS runtime for YouTube nsig/sig solving (EJS). Sandboxed (no FS/network). Required since yt-dlp 2025.11.12. Asset = single deno executable inside a .zip.",
+        "assets": {
+            "darwin-arm64": "deno-aarch64-apple-darwin.zip",
+            "darwin-x64": "deno-x86_64-apple-darwin.zip",
+            "linux-arm64": "deno-aarch64-unknown-linux-gnu.zip",
+            "linux-x64": "deno-x86_64-unknown-linux-gnu.zip",
+            "win32-arm64": "deno-aarch64-pc-windows-msvc.zip",
+            "win32-x64": "deno-x86_64-pc-windows-msvc.zip"
+        },
+        "sha256": {
+            "deno-aarch64-apple-darwin.zip": "88b350be928fdba0e5d8142ff7c101a17133426371e3cf5ed0e0f74e62476f6c",
+            "deno-x86_64-apple-darwin.zip": "4254ec12123cfcf88b87703d7acf092a1ea024bdf9be8dd3cd9d4474761cb74e",
+            "deno-aarch64-unknown-linux-gnu.zip": "d4589cc1ffcbf1995c92a0127d932aaf832ac70cfdcc6d5b7bf38043cf303575",
+            "deno-x86_64-unknown-linux-gnu.zip": "30455b845ffa6082209c3590269c910ad3b7efdf28c9879afd4006c47ae54197",
+            "deno-aarch64-pc-windows-msvc.zip": "243f478ac577ade1bbd980ecf510607a10ed8cc977b462083ada48e5f6580de1",
+            "deno-x86_64-pc-windows-msvc.zip": "7fdd1f42e6b0855421ecf27bb406e2492ade1087c85e30ebf0deab6280ea743c"
+        }
+    }
+}

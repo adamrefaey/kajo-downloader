@@ -1,0 +1,31 @@
+/* ────────────────────────────────────────────────
+   Responsive overrides for shared / global classes.
+   Component-specific responsive rules live in their
+   own .module.css files.
+   ──────────────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+    .input,
+    .compact-folder-path,
+    .primary-button,
+    .ghost-button {
+        min-height: 38px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 560px) {
+    .panel {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .input,
+    .compact-folder-path,
+    .primary-button,
+    .ghost-button {
+        min-height: 36px;
+        font-size: 13px;
+        padding-inline: 10px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "YouTubeを検索",
+        "placeholder": "YouTubeを検索...",
+        "noResults": "結果が見つかりません",
+        "searching": "検索中...",
+        "addToQueue": "ダウンロード",
+        "added": "追加済み",
+        "loadMore": "さらに結果を読み込む",
+        "usageUnlimited": "無制限の検索",
+        "failed": "検索に失敗しました",
+        "inputLabel": "YouTubeを検索"
+    }
+}

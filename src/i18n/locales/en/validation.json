@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "Line {{line}}: enter a valid http(s) URL.",
+    "multilineBatchLineProhibited": "Line {{line}}: downloads from this host are not allowed.",
+    "multilineBatchLineUnsupported": "Line {{line}}: unsupported URL format for this site.",
+    "multilineBatchLineYoutubeUnsupported": "Line {{line}}: unsupported YouTube URL format.",
+    "mediaUrlRequired": "Enter a valid http(s) URL to continue.",
+    "mediaUrlProhibitedContent": "Adult video sites cannot be downloaded with this app.",
+    "mediaUrlUnsupported": "Unsupported URL format for this site. Try a direct video or playlist link.",
+    "youtubeUrlUnsupported": "Unsupported YouTube URL format. Use watch, shorts, youtu.be, playlist, or channel links."
+}

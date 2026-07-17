@@ -1,0 +1,301 @@
+/* Settings dialog — global BEM class names from SettingsModal.tsx.
+   (Must live in a plain stylesheet: :global { } blocks in *.module.css are
+   mishandled by the bundler and get hashed / stripped.) */
+
+.settings-modal-head {
+    align-items: center;
+}
+
+.settings-modal-tabbar {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    margin: 6px -12px 0;
+    padding: 8px 12px 12px;
+    background: linear-gradient(180deg, rgb(22 26 32 / 98%) 55%, rgb(22 26 32 / 88%));
+    border-bottom: 1px solid rgb(255 255 255 / 7%);
+}
+
+.settings-modal-tabs {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.settings-tab-panel {
+    min-width: 0;
+}
+
+.settings-tab-panel > .settings-modal-grid:first-child {
+    margin-top: 8px;
+}
+
+/* Tab bar already provides a top edge; keep no border, but add padding so the first
+   heading (e.g. Output format) isn’t flush against the tab bar rule. */
+.settings-tab-panel .settings-tab-first-in-panel {
+    margin-top: 0;
+    padding-top: 14px;
+    border-top: none;
+}
+
+.settings-modal-grid {
+    margin: 12px 0 0;
+    border: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-width: 0;
+}
+
+@media (min-width: 520px) {
+    .settings-modal-grid {
+        grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(160px, 1fr));
+    }
+}
+
+.settings-section {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.settings-downloads-free-hint {
+    margin: 0 0 12px;
+}
+
+.settings-section-heading {
+    margin: 0 0 6px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.settings-section-hint {
+    margin: 0 0 12px;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.45;
+}
+
+.settings-quick-grid {
+    margin-top: 8px;
+}
+
+.settings-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settings-checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.settings-field-hint {
+    margin: 6px 0 0;
+    font-size: 11px;
+    color: var(--text-dim);
+    line-height: 1.35;
+}
+
+.settings-proxy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.settings-field-spaced {
+    display: block;
+    margin-top: 10px;
+}
+
+.settings-lang-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.settings-proxy-status {
+    color: var(--text-muted, var(--text-dim));
+}
+
+/* Download history (settings modal): match toolbar-setting-card density + hierarchy */
+.settings-history-section .settings-section-hint {
+    margin-bottom: 10px;
+}
+
+.settings-history-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.settings-history-count {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-dim);
+}
+
+.settings-history-clear {
+    flex-shrink: 0;
+}
+
+.settings-history-panel {
+    border: 1px solid rgb(255 255 255 / 8%);
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, rgb(20 24 31 / 94%), rgb(15 18 24 / 98%)),
+        radial-gradient(140% 130% at 0% 0%, rgb(255 255 255 / 4%), transparent 44%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+    overflow: hidden;
+    max-height: min(360px, 42vh);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.settings-history-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+}
+
+.settings-history-empty {
+    margin: 0;
+    padding: 28px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-dim);
+}
+
+.settings-history-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px 14px;
+    padding: 11px 14px;
+    border-bottom: 1px solid rgb(255 255 255 / 6%);
+    transition: background 0.12s ease;
+}
+
+.settings-history-row:last-child {
+    border-bottom: none;
+}
+
+.settings-history-row:hover {
+    background: rgb(255 255 255 / 4%);
+}
+
+.settings-history-row-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    flex: 1 1 200px;
+}
+
+.settings-history-status {
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    line-height: 1.25;
+    padding: 5px 9px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    max-width: 8rem;
+    text-align: center;
+}
+
+.settings-history-status[data-status="complete"] {
+    color: var(--green);
+    background: color-mix(in srgb, var(--green) 14%, rgb(0 0 0 / 28%));
+    border-color: color-mix(in srgb, var(--green) 38%, rgb(255 255 255 / 6%));
+}
+
+.settings-history-status[data-status="error"] {
+    color: #fca5a5;
+    background: rgb(248 113 113 / 12%);
+    border-color: rgb(248 113 113 / 28%);
+}
+
+.settings-history-status[data-status="cancelled"] {
+    color: var(--text-dim);
+    background: rgb(255 255 255 / 6%);
+    border-color: rgb(255 255 255 / 12%);
+}
+
+.settings-history-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    flex: 1;
+}
+
+.settings-history-title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.settings-history-meta {
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--text-faint);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.settings-history-meta[data-variant="error"] {
+    color: #fca5a5;
+}
+
+.settings-history-when {
+    flex: 0 0 auto;
+    margin-inline-start: auto;
+    padding-top: 2px;
+    font-size: 11px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-faint);
+    white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+    .settings-history-when {
+        flex-basis: 100%;
+        margin-inline-start: 0;
+        padding-top: 2px;
+        text-align: end;
+    }
+}

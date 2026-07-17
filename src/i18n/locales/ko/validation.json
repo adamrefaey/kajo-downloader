@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "{{line}}번째 줄: 유효한 http(s) URL을 입력하세요.",
+    "multilineBatchLineProhibited": "{{line}}번째 줄: 이 호스트에서 다운로드는 허용되지 않습니다.",
+    "multilineBatchLineUnsupported": "{{line}}번째 줄: 이 사이트에서 지원되지 않는 URL 형식입니다.",
+    "multilineBatchLineYoutubeUnsupported": "{{line}}번째 줄: 지원되지 않는 YouTube URL 형식입니다.",
+    "mediaUrlRequired": "계속하려면 유효한 http(s) URL을 입력하세요.",
+    "mediaUrlProhibitedContent": "이 앱은 성인 동영상 사이트를 다운로드할 수 없습니다.",
+    "mediaUrlUnsupported": "이 사이트에서 지원되지 않는 URL 형식입니다. 직접 동영상 또는 재생목록 링크를 사용해 보세요.",
+    "youtubeUrlUnsupported": "지원되지 않는 YouTube URL 형식입니다. watch, shorts, youtu.be, 재생목록 또는 채널 링크를 사용하세요."
+}

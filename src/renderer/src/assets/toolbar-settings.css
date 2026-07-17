@@ -1,0 +1,133 @@
+/* ────────────────────────────────────────────────
+   Settings toolbar field chrome (global BEM).
+   Used by SettingsModal, UltimateWorkspace, MediaLibraryPanel.
+   ──────────────────────────────────────────────── */
+
+.toolbar-controls-grid {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(200px, 1fr));
+    gap: 8px;
+    min-width: 0;
+}
+
+.toolbar-setting-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+    min-height: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255 255 255 / 8%);
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, rgb(20 24 31 / 94%), rgb(15 18 24 / 98%)),
+        radial-gradient(140% 130% at 0% 0%, rgb(255 255 255 / 4%), transparent 44%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.toolbar-setting-card-location {
+    justify-content: space-between;
+}
+
+.toolbar-setting-head {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.toolbar-setting-eyebrow {
+    color: var(--text);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.toolbar-setting-select {
+    width: 100%;
+    min-height: 32px;
+    border-radius: 9px;
+    border-color: rgb(255 255 255 / 12%);
+    background: rgb(11 14 19 / 96%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
+    font-size: 11px;
+}
+
+.toolbar-setting-select.toolbar-concurrency-select {
+    max-width: 120px;
+}
+
+.toolbar-folder-segment {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    width: 100%;
+    padding: 3px;
+    border-radius: 9px;
+    background: rgb(9 12 16 / 82%);
+    border: 1px solid rgb(255 255 255 / 8%);
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 4%),
+        0 1px 0 rgb(0 0 0 / 25%);
+}
+
+.toolbar-folder-segment .compact-folder-path {
+    flex: 1;
+    min-width: 0;
+    min-height: 22px;
+    margin: 0;
+    padding: 2px 6px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    font-size: 12px;
+    color: var(--text);
+    box-shadow: none;
+}
+
+.toolbar-folder-segment .compact-folder-path:focus-visible {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgb(103 132 180 / 55%);
+}
+
+@media (max-width: 1280px) {
+    .toolbar-controls-grid {
+        grid-template-columns: minmax(0, 1fr) repeat(2, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 920px) {
+    .toolbar-controls-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .toolbar-setting-card-location {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .toolbar-controls-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbar-setting-card-location {
+        grid-column: auto;
+    }
+
+    .toolbar-folder-segment {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .toolbar-folder-segment .compact-folder-path {
+        min-width: 0;
+        width: 100%;
+    }
+}

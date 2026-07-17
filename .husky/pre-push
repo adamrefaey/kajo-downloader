@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+pnpm run typecheck
+# Coverage gate matches CI (`pnpm run test:coverage`); plain `test` alone can miss threshold drift.
+pnpm run test:coverage
+
+# SAST: run Semgrep if installed; reject the push on any finding.
+if command -v semgrep > /dev/null 2>&1; then
+  echo "Running Semgrep SAST scan…"
+  semgrep scan --config=auto --error .
+else
+  echo "Warning: semgrep not found — skipping SAST scan. Install it with: brew install semgrep (or pip install semgrep)"
+fi

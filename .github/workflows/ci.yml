@@ -1,0 +1,132 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    # Nightly full run at 02:00 UTC — ensures everything passes even when no PRs are open
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Quality — lint, typecheck, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Install binary fetch tools (archives / squashfs)
+        run: sudo apt-get update && sudo apt-get install -y squashfs-tools p7zip-full
+
+      - name: Verify pinned binaries (fetch + SHA-256, linux/x64)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-binaries.mjs --platform linux --arch x64
+
+      - name: Security audit (high severity)
+        run: pnpm audit --audit-level=high
+
+      - name: Lint (Biome, no fixes)
+        run: pnpm exec biome check .
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+      - name: Dead-code check (knip)
+        run: pnpm run knip
+
+      - name: i18n key hygiene (no dead / stale locale keys)
+        run: pnpm run check:i18n
+
+      - name: React Compiler ESLint
+        run: pnpm run check:compiler
+
+      - name: Unit tests and coverage
+        run: pnpm run test:coverage
+
+      - name: Electron build, renderer bundle budget + delta, Linux dir pack
+        env:
+          CI: true
+          KAJO_AUTO_UPDATE_FEED_URL: ${{ vars.KAJO_AUTO_UPDATE_FEED_URL }}
+        run: |
+          node scripts/ensure-dev-binaries.mjs
+          pnpm exec electron-vite build
+          node scripts/check-renderer-bundle-budget.mjs 2>&1 | tee /tmp/bundle-budget.txt
+          node scripts/check-renderer-bundle-delta.mjs 2>&1 | tee /tmp/bundle-delta.txt
+          node scripts/with-env.mjs electron-builder --config electron-builder.config.mjs --dir --linux --x64
+
+      - name: Write bundle size to job summary
+        if: always()
+        run: |
+          {
+            echo "## Renderer bundle size"
+            echo '```'
+            cat /tmp/bundle-budget.txt 2>/dev/null || echo "(budget output not found)"
+            cat /tmp/bundle-delta.txt 2>/dev/null || echo "(delta output not found)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  docs:
+    name: Docs — env reference sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Verify all .env.example vars are in env_reference.md
+        run: node scripts/check-env-docs.mjs
+
+  # Nightly / schedule-only: verify SHA-256 pins for every platform/arch combo.
+  # Push/PR quality job keeps linux/x64 only for speed.
+  binary-matrix:
+    name: Binary pins — all platforms
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: linux
+            arch: x64
+          - platform: linux
+            arch: arm64
+          - platform: darwin
+            arch: x64
+          - platform: darwin
+            arch: arm64
+          - platform: win32
+            arch: x64
+          - platform: win32
+            arch: arm64
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Install binary fetch tools (archives / squashfs)
+        run: sudo apt-get update && sudo apt-get install -y squashfs-tools p7zip-full
+
+      - name: Fetch and verify pinned binaries
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-binaries.mjs --platform ${{ matrix.platform }} --arch ${{ matrix.arch }}

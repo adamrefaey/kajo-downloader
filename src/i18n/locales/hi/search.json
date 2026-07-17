@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "YouTube खोजें",
+        "placeholder": "YouTube खोजें...",
+        "noResults": "कोई परिणाम नहीं मिला",
+        "searching": "खोज रहे हैं...",
+        "addToQueue": "डाउनलोड करें",
+        "added": "जोड़ा गया",
+        "loadMore": "अधिक परिणाम लोड करें",
+        "usageUnlimited": "असीमित खोज",
+        "failed": "खोज विफल",
+        "inputLabel": "YouTube खोजें"
+    }
+}

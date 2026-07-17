@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "자동 업데이트는 릴리스에 적용됩니다. 개발 빌드는 업데이트 채널을 사용하지 않습니다.",
+    "disabledMessage": "이 설치는 업데이트 확인이 비활성화되어 있습니다.",
+    "linuxPackageManagedMessage": "앱 내 업데이트는 AppImage 빌드에서 사용할 수 있습니다. .deb/.rpm 패키지는 시스템 패키지 관리자로 업데이트하세요.",
+    "latestMessage": "최신 버전을 실행 중입니다.",
+    "availablePrefix": "{{version}} 버전을 사용할 수 있습니다.",
+    "availableTailAuto": " 백그라운드에서 다운로드 중입니다. 설치 준비가 완료되면 알림이 표시됩니다.",
+    "availableTailManual": " 자동 다운로드를 활성화하거나 릴리스 프로세스를 사용하여 업데이트를 설치하세요.",
+    "checkFailedTitle": "업데이트 확인 실패",
+    "readyTitle": "업데이트 준비됨 — {{appName}}",
+    "readyMessage": "새 버전이 다운로드되었습니다. 지금 다시 시작하여 설치를 완료하거나, 나중에를 선택하면 종료 시 설치됩니다.",
+    "restart": "다시 시작",
+    "later": "나중에"
+}

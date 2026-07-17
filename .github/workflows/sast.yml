@@ -1,0 +1,34 @@
+name: SAST
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    # Weekly scan every Monday at 03:00 UTC
+    - cron: '0 3 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  semgrep:
+    name: Semgrep SAST
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Skip on fork PRs to avoid token leakage.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    container:
+      image: semgrep/semgrep
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Run Semgrep
+        # semgrep scan --config=auto is the Semgrep CE command for token-free local scanning.
+        # It auto-detects language/framework rules and downloads them at run time.
+        # To upload results to semgrep.dev, add SEMGREP_APP_TOKEN as a repository secret
+        # and replace the command with: semgrep ci
+        run: semgrep scan --config=auto --error .

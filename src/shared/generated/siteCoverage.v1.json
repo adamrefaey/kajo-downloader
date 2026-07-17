@@ -1,0 +1,7139 @@
+{
+    "schemaVersion": 1,
+    "generatedAt": "2026-06-19T21:09:37.238Z",
+    "ytdlpVersion": "2026.06.09",
+    "referencedMinYtdlpVersion": "2025.03.26",
+    "extractorCount": 1747,
+    "extractors": [
+        {
+            "key": "10play",
+            "broken": false
+        },
+        {
+            "key": "10play:season",
+            "broken": false
+        },
+        {
+            "key": "17live",
+            "broken": false
+        },
+        {
+            "key": "17live:clip",
+            "broken": false
+        },
+        {
+            "key": "17live:vod",
+            "broken": false
+        },
+        {
+            "key": "1News",
+            "broken": false
+        },
+        {
+            "key": "1tv",
+            "broken": false
+        },
+        {
+            "key": "1tv:live",
+            "broken": false
+        },
+        {
+            "key": "20min",
+            "broken": true
+        },
+        {
+            "key": "23video",
+            "broken": false
+        },
+        {
+            "key": "247sports",
+            "broken": true
+        },
+        {
+            "key": "24tv.ua",
+            "broken": false
+        },
+        {
+            "key": "3qsdn",
+            "broken": false
+        },
+        {
+            "key": "3sat",
+            "broken": false
+        },
+        {
+            "key": "4tube",
+            "broken": false
+        },
+        {
+            "key": "56.com",
+            "broken": false
+        },
+        {
+            "key": "7plus",
+            "broken": false
+        },
+        {
+            "key": "9c9media",
+            "broken": false
+        },
+        {
+            "key": "9gag",
+            "broken": false
+        },
+        {
+            "key": "9News",
+            "broken": false
+        },
+        {
+            "key": "9now.com.au",
+            "broken": false
+        },
+        {
+            "key": "abc.net.au",
+            "broken": false
+        },
+        {
+            "key": "abc.net.au:iview",
+            "broken": false
+        },
+        {
+            "key": "abc.net.au:iview:showseries",
+            "broken": false
+        },
+        {
+            "key": "abcnews",
+            "broken": false
+        },
+        {
+            "key": "abcnews:video",
+            "broken": false
+        },
+        {
+            "key": "abcotvs",
+            "broken": false
+        },
+        {
+            "key": "abcotvs:clips",
+            "broken": false
+        },
+        {
+            "key": "AbemaTV",
+            "broken": false
+        },
+        {
+            "key": "AbemaTVTitle",
+            "broken": false
+        },
+        {
+            "key": "AcademicEarth:Course",
+            "broken": false
+        },
+        {
+            "key": "acast",
+            "broken": false
+        },
+        {
+            "key": "acast:channel",
+            "broken": false
+        },
+        {
+            "key": "AcFunBangumi",
+            "broken": false
+        },
+        {
+            "key": "AcFunVideo",
+            "broken": false
+        },
+        {
+            "key": "ADN",
+            "broken": false
+        },
+        {
+            "key": "ADNSeason",
+            "broken": false
+        },
+        {
+            "key": "AdobeConnect",
+            "broken": false
+        },
+        {
+            "key": "adobetv",
+            "broken": false
+        },
+        {
+            "key": "AdultSwim",
+            "broken": false
+        },
+        {
+            "key": "aenetworks",
+            "broken": false
+        },
+        {
+            "key": "aenetworks:collection",
+            "broken": false
+        },
+        {
+            "key": "aenetworks:show",
+            "broken": false
+        },
+        {
+            "key": "AeonCo",
+            "broken": false
+        },
+        {
+            "key": "agalega:videos",
+            "broken": false
+        },
+        {
+            "key": "AitubeKZVideo",
+            "broken": false
+        },
+        {
+            "key": "Alibaba",
+            "broken": false
+        },
+        {
+            "key": "AliExpressLive",
+            "broken": false
+        },
+        {
+            "key": "AlJazeera",
+            "broken": false
+        },
+        {
+            "key": "Allocine",
+            "broken": false
+        },
+        {
+            "key": "Allstar",
+            "broken": false
+        },
+        {
+            "key": "AllstarProfile",
+            "broken": false
+        },
+        {
+            "key": "AlphaPorno",
+            "broken": false
+        },
+        {
+            "key": "altcensored",
+            "broken": false
+        },
+        {
+            "key": "altcensored:channel",
+            "broken": false
+        },
+        {
+            "key": "Alura",
+            "broken": false
+        },
+        {
+            "key": "AluraCourse",
+            "broken": false
+        },
+        {
+            "key": "AmadeusTV",
+            "broken": false
+        },
+        {
+            "key": "Amara",
+            "broken": false
+        },
+        {
+            "key": "AmazonMiniTV",
+            "broken": false
+        },
+        {
+            "key": "amazonminitv:season",
+            "broken": false
+        },
+        {
+            "key": "amazonminitv:series",
+            "broken": false
+        },
+        {
+            "key": "AmazonReviews",
+            "broken": false
+        },
+        {
+            "key": "AmazonStore",
+            "broken": false
+        },
+        {
+            "key": "AMCNetworks",
+            "broken": false
+        },
+        {
+            "key": "AmericasTestKitchen",
+            "broken": false
+        },
+        {
+            "key": "AmericasTestKitchenSeason",
+            "broken": false
+        },
+        {
+            "key": "AmHistoryChannel",
+            "broken": false
+        },
+        {
+            "key": "anderetijden",
+            "broken": false
+        },
+        {
+            "key": "Angel",
+            "broken": false
+        },
+        {
+            "key": "AnimalPlanet",
+            "broken": false
+        },
+        {
+            "key": "ant1newsgr:article",
+            "broken": false
+        },
+        {
+            "key": "ant1newsgr:embed",
+            "broken": false
+        },
+        {
+            "key": "antenna:watch",
+            "broken": false
+        },
+        {
+            "key": "Anvato",
+            "broken": false
+        },
+        {
+            "key": "aol.com",
+            "broken": true
+        },
+        {
+            "key": "APA",
+            "broken": false
+        },
+        {
+            "key": "Aparat",
+            "broken": false
+        },
+        {
+            "key": "apple:music:connect",
+            "broken": false
+        },
+        {
+            "key": "ApplePodcasts",
+            "broken": false
+        },
+        {
+            "key": "archive.org",
+            "broken": false
+        },
+        {
+            "key": "ArcPublishing",
+            "broken": false
+        },
+        {
+            "key": "ARD",
+            "broken": false
+        },
+        {
+            "key": "ARDAudiothek",
+            "broken": false
+        },
+        {
+            "key": "ARDAudiothekPlaylist",
+            "broken": false
+        },
+        {
+            "key": "ARDMediathek",
+            "broken": false
+        },
+        {
+            "key": "ARDMediathekCollection",
+            "broken": false
+        },
+        {
+            "key": "Art19",
+            "broken": false
+        },
+        {
+            "key": "Art19Show",
+            "broken": false
+        },
+        {
+            "key": "arte.sky.it",
+            "broken": false
+        },
+        {
+            "key": "ArteTV",
+            "broken": false
+        },
+        {
+            "key": "ArteTVCategory",
+            "broken": false
+        },
+        {
+            "key": "ArteTVEmbed",
+            "broken": false
+        },
+        {
+            "key": "ArteTVPlaylist",
+            "broken": false
+        },
+        {
+            "key": "asobichannel",
+            "broken": false
+        },
+        {
+            "key": "asobichannel:tag",
+            "broken": false
+        },
+        {
+            "key": "AsobiStage",
+            "broken": false
+        },
+        {
+            "key": "AtresPlayer",
+            "broken": false
+        },
+        {
+            "key": "AtScaleConfEvent",
+            "broken": false
+        },
+        {
+            "key": "AudiMedia",
+            "broken": false
+        },
+        {
+            "key": "AudioBoom",
+            "broken": false
+        },
+        {
+            "key": "Audiodraft:custom",
+            "broken": false
+        },
+        {
+            "key": "Audiodraft:generic",
+            "broken": false
+        },
+        {
+            "key": "audiomack",
+            "broken": false
+        },
+        {
+            "key": "audiomack:album",
+            "broken": false
+        },
+        {
+            "key": "Audius",
+            "broken": false
+        },
+        {
+            "key": "audius:artist",
+            "broken": false
+        },
+        {
+            "key": "audius:playlist",
+            "broken": false
+        },
+        {
+            "key": "audius:track",
+            "broken": false
+        },
+        {
+            "key": "AZMedien",
+            "broken": false
+        },
+        {
+            "key": "BaiduVideo",
+            "broken": false
+        },
+        {
+            "key": "BanBye",
+            "broken": false
+        },
+        {
+            "key": "BanByeChannel",
+            "broken": false
+        },
+        {
+            "key": "Bandcamp",
+            "broken": false
+        },
+        {
+            "key": "Bandcamp:album",
+            "broken": false
+        },
+        {
+            "key": "Bandcamp:user",
+            "broken": false
+        },
+        {
+            "key": "Bandcamp:weekly",
+            "broken": false
+        },
+        {
+            "key": "Bandlab",
+            "broken": false
+        },
+        {
+            "key": "BandlabPlaylist",
+            "broken": false
+        },
+        {
+            "key": "BannedVideo",
+            "broken": false
+        },
+        {
+            "key": "bbc",
+            "broken": false
+        },
+        {
+            "key": "bbc.co.uk",
+            "broken": false
+        },
+        {
+            "key": "bbc.co.uk:article",
+            "broken": false
+        },
+        {
+            "key": "bbc.co.uk:iplayer:episodes",
+            "broken": false
+        },
+        {
+            "key": "bbc.co.uk:iplayer:group",
+            "broken": false
+        },
+        {
+            "key": "bbc.co.uk:playlist",
+            "broken": false
+        },
+        {
+            "key": "BBVTV",
+            "broken": false
+        },
+        {
+            "key": "BBVTVLive",
+            "broken": false
+        },
+        {
+            "key": "BBVTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "BeaconTv",
+            "broken": false
+        },
+        {
+            "key": "Beatport",
+            "broken": false
+        },
+        {
+            "key": "Beeg",
+            "broken": false
+        },
+        {
+            "key": "BehindKink",
+            "broken": true
+        },
+        {
+            "key": "BerufeTV",
+            "broken": false
+        },
+        {
+            "key": "Bet",
+            "broken": false
+        },
+        {
+            "key": "bfi:player",
+            "broken": true
+        },
+        {
+            "key": "bfmtv",
+            "broken": false
+        },
+        {
+            "key": "bfmtv:article",
+            "broken": false
+        },
+        {
+            "key": "bfmtv:live",
+            "broken": false
+        },
+        {
+            "key": "bibeltv:live",
+            "broken": false
+        },
+        {
+            "key": "bibeltv:series",
+            "broken": false
+        },
+        {
+            "key": "bibeltv:video",
+            "broken": false
+        },
+        {
+            "key": "Bigo",
+            "broken": false
+        },
+        {
+            "key": "Bild",
+            "broken": false
+        },
+        {
+            "key": "BiliBili",
+            "broken": false
+        },
+        {
+            "key": "Bilibili category extractor",
+            "broken": false
+        },
+        {
+            "key": "BilibiliAudio",
+            "broken": false
+        },
+        {
+            "key": "BilibiliAudioAlbum",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliBangumi",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliBangumiMedia",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliBangumiSeason",
+            "broken": false
+        },
+        {
+            "key": "BilibiliCheese",
+            "broken": false
+        },
+        {
+            "key": "BilibiliCheeseSeason",
+            "broken": false
+        },
+        {
+            "key": "BilibiliCollectionList",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliDynamic",
+            "broken": false
+        },
+        {
+            "key": "BilibiliFavoritesList",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliPlayer",
+            "broken": false
+        },
+        {
+            "key": "BilibiliPlaylist",
+            "broken": false
+        },
+        {
+            "key": "BiliBiliSearch",
+            "broken": false
+        },
+        {
+            "key": "BilibiliSeriesList",
+            "broken": false
+        },
+        {
+            "key": "BilibiliSpaceAudio",
+            "broken": false
+        },
+        {
+            "key": "BilibiliSpaceVideo",
+            "broken": false
+        },
+        {
+            "key": "BilibiliWatchlater",
+            "broken": false
+        },
+        {
+            "key": "BiliIntl",
+            "broken": false
+        },
+        {
+            "key": "biliIntl:series",
+            "broken": false
+        },
+        {
+            "key": "BiliLive",
+            "broken": false
+        },
+        {
+            "key": "BioBioChileTV",
+            "broken": false
+        },
+        {
+            "key": "Biography",
+            "broken": false
+        },
+        {
+            "key": "BitChute",
+            "broken": false
+        },
+        {
+            "key": "BitChuteChannel",
+            "broken": false
+        },
+        {
+            "key": "Bitmovin",
+            "broken": false
+        },
+        {
+            "key": "BlackboardCollaborate",
+            "broken": false
+        },
+        {
+            "key": "BlackboardCollaborateLaunch",
+            "broken": false
+        },
+        {
+            "key": "BleacherReport",
+            "broken": true
+        },
+        {
+            "key": "BleacherReportCMS",
+            "broken": true
+        },
+        {
+            "key": "blerp",
+            "broken": false
+        },
+        {
+            "key": "Blob",
+            "broken": false
+        },
+        {
+            "key": "blogger.com",
+            "broken": false
+        },
+        {
+            "key": "Bloomberg",
+            "broken": false
+        },
+        {
+            "key": "Bluesky",
+            "broken": false
+        },
+        {
+            "key": "BongaCams",
+            "broken": false
+        },
+        {
+            "key": "Boosty",
+            "broken": false
+        },
+        {
+            "key": "BostonGlobe",
+            "broken": false
+        },
+        {
+            "key": "Box",
+            "broken": false
+        },
+        {
+            "key": "BoxCastVideo",
+            "broken": false
+        },
+        {
+            "key": "Bpb",
+            "broken": false
+        },
+        {
+            "key": "BR",
+            "broken": true
+        },
+        {
+            "key": "BrainPOP",
+            "broken": false
+        },
+        {
+            "key": "BrainPOPELL",
+            "broken": false
+        },
+        {
+            "key": "BrainPOPEsp",
+            "broken": false
+        },
+        {
+            "key": "BrainPOPFr",
+            "broken": false
+        },
+        {
+            "key": "BrainPOPIl",
+            "broken": false
+        },
+        {
+            "key": "BrainPOPJr",
+            "broken": false
+        },
+        {
+            "key": "BravoTV",
+            "broken": false
+        },
+        {
+            "key": "BreitBart",
+            "broken": false
+        },
+        {
+            "key": "brightcove:legacy",
+            "broken": false
+        },
+        {
+            "key": "brightcove:new",
+            "broken": false
+        },
+        {
+            "key": "Brilliantpala:Classes",
+            "broken": false
+        },
+        {
+            "key": "Brilliantpala:Elearn",
+            "broken": false
+        },
+        {
+            "key": "bt:article",
+            "broken": false
+        },
+        {
+            "key": "bt:vestlendingen",
+            "broken": false
+        },
+        {
+            "key": "BTVPlus",
+            "broken": false
+        },
+        {
+            "key": "Bundesliga",
+            "broken": false
+        },
+        {
+            "key": "Bundestag",
+            "broken": false
+        },
+        {
+            "key": "BunnyCdn",
+            "broken": false
+        },
+        {
+            "key": "BusinessInsider",
+            "broken": false
+        },
+        {
+            "key": "BuzzFeed",
+            "broken": false
+        },
+        {
+            "key": "BYUtv",
+            "broken": true
+        },
+        {
+            "key": "Caltrans",
+            "broken": false
+        },
+        {
+            "key": "CAM4",
+            "broken": false
+        },
+        {
+            "key": "CamFMEpisode",
+            "broken": false
+        },
+        {
+            "key": "CamFMShow",
+            "broken": false
+        },
+        {
+            "key": "CamModels",
+            "broken": false
+        },
+        {
+            "key": "Camsoda",
+            "broken": false
+        },
+        {
+            "key": "CamtasiaEmbed",
+            "broken": false
+        },
+        {
+            "key": "Canal1",
+            "broken": false
+        },
+        {
+            "key": "CanalAlpha",
+            "broken": false
+        },
+        {
+            "key": "canalc2.tv",
+            "broken": false
+        },
+        {
+            "key": "Canalplus",
+            "broken": false
+        },
+        {
+            "key": "Canalsurmas",
+            "broken": false
+        },
+        {
+            "key": "CaracolTvPlay",
+            "broken": false
+        },
+        {
+            "key": "cbc.ca",
+            "broken": false
+        },
+        {
+            "key": "cbc.ca:listen",
+            "broken": false
+        },
+        {
+            "key": "cbc.ca:player",
+            "broken": false
+        },
+        {
+            "key": "cbc.ca:player:playlist",
+            "broken": false
+        },
+        {
+            "key": "CBS",
+            "broken": true
+        },
+        {
+            "key": "CBSLocal",
+            "broken": false
+        },
+        {
+            "key": "CBSLocalArticle",
+            "broken": false
+        },
+        {
+            "key": "CBSLocalLive",
+            "broken": false
+        },
+        {
+            "key": "cbsnews",
+            "broken": false
+        },
+        {
+            "key": "cbsnews:embed",
+            "broken": false
+        },
+        {
+            "key": "cbsnews:live",
+            "broken": false
+        },
+        {
+            "key": "cbsnews:livevideo",
+            "broken": false
+        },
+        {
+            "key": "cbssports",
+            "broken": true
+        },
+        {
+            "key": "cbssports:embed",
+            "broken": true
+        },
+        {
+            "key": "CCMA",
+            "broken": false
+        },
+        {
+            "key": "CCTV",
+            "broken": false
+        },
+        {
+            "key": "CDA",
+            "broken": false
+        },
+        {
+            "key": "CDAFolder",
+            "broken": false
+        },
+        {
+            "key": "Cellebrite",
+            "broken": false
+        },
+        {
+            "key": "CeskaTelevize",
+            "broken": false
+        },
+        {
+            "key": "CGTN",
+            "broken": false
+        },
+        {
+            "key": "CharlieRose",
+            "broken": false
+        },
+        {
+            "key": "Chaturbate",
+            "broken": false
+        },
+        {
+            "key": "Chilloutzone",
+            "broken": false
+        },
+        {
+            "key": "chzzk:live",
+            "broken": false
+        },
+        {
+            "key": "chzzk:video",
+            "broken": false
+        },
+        {
+            "key": "cielotv.it",
+            "broken": false
+        },
+        {
+            "key": "Cinemax",
+            "broken": true
+        },
+        {
+            "key": "CinetecaMilano",
+            "broken": false
+        },
+        {
+            "key": "Cineverse",
+            "broken": false
+        },
+        {
+            "key": "CineverseDetails",
+            "broken": false
+        },
+        {
+            "key": "CiscoLiveSearch",
+            "broken": false
+        },
+        {
+            "key": "CiscoLiveSession",
+            "broken": false
+        },
+        {
+            "key": "ciscowebex",
+            "broken": false
+        },
+        {
+            "key": "CJSW",
+            "broken": false
+        },
+        {
+            "key": "Clipchamp",
+            "broken": false
+        },
+        {
+            "key": "ClipRs",
+            "broken": true
+        },
+        {
+            "key": "CloserToTruth",
+            "broken": true
+        },
+        {
+            "key": "CloudflareStream",
+            "broken": false
+        },
+        {
+            "key": "CloudyCDN",
+            "broken": false
+        },
+        {
+            "key": "Clubic",
+            "broken": true
+        },
+        {
+            "key": "Clyp",
+            "broken": false
+        },
+        {
+            "key": "CNBCVideo",
+            "broken": false
+        },
+        {
+            "key": "CNN",
+            "broken": false
+        },
+        {
+            "key": "CNNIndonesia",
+            "broken": false
+        },
+        {
+            "key": "ComedyCentral",
+            "broken": false
+        },
+        {
+            "key": "CommonMistakes",
+            "broken": false
+        },
+        {
+            "key": "ConanClassic",
+            "broken": true
+        },
+        {
+            "key": "CondeNast",
+            "broken": false
+        },
+        {
+            "key": "CookingChannel",
+            "broken": false
+        },
+        {
+            "key": "Corus",
+            "broken": false
+        },
+        {
+            "key": "Coub",
+            "broken": false
+        },
+        {
+            "key": "CozyTV",
+            "broken": false
+        },
+        {
+            "key": "cp24",
+            "broken": false
+        },
+        {
+            "key": "cpac",
+            "broken": false
+        },
+        {
+            "key": "cpac:playlist",
+            "broken": false
+        },
+        {
+            "key": "Cracked",
+            "broken": false
+        },
+        {
+            "key": "Craftsy",
+            "broken": false
+        },
+        {
+            "key": "croatian.film",
+            "broken": false
+        },
+        {
+            "key": "CrooksAndLiars",
+            "broken": false
+        },
+        {
+            "key": "CrowdBunker",
+            "broken": false
+        },
+        {
+            "key": "CrowdBunkerChannel",
+            "broken": false
+        },
+        {
+            "key": "Crtvg",
+            "broken": false
+        },
+        {
+            "key": "CSpan",
+            "broken": false
+        },
+        {
+            "key": "CSpanCongress",
+            "broken": false
+        },
+        {
+            "key": "CtsNews",
+            "broken": false
+        },
+        {
+            "key": "CTVNews",
+            "broken": false
+        },
+        {
+            "key": "cu.ntv.co.jp",
+            "broken": false
+        },
+        {
+            "key": "CultureUnplugged",
+            "broken": false
+        },
+        {
+            "key": "curiositystream",
+            "broken": false
+        },
+        {
+            "key": "curiositystream:collections",
+            "broken": false
+        },
+        {
+            "key": "curiositystream:series",
+            "broken": false
+        },
+        {
+            "key": "Cybrary",
+            "broken": false
+        },
+        {
+            "key": "CybraryCourse",
+            "broken": false
+        },
+        {
+            "key": "DacastPlaylist",
+            "broken": false
+        },
+        {
+            "key": "DacastVOD",
+            "broken": false
+        },
+        {
+            "key": "DagelijkseKost",
+            "broken": false
+        },
+        {
+            "key": "DailyMail",
+            "broken": false
+        },
+        {
+            "key": "dailymotion",
+            "broken": false
+        },
+        {
+            "key": "dailymotion:playlist",
+            "broken": false
+        },
+        {
+            "key": "dailymotion:search",
+            "broken": false
+        },
+        {
+            "key": "dailymotion:user",
+            "broken": false
+        },
+        {
+            "key": "DailyWire",
+            "broken": false
+        },
+        {
+            "key": "DailyWirePodcast",
+            "broken": false
+        },
+        {
+            "key": "damtomo:record",
+            "broken": false
+        },
+        {
+            "key": "damtomo:video",
+            "broken": false
+        },
+        {
+            "key": "dangalplay",
+            "broken": false
+        },
+        {
+            "key": "dangalplay:season",
+            "broken": false
+        },
+        {
+            "key": "daum.net",
+            "broken": false
+        },
+        {
+            "key": "daum.net:clip",
+            "broken": false
+        },
+        {
+            "key": "daum.net:playlist",
+            "broken": false
+        },
+        {
+            "key": "daum.net:user",
+            "broken": false
+        },
+        {
+            "key": "daystar:clip",
+            "broken": false
+        },
+        {
+            "key": "DBTV",
+            "broken": false
+        },
+        {
+            "key": "DctpTv",
+            "broken": false
+        },
+        {
+            "key": "democracynow",
+            "broken": false
+        },
+        {
+            "key": "DestinationAmerica",
+            "broken": false
+        },
+        {
+            "key": "DetikEmbed",
+            "broken": false
+        },
+        {
+            "key": "DeuxM",
+            "broken": false
+        },
+        {
+            "key": "DeuxMNews",
+            "broken": false
+        },
+        {
+            "key": "DHM",
+            "broken": true
+        },
+        {
+            "key": "DigitalConcertHall",
+            "broken": false
+        },
+        {
+            "key": "DigitallySpeaking",
+            "broken": false
+        },
+        {
+            "key": "Digiteka",
+            "broken": false
+        },
+        {
+            "key": "Digiview",
+            "broken": false
+        },
+        {
+            "key": "DiscogsReleasePlaylist",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryLife",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryNetworksDe",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryPlus",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryPlusIndia",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryPlusIndiaShow",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryPlusItaly",
+            "broken": false
+        },
+        {
+            "key": "DiscoveryPlusItalyShow",
+            "broken": false
+        },
+        {
+            "key": "Disney",
+            "broken": false
+        },
+        {
+            "key": "dlf",
+            "broken": false
+        },
+        {
+            "key": "dlf:corpus",
+            "broken": false
+        },
+        {
+            "key": "dlive:stream",
+            "broken": false
+        },
+        {
+            "key": "dlive:vod",
+            "broken": false
+        },
+        {
+            "key": "Douyin",
+            "broken": false
+        },
+        {
+            "key": "DouyuShow",
+            "broken": false
+        },
+        {
+            "key": "DouyuTV",
+            "broken": false
+        },
+        {
+            "key": "DPlay",
+            "broken": false
+        },
+        {
+            "key": "DRBonanza",
+            "broken": false
+        },
+        {
+            "key": "DRM",
+            "broken": false
+        },
+        {
+            "key": "Dropbox",
+            "broken": false
+        },
+        {
+            "key": "Dropout",
+            "broken": false
+        },
+        {
+            "key": "DropoutSeason",
+            "broken": false
+        },
+        {
+            "key": "DrTalks",
+            "broken": false
+        },
+        {
+            "key": "DrTuber",
+            "broken": false
+        },
+        {
+            "key": "drtv",
+            "broken": false
+        },
+        {
+            "key": "drtv:live",
+            "broken": false
+        },
+        {
+            "key": "drtv:season",
+            "broken": false
+        },
+        {
+            "key": "drtv:series",
+            "broken": false
+        },
+        {
+            "key": "DTube",
+            "broken": true
+        },
+        {
+            "key": "Dumpert",
+            "broken": false
+        },
+        {
+            "key": "Duoplay",
+            "broken": false
+        },
+        {
+            "key": "dvtv",
+            "broken": false
+        },
+        {
+            "key": "dw",
+            "broken": true
+        },
+        {
+            "key": "dw:article",
+            "broken": true
+        },
+        {
+            "key": "dzen.ru",
+            "broken": false
+        },
+        {
+            "key": "dzen.ru:channel",
+            "broken": false
+        },
+        {
+            "key": "EbaumsWorld",
+            "broken": false
+        },
+        {
+            "key": "Ebay",
+            "broken": false
+        },
+        {
+            "key": "egghead:course",
+            "broken": false
+        },
+        {
+            "key": "egghead:lesson",
+            "broken": false
+        },
+        {
+            "key": "eggs:artist",
+            "broken": false
+        },
+        {
+            "key": "eggs:single",
+            "broken": false
+        },
+        {
+            "key": "EinsUndEinsTV",
+            "broken": false
+        },
+        {
+            "key": "EinsUndEinsTVLive",
+            "broken": false
+        },
+        {
+            "key": "EinsUndEinsTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "ElementorEmbed",
+            "broken": false
+        },
+        {
+            "key": "Elonet",
+            "broken": false
+        },
+        {
+            "key": "ElPais",
+            "broken": false
+        },
+        {
+            "key": "ElTreceTV",
+            "broken": false
+        },
+        {
+            "key": "Embedly",
+            "broken": false
+        },
+        {
+            "key": "EMPFlix",
+            "broken": false
+        },
+        {
+            "key": "Epicon",
+            "broken": false
+        },
+        {
+            "key": "EpiconSeries",
+            "broken": false
+        },
+        {
+            "key": "EpidemicSound",
+            "broken": false
+        },
+        {
+            "key": "eplus",
+            "broken": false
+        },
+        {
+            "key": "Epoch",
+            "broken": false
+        },
+        {
+            "key": "Eporner",
+            "broken": false
+        },
+        {
+            "key": "Erocast",
+            "broken": false
+        },
+        {
+            "key": "EroProfile",
+            "broken": false
+        },
+        {
+            "key": "EroProfile:album",
+            "broken": false
+        },
+        {
+            "key": "ERRArhiiv",
+            "broken": false
+        },
+        {
+            "key": "ERRJupiter",
+            "broken": false
+        },
+        {
+            "key": "ertflix",
+            "broken": false
+        },
+        {
+            "key": "ertflix:codename",
+            "broken": false
+        },
+        {
+            "key": "ertwebtv:embed",
+            "broken": false
+        },
+        {
+            "key": "ESPN",
+            "broken": false
+        },
+        {
+            "key": "ESPNArticle",
+            "broken": false
+        },
+        {
+            "key": "ESPNCricInfo",
+            "broken": false
+        },
+        {
+            "key": "EttuTv",
+            "broken": false
+        },
+        {
+            "key": "Europa",
+            "broken": true
+        },
+        {
+            "key": "EuroParlWebstream",
+            "broken": false
+        },
+        {
+            "key": "EuropeanTour",
+            "broken": false
+        },
+        {
+            "key": "Eurosport",
+            "broken": false
+        },
+        {
+            "key": "EUScreen",
+            "broken": false
+        },
+        {
+            "key": "EWETV",
+            "broken": false
+        },
+        {
+            "key": "EWETVLive",
+            "broken": false
+        },
+        {
+            "key": "EWETVRecordings",
+            "broken": false
+        },
+        {
+            "key": "Expressen",
+            "broken": false
+        },
+        {
+            "key": "facebook",
+            "broken": false
+        },
+        {
+            "key": "facebook:ads",
+            "broken": false
+        },
+        {
+            "key": "facebook:reel",
+            "broken": false
+        },
+        {
+            "key": "FacebookPluginsVideo",
+            "broken": false
+        },
+        {
+            "key": "FacebookRedirectURL",
+            "broken": false
+        },
+        {
+            "key": "fancode:live",
+            "broken": true
+        },
+        {
+            "key": "fancode:vod",
+            "broken": true
+        },
+        {
+            "key": "Fathom",
+            "broken": false
+        },
+        {
+            "key": "Faulio",
+            "broken": false
+        },
+        {
+            "key": "FaulioLive",
+            "broken": false
+        },
+        {
+            "key": "faz.net",
+            "broken": false
+        },
+        {
+            "key": "fc2",
+            "broken": false
+        },
+        {
+            "key": "fc2:embed",
+            "broken": false
+        },
+        {
+            "key": "fc2:live",
+            "broken": false
+        },
+        {
+            "key": "Fczenit",
+            "broken": false
+        },
+        {
+            "key": "Fifa",
+            "broken": false
+        },
+        {
+            "key": "FilmArchiv",
+            "broken": false
+        },
+        {
+            "key": "filmon",
+            "broken": false
+        },
+        {
+            "key": "filmon:channel",
+            "broken": false
+        },
+        {
+            "key": "Filmweb",
+            "broken": false
+        },
+        {
+            "key": "FiveThirtyEight",
+            "broken": false
+        },
+        {
+            "key": "FiveTV",
+            "broken": false
+        },
+        {
+            "key": "Flickr",
+            "broken": false
+        },
+        {
+            "key": "Floatplane",
+            "broken": false
+        },
+        {
+            "key": "FloatplaneChannel",
+            "broken": false
+        },
+        {
+            "key": "Folketinget",
+            "broken": false
+        },
+        {
+            "key": "FoodNetwork",
+            "broken": false
+        },
+        {
+            "key": "FootyRoom",
+            "broken": false
+        },
+        {
+            "key": "Formula1",
+            "broken": false
+        },
+        {
+            "key": "FOX",
+            "broken": false
+        },
+        {
+            "key": "FOX9",
+            "broken": false
+        },
+        {
+            "key": "FOX9News",
+            "broken": false
+        },
+        {
+            "key": "foxnews",
+            "broken": false
+        },
+        {
+            "key": "foxnews:article",
+            "broken": false
+        },
+        {
+            "key": "FoxNewsVideo",
+            "broken": false
+        },
+        {
+            "key": "FoxSports",
+            "broken": false
+        },
+        {
+            "key": "fptplay",
+            "broken": false
+        },
+        {
+            "key": "FrancaisFacile",
+            "broken": false
+        },
+        {
+            "key": "FranceCulture",
+            "broken": false
+        },
+        {
+            "key": "franceinfo",
+            "broken": false
+        },
+        {
+            "key": "francetv",
+            "broken": false
+        },
+        {
+            "key": "francetv:site",
+            "broken": false
+        },
+        {
+            "key": "Freesound",
+            "broken": false
+        },
+        {
+            "key": "freespeech.org",
+            "broken": false
+        },
+        {
+            "key": "freetv:series",
+            "broken": false
+        },
+        {
+            "key": "FreeTvMovies",
+            "broken": false
+        },
+        {
+            "key": "FrontendMasters",
+            "broken": false
+        },
+        {
+            "key": "FrontendMastersCourse",
+            "broken": false
+        },
+        {
+            "key": "FrontendMastersLesson",
+            "broken": false
+        },
+        {
+            "key": "Funk",
+            "broken": false
+        },
+        {
+            "key": "Funker530",
+            "broken": false
+        },
+        {
+            "key": "Fux",
+            "broken": false
+        },
+        {
+            "key": "FuyinTV",
+            "broken": false
+        },
+        {
+            "key": "Gab",
+            "broken": false
+        },
+        {
+            "key": "Gaia",
+            "broken": false
+        },
+        {
+            "key": "GameDevTVDashboard",
+            "broken": false
+        },
+        {
+            "key": "GameJolt",
+            "broken": false
+        },
+        {
+            "key": "GameJoltCommunity",
+            "broken": false
+        },
+        {
+            "key": "GameJoltGame",
+            "broken": false
+        },
+        {
+            "key": "GameJoltGameSoundtrack",
+            "broken": false
+        },
+        {
+            "key": "GameJoltSearch",
+            "broken": false
+        },
+        {
+            "key": "GameJoltUser",
+            "broken": false
+        },
+        {
+            "key": "GameSpot",
+            "broken": false
+        },
+        {
+            "key": "GameStar",
+            "broken": false
+        },
+        {
+            "key": "Gaskrank",
+            "broken": false
+        },
+        {
+            "key": "Gazeta",
+            "broken": true
+        },
+        {
+            "key": "GBNews",
+            "broken": false
+        },
+        {
+            "key": "GDCVault",
+            "broken": true
+        },
+        {
+            "key": "GediDigital",
+            "broken": false
+        },
+        {
+            "key": "gem.cbc.ca",
+            "broken": false
+        },
+        {
+            "key": "gem.cbc.ca:content",
+            "broken": false
+        },
+        {
+            "key": "gem.cbc.ca:live",
+            "broken": false
+        },
+        {
+            "key": "gem.cbc.ca:olympics",
+            "broken": false
+        },
+        {
+            "key": "gem.cbc.ca:playlist",
+            "broken": false
+        },
+        {
+            "key": "generic",
+            "broken": false
+        },
+        {
+            "key": "generic:quoted-html",
+            "broken": false
+        },
+        {
+            "key": "Genius",
+            "broken": false
+        },
+        {
+            "key": "GeniusLyrics",
+            "broken": false
+        },
+        {
+            "key": "Germanupa",
+            "broken": false
+        },
+        {
+            "key": "GetCourseRu",
+            "broken": false
+        },
+        {
+            "key": "GetCourseRuPlayer",
+            "broken": false
+        },
+        {
+            "key": "Gettr",
+            "broken": false
+        },
+        {
+            "key": "GettrStreaming",
+            "broken": false
+        },
+        {
+            "key": "GiantBomb",
+            "broken": false
+        },
+        {
+            "key": "GlattvisionTV",
+            "broken": false
+        },
+        {
+            "key": "GlattvisionTVLive",
+            "broken": false
+        },
+        {
+            "key": "GlattvisionTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "Glide",
+            "broken": false
+        },
+        {
+            "key": "GlobalPlayerAudio",
+            "broken": false
+        },
+        {
+            "key": "GlobalPlayerAudioEpisode",
+            "broken": false
+        },
+        {
+            "key": "GlobalPlayerLive",
+            "broken": false
+        },
+        {
+            "key": "GlobalPlayerLivePlaylist",
+            "broken": false
+        },
+        {
+            "key": "GlobalPlayerVideo",
+            "broken": false
+        },
+        {
+            "key": "Globo",
+            "broken": false
+        },
+        {
+            "key": "GloboArticle",
+            "broken": false
+        },
+        {
+            "key": "glomex",
+            "broken": false
+        },
+        {
+            "key": "glomex:embed",
+            "broken": false
+        },
+        {
+            "key": "GMANetworkVideo",
+            "broken": false
+        },
+        {
+            "key": "Go",
+            "broken": false
+        },
+        {
+            "key": "GoDiscovery",
+            "broken": false
+        },
+        {
+            "key": "GodResource",
+            "broken": false
+        },
+        {
+            "key": "GodTube",
+            "broken": true
+        },
+        {
+            "key": "Gofile",
+            "broken": false
+        },
+        {
+            "key": "Golem",
+            "broken": false
+        },
+        {
+            "key": "goodgame:stream",
+            "broken": false
+        },
+        {
+            "key": "GoogleDrive",
+            "broken": false
+        },
+        {
+            "key": "GoogleDrive:Folder",
+            "broken": false
+        },
+        {
+            "key": "GoPro",
+            "broken": false
+        },
+        {
+            "key": "GoToStage",
+            "broken": false
+        },
+        {
+            "key": "Graspop",
+            "broken": false
+        },
+        {
+            "key": "Gronkh",
+            "broken": false
+        },
+        {
+            "key": "gronkh:feed",
+            "broken": false
+        },
+        {
+            "key": "gronkh:vods",
+            "broken": false
+        },
+        {
+            "key": "Groupon",
+            "broken": false
+        },
+        {
+            "key": "Harpodeon",
+            "broken": false
+        },
+        {
+            "key": "hbo",
+            "broken": false
+        },
+        {
+            "key": "HearThisAt",
+            "broken": false
+        },
+        {
+            "key": "Heise",
+            "broken": false
+        },
+        {
+            "key": "HellPorno",
+            "broken": false
+        },
+        {
+            "key": "hetklokhuis",
+            "broken": false
+        },
+        {
+            "key": "hgtv.com:show",
+            "broken": false
+        },
+        {
+            "key": "HGTVDe",
+            "broken": false
+        },
+        {
+            "key": "HGTVUsa",
+            "broken": false
+        },
+        {
+            "key": "HiDive",
+            "broken": false
+        },
+        {
+            "key": "HistoricFilms",
+            "broken": false
+        },
+        {
+            "key": "history:player",
+            "broken": false
+        },
+        {
+            "key": "history:topic",
+            "broken": false
+        },
+        {
+            "key": "HitRecord",
+            "broken": false
+        },
+        {
+            "key": "HollywoodReporter",
+            "broken": false
+        },
+        {
+            "key": "HollywoodReporterPlaylist",
+            "broken": false
+        },
+        {
+            "key": "Holodex",
+            "broken": false
+        },
+        {
+            "key": "HotNewHipHop",
+            "broken": true
+        },
+        {
+            "key": "hotstar",
+            "broken": false
+        },
+        {
+            "key": "hotstar:series",
+            "broken": false
+        },
+        {
+            "key": "HotStarPrefix",
+            "broken": false
+        },
+        {
+            "key": "href.li",
+            "broken": false
+        },
+        {
+            "key": "hrfernsehen",
+            "broken": false
+        },
+        {
+            "key": "HRTi",
+            "broken": false
+        },
+        {
+            "key": "HRTiPlaylist",
+            "broken": false
+        },
+        {
+            "key": "HSEProduct",
+            "broken": false
+        },
+        {
+            "key": "HSEShow",
+            "broken": false
+        },
+        {
+            "key": "html5",
+            "broken": false
+        },
+        {
+            "key": "Huajiao",
+            "broken": false
+        },
+        {
+            "key": "HuffPost",
+            "broken": false
+        },
+        {
+            "key": "Hungama",
+            "broken": false
+        },
+        {
+            "key": "HungamaAlbumPlaylist",
+            "broken": false
+        },
+        {
+            "key": "HungamaSong",
+            "broken": false
+        },
+        {
+            "key": "huya:live",
+            "broken": false
+        },
+        {
+            "key": "huya:video",
+            "broken": false
+        },
+        {
+            "key": "Hypem",
+            "broken": false
+        },
+        {
+            "key": "Hytale",
+            "broken": false
+        },
+        {
+            "key": "Icareus",
+            "broken": false
+        },
+        {
+            "key": "IdagioAlbum",
+            "broken": false
+        },
+        {
+            "key": "IdagioPersonalPlaylist",
+            "broken": false
+        },
+        {
+            "key": "IdagioPlaylist",
+            "broken": false
+        },
+        {
+            "key": "IdagioRecording",
+            "broken": false
+        },
+        {
+            "key": "IdagioTrack",
+            "broken": false
+        },
+        {
+            "key": "iflix:episode",
+            "broken": false
+        },
+        {
+            "key": "IflixSeries",
+            "broken": false
+        },
+        {
+            "key": "ign.com",
+            "broken": false
+        },
+        {
+            "key": "IGNArticle",
+            "broken": false
+        },
+        {
+            "key": "IGNVideo",
+            "broken": false
+        },
+        {
+            "key": "iheartradio",
+            "broken": false
+        },
+        {
+            "key": "iheartradio:podcast",
+            "broken": false
+        },
+        {
+            "key": "IlPost",
+            "broken": false
+        },
+        {
+            "key": "Iltalehti",
+            "broken": false
+        },
+        {
+            "key": "imdb",
+            "broken": false
+        },
+        {
+            "key": "imdb:list",
+            "broken": false
+        },
+        {
+            "key": "Imgur",
+            "broken": false
+        },
+        {
+            "key": "imgur:album",
+            "broken": false
+        },
+        {
+            "key": "imgur:gallery",
+            "broken": false
+        },
+        {
+            "key": "Ina",
+            "broken": false
+        },
+        {
+            "key": "Inc",
+            "broken": false
+        },
+        {
+            "key": "IndavideoEmbed",
+            "broken": false
+        },
+        {
+            "key": "InfoQ",
+            "broken": false
+        },
+        {
+            "key": "Instagram",
+            "broken": false
+        },
+        {
+            "key": "instagram:story",
+            "broken": false
+        },
+        {
+            "key": "instagram:tag",
+            "broken": false
+        },
+        {
+            "key": "instagram:user",
+            "broken": true
+        },
+        {
+            "key": "InstagramIOS",
+            "broken": false
+        },
+        {
+            "key": "Internazionale",
+            "broken": false
+        },
+        {
+            "key": "InvestigationDiscovery",
+            "broken": false
+        },
+        {
+            "key": "IPrima",
+            "broken": false
+        },
+        {
+            "key": "IPrimaCNN",
+            "broken": false
+        },
+        {
+            "key": "iq.com",
+            "broken": false
+        },
+        {
+            "key": "iq.com:album",
+            "broken": false
+        },
+        {
+            "key": "iqiyi",
+            "broken": false
+        },
+        {
+            "key": "IslamChannel",
+            "broken": false
+        },
+        {
+            "key": "IslamChannelSeries",
+            "broken": false
+        },
+        {
+            "key": "IsraelNationalNews",
+            "broken": false
+        },
+        {
+            "key": "ITProTV",
+            "broken": false
+        },
+        {
+            "key": "ITProTVCourse",
+            "broken": false
+        },
+        {
+            "key": "ITV",
+            "broken": false
+        },
+        {
+            "key": "ITVBTCC",
+            "broken": false
+        },
+        {
+            "key": "ivi",
+            "broken": false
+        },
+        {
+            "key": "ivi:compilation",
+            "broken": false
+        },
+        {
+            "key": "ivideon",
+            "broken": false
+        },
+        {
+            "key": "Ivoox",
+            "broken": false
+        },
+        {
+            "key": "iwara",
+            "broken": false
+        },
+        {
+            "key": "iwara:playlist",
+            "broken": false
+        },
+        {
+            "key": "iwara:user",
+            "broken": false
+        },
+        {
+            "key": "Ixigua",
+            "broken": false
+        },
+        {
+            "key": "Jamendo",
+            "broken": false
+        },
+        {
+            "key": "JamendoAlbum",
+            "broken": false
+        },
+        {
+            "key": "JeuxVideo",
+            "broken": true
+        },
+        {
+            "key": "jiosaavn:album",
+            "broken": false
+        },
+        {
+            "key": "jiosaavn:artist",
+            "broken": false
+        },
+        {
+            "key": "jiosaavn:playlist",
+            "broken": false
+        },
+        {
+            "key": "jiosaavn:show",
+            "broken": false
+        },
+        {
+            "key": "jiosaavn:show:playlist",
+            "broken": false
+        },
+        {
+            "key": "jiosaavn:song",
+            "broken": false
+        },
+        {
+            "key": "Joj",
+            "broken": false
+        },
+        {
+            "key": "Jove",
+            "broken": false
+        },
+        {
+            "key": "JStream",
+            "broken": false
+        },
+        {
+            "key": "JTBC",
+            "broken": false
+        },
+        {
+            "key": "JTBC:program",
+            "broken": false
+        },
+        {
+            "key": "JWPlatform",
+            "broken": false
+        },
+        {
+            "key": "Kakao",
+            "broken": false
+        },
+        {
+            "key": "Kaltura",
+            "broken": false
+        },
+        {
+            "key": "KankaNews",
+            "broken": true
+        },
+        {
+            "key": "Karaoketv",
+            "broken": false
+        },
+        {
+            "key": "Katsomo",
+            "broken": true
+        },
+        {
+            "key": "KelbyOne",
+            "broken": true
+        },
+        {
+            "key": "Kenh14Playlist",
+            "broken": false
+        },
+        {
+            "key": "Kenh14Video",
+            "broken": false
+        },
+        {
+            "key": "khanacademy",
+            "broken": false
+        },
+        {
+            "key": "khanacademy:unit",
+            "broken": false
+        },
+        {
+            "key": "kick:clips",
+            "broken": false
+        },
+        {
+            "key": "kick:live",
+            "broken": false
+        },
+        {
+            "key": "kick:vod",
+            "broken": false
+        },
+        {
+            "key": "Kicker",
+            "broken": false
+        },
+        {
+            "key": "KickStarter",
+            "broken": false
+        },
+        {
+            "key": "Kika",
+            "broken": false
+        },
+        {
+            "key": "KikaPlaylist",
+            "broken": false
+        },
+        {
+            "key": "KinoPoisk",
+            "broken": false
+        },
+        {
+            "key": "Kommunetv",
+            "broken": false
+        },
+        {
+            "key": "KompasVideo",
+            "broken": false
+        },
+        {
+            "key": "KrasView",
+            "broken": true
+        },
+        {
+            "key": "KTH",
+            "broken": false
+        },
+        {
+            "key": "Ku6",
+            "broken": false
+        },
+        {
+            "key": "KukuluLive",
+            "broken": false
+        },
+        {
+            "key": "kuwo:album",
+            "broken": true
+        },
+        {
+            "key": "kuwo:category",
+            "broken": true
+        },
+        {
+            "key": "kuwo:chart",
+            "broken": true
+        },
+        {
+            "key": "kuwo:mv",
+            "broken": true
+        },
+        {
+            "key": "kuwo:singer",
+            "broken": true
+        },
+        {
+            "key": "kuwo:song",
+            "broken": true
+        },
+        {
+            "key": "la7.it",
+            "broken": false
+        },
+        {
+            "key": "la7.it:pod:episode",
+            "broken": false
+        },
+        {
+            "key": "la7.it:podcast",
+            "broken": false
+        },
+        {
+            "key": "laracasts",
+            "broken": false
+        },
+        {
+            "key": "laracasts:series",
+            "broken": false
+        },
+        {
+            "key": "LastFM",
+            "broken": false
+        },
+        {
+            "key": "LastFMPlaylist",
+            "broken": false
+        },
+        {
+            "key": "LastFMUser",
+            "broken": false
+        },
+        {
+            "key": "LaXarxaMes",
+            "broken": false
+        },
+        {
+            "key": "lbry",
+            "broken": false
+        },
+        {
+            "key": "lbry:channel",
+            "broken": false
+        },
+        {
+            "key": "lbry:playlist",
+            "broken": false
+        },
+        {
+            "key": "LCI",
+            "broken": false
+        },
+        {
+            "key": "Lcp",
+            "broken": true
+        },
+        {
+            "key": "LcpPlay",
+            "broken": true
+        },
+        {
+            "key": "Le",
+            "broken": false
+        },
+        {
+            "key": "LearningOnScreen",
+            "broken": false
+        },
+        {
+            "key": "Lecture2Go",
+            "broken": true
+        },
+        {
+            "key": "Lecturio",
+            "broken": false
+        },
+        {
+            "key": "LecturioCourse",
+            "broken": false
+        },
+        {
+            "key": "LecturioDeCourse",
+            "broken": false
+        },
+        {
+            "key": "LeFigaroVideoEmbed",
+            "broken": false
+        },
+        {
+            "key": "LeFigaroVideoSection",
+            "broken": false
+        },
+        {
+            "key": "LEGO",
+            "broken": false
+        },
+        {
+            "key": "Lemonde",
+            "broken": false
+        },
+        {
+            "key": "Lenta",
+            "broken": true
+        },
+        {
+            "key": "LePlaylist",
+            "broken": false
+        },
+        {
+            "key": "Libsyn",
+            "broken": false
+        },
+        {
+            "key": "life",
+            "broken": false
+        },
+        {
+            "key": "life:embed",
+            "broken": false
+        },
+        {
+            "key": "likee",
+            "broken": false
+        },
+        {
+            "key": "likee:user",
+            "broken": false
+        },
+        {
+            "key": "LinkedIn",
+            "broken": false
+        },
+        {
+            "key": "linkedin:events",
+            "broken": false
+        },
+        {
+            "key": "linkedin:learning",
+            "broken": false
+        },
+        {
+            "key": "linkedin:learning:course",
+            "broken": false
+        },
+        {
+            "key": "Liputan6",
+            "broken": false
+        },
+        {
+            "key": "ListenNotes",
+            "broken": false
+        },
+        {
+            "key": "LiTV",
+            "broken": false
+        },
+        {
+            "key": "LiveJournal",
+            "broken": true
+        },
+        {
+            "key": "Livestreamfails",
+            "broken": false
+        },
+        {
+            "key": "Lnk",
+            "broken": false
+        },
+        {
+            "key": "loc",
+            "broken": false
+        },
+        {
+            "key": "Locipo",
+            "broken": false
+        },
+        {
+            "key": "LocipoPlaylist",
+            "broken": false
+        },
+        {
+            "key": "Loco",
+            "broken": false
+        },
+        {
+            "key": "loom",
+            "broken": false
+        },
+        {
+            "key": "loom:folder",
+            "broken": true
+        },
+        {
+            "key": "LoveHomePorn",
+            "broken": false
+        },
+        {
+            "key": "LRTRadio",
+            "broken": false
+        },
+        {
+            "key": "LRTStream",
+            "broken": false
+        },
+        {
+            "key": "LRTVOD",
+            "broken": false
+        },
+        {
+            "key": "LSMLREmbed",
+            "broken": false
+        },
+        {
+            "key": "LSMLTVEmbed",
+            "broken": false
+        },
+        {
+            "key": "LSMReplay",
+            "broken": false
+        },
+        {
+            "key": "Lumni",
+            "broken": false
+        },
+        {
+            "key": "maariv.co.il",
+            "broken": false
+        },
+        {
+            "key": "MagellanTV",
+            "broken": false
+        },
+        {
+            "key": "MagentaMusik",
+            "broken": false
+        },
+        {
+            "key": "mailru",
+            "broken": false
+        },
+        {
+            "key": "mailru:music",
+            "broken": false
+        },
+        {
+            "key": "mailru:music:search",
+            "broken": false
+        },
+        {
+            "key": "MainStreaming",
+            "broken": false
+        },
+        {
+            "key": "mangomolo:live",
+            "broken": false
+        },
+        {
+            "key": "mangomolo:video",
+            "broken": false
+        },
+        {
+            "key": "MangoTV",
+            "broken": false
+        },
+        {
+            "key": "ManyVids",
+            "broken": false
+        },
+        {
+            "key": "MaoriTV",
+            "broken": false
+        },
+        {
+            "key": "Markiza",
+            "broken": true
+        },
+        {
+            "key": "MarkizaPage",
+            "broken": true
+        },
+        {
+            "key": "massengeschmack.tv",
+            "broken": false
+        },
+        {
+            "key": "Masters",
+            "broken": false
+        },
+        {
+            "key": "MatchiTV",
+            "broken": false
+        },
+        {
+            "key": "MatchTV",
+            "broken": false
+        },
+        {
+            "key": "mave",
+            "broken": false
+        },
+        {
+            "key": "mave:channel",
+            "broken": false
+        },
+        {
+            "key": "MBN",
+            "broken": false
+        },
+        {
+            "key": "MDR",
+            "broken": false
+        },
+        {
+            "key": "MedalTV",
+            "broken": false
+        },
+        {
+            "key": "media.ccc.de",
+            "broken": false
+        },
+        {
+            "key": "media.ccc.de:lists",
+            "broken": false
+        },
+        {
+            "key": "Mediaite",
+            "broken": false
+        },
+        {
+            "key": "MediaKlikk",
+            "broken": false
+        },
+        {
+            "key": "Medialaan",
+            "broken": false
+        },
+        {
+            "key": "Mediaset",
+            "broken": false
+        },
+        {
+            "key": "MediasetShow",
+            "broken": false
+        },
+        {
+            "key": "Mediasite",
+            "broken": false
+        },
+        {
+            "key": "MediasiteCatalog",
+            "broken": false
+        },
+        {
+            "key": "MediasiteNamedCatalog",
+            "broken": false
+        },
+        {
+            "key": "MediaStream",
+            "broken": false
+        },
+        {
+            "key": "MediaWorksNZVOD",
+            "broken": false
+        },
+        {
+            "key": "Medici",
+            "broken": false
+        },
+        {
+            "key": "megaphone.fm",
+            "broken": false
+        },
+        {
+            "key": "megatvcom",
+            "broken": false
+        },
+        {
+            "key": "megatvcom:embed",
+            "broken": false
+        },
+        {
+            "key": "Meipai",
+            "broken": false
+        },
+        {
+            "key": "MelonVOD",
+            "broken": false
+        },
+        {
+            "key": "Metacritic",
+            "broken": false
+        },
+        {
+            "key": "mewatch",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftBuild",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftEmbed",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftLearnEpisode",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftLearnPlaylist",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftLearnSession",
+            "broken": false
+        },
+        {
+            "key": "MicrosoftMedius",
+            "broken": false
+        },
+        {
+            "key": "minds",
+            "broken": false
+        },
+        {
+            "key": "minds:channel",
+            "broken": false
+        },
+        {
+            "key": "minds:group",
+            "broken": false
+        },
+        {
+            "key": "mir24.tv",
+            "broken": false
+        },
+        {
+            "key": "mirrativ",
+            "broken": false
+        },
+        {
+            "key": "mirrativ:user",
+            "broken": false
+        },
+        {
+            "key": "MirrorCoUK",
+            "broken": false
+        },
+        {
+            "key": "mixch",
+            "broken": false
+        },
+        {
+            "key": "mixch:archive",
+            "broken": false
+        },
+        {
+            "key": "mixch:movie",
+            "broken": false
+        },
+        {
+            "key": "mixcloud",
+            "broken": false
+        },
+        {
+            "key": "mixcloud:playlist",
+            "broken": false
+        },
+        {
+            "key": "mixcloud:user",
+            "broken": false
+        },
+        {
+            "key": "Mixlr",
+            "broken": false
+        },
+        {
+            "key": "MixlrRecoring",
+            "broken": false
+        },
+        {
+            "key": "MLB",
+            "broken": false
+        },
+        {
+            "key": "MLBArticle",
+            "broken": false
+        },
+        {
+            "key": "MLBTV",
+            "broken": false
+        },
+        {
+            "key": "MLBVideo",
+            "broken": false
+        },
+        {
+            "key": "MLSSoccer",
+            "broken": false
+        },
+        {
+            "key": "Mms",
+            "broken": false
+        },
+        {
+            "key": "MNetTV",
+            "broken": false
+        },
+        {
+            "key": "MNetTVLive",
+            "broken": false
+        },
+        {
+            "key": "MNetTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "MochaVideo",
+            "broken": false
+        },
+        {
+            "key": "Mojevideo",
+            "broken": false
+        },
+        {
+            "key": "Monstercat",
+            "broken": false
+        },
+        {
+            "key": "monstersiren",
+            "broken": false
+        },
+        {
+            "key": "Motorsport",
+            "broken": true
+        },
+        {
+            "key": "MovieFap",
+            "broken": false
+        },
+        {
+            "key": "moviepilot",
+            "broken": false
+        },
+        {
+            "key": "MovingImage",
+            "broken": false
+        },
+        {
+            "key": "MSN",
+            "broken": false
+        },
+        {
+            "key": "mtg",
+            "broken": false
+        },
+        {
+            "key": "mtv",
+            "broken": false
+        },
+        {
+            "key": "MTVUutisetArticle",
+            "broken": true
+        },
+        {
+            "key": "MuenchenTV",
+            "broken": true
+        },
+        {
+            "key": "MujRozhlas",
+            "broken": false
+        },
+        {
+            "key": "Murrtube",
+            "broken": false
+        },
+        {
+            "key": "MurrtubeUser",
+            "broken": true
+        },
+        {
+            "key": "MuseAI",
+            "broken": false
+        },
+        {
+            "key": "MuseScore",
+            "broken": false
+        },
+        {
+            "key": "Mux",
+            "broken": false
+        },
+        {
+            "key": "Mx3",
+            "broken": false
+        },
+        {
+            "key": "Mx3Neo",
+            "broken": false
+        },
+        {
+            "key": "Mx3Volksmusik",
+            "broken": false
+        },
+        {
+            "key": "Mxplayer",
+            "broken": false
+        },
+        {
+            "key": "MxplayerShow",
+            "broken": false
+        },
+        {
+            "key": "MySpace",
+            "broken": false
+        },
+        {
+            "key": "MySpace:album",
+            "broken": false
+        },
+        {
+            "key": "MySpass",
+            "broken": false
+        },
+        {
+            "key": "MyVideoGe",
+            "broken": false
+        },
+        {
+            "key": "MyVidster",
+            "broken": false
+        },
+        {
+            "key": "Mzaalo",
+            "broken": false
+        },
+        {
+            "key": "n-tv.de",
+            "broken": false
+        },
+        {
+            "key": "N1Info:article",
+            "broken": false
+        },
+        {
+            "key": "N1InfoAsset",
+            "broken": false
+        },
+        {
+            "key": "NascarClassics",
+            "broken": false
+        },
+        {
+            "key": "Nate",
+            "broken": false
+        },
+        {
+            "key": "NateProgram",
+            "broken": false
+        },
+        {
+            "key": "NationalGeographicTV",
+            "broken": false
+        },
+        {
+            "key": "Naver",
+            "broken": false
+        },
+        {
+            "key": "Naver:live",
+            "broken": false
+        },
+        {
+            "key": "nba",
+            "broken": true
+        },
+        {
+            "key": "nba:channel",
+            "broken": true
+        },
+        {
+            "key": "nba:embed",
+            "broken": true
+        },
+        {
+            "key": "nba:watch",
+            "broken": true
+        },
+        {
+            "key": "nba:watch:collection",
+            "broken": true
+        },
+        {
+            "key": "nba:watch:embed",
+            "broken": true
+        },
+        {
+            "key": "NBC",
+            "broken": false
+        },
+        {
+            "key": "NBCNews",
+            "broken": false
+        },
+        {
+            "key": "nbcolympics",
+            "broken": false
+        },
+        {
+            "key": "nbcolympics:stream",
+            "broken": true
+        },
+        {
+            "key": "NBCSports",
+            "broken": true
+        },
+        {
+            "key": "NBCSportsStream",
+            "broken": true
+        },
+        {
+            "key": "NBCSportsVPlayer",
+            "broken": true
+        },
+        {
+            "key": "NBCStations",
+            "broken": false
+        },
+        {
+            "key": "ndr",
+            "broken": false
+        },
+        {
+            "key": "ndr:embed",
+            "broken": false
+        },
+        {
+            "key": "ndr:embed:base",
+            "broken": false
+        },
+        {
+            "key": "NDTV",
+            "broken": true
+        },
+        {
+            "key": "nebula:channel",
+            "broken": false
+        },
+        {
+            "key": "nebula:media",
+            "broken": false
+        },
+        {
+            "key": "nebula:season",
+            "broken": false
+        },
+        {
+            "key": "nebula:subscriptions",
+            "broken": false
+        },
+        {
+            "key": "nebula:video",
+            "broken": false
+        },
+        {
+            "key": "NekoHacker",
+            "broken": false
+        },
+        {
+            "key": "Nest",
+            "broken": false
+        },
+        {
+            "key": "NestClip",
+            "broken": false
+        },
+        {
+            "key": "NetAppCollection",
+            "broken": false
+        },
+        {
+            "key": "NetAppVideo",
+            "broken": false
+        },
+        {
+            "key": "netease:album",
+            "broken": false
+        },
+        {
+            "key": "netease:djradio",
+            "broken": false
+        },
+        {
+            "key": "netease:mv",
+            "broken": false
+        },
+        {
+            "key": "netease:playlist",
+            "broken": false
+        },
+        {
+            "key": "netease:program",
+            "broken": false
+        },
+        {
+            "key": "netease:singer",
+            "broken": false
+        },
+        {
+            "key": "netease:song",
+            "broken": false
+        },
+        {
+            "key": "NetPlusTV",
+            "broken": false
+        },
+        {
+            "key": "NetPlusTVLive",
+            "broken": false
+        },
+        {
+            "key": "NetPlusTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "Netzkino",
+            "broken": false
+        },
+        {
+            "key": "Newgrounds",
+            "broken": false
+        },
+        {
+            "key": "Newgrounds:playlist",
+            "broken": false
+        },
+        {
+            "key": "Newgrounds:user",
+            "broken": false
+        },
+        {
+            "key": "NewsPicks",
+            "broken": false
+        },
+        {
+            "key": "Newsy",
+            "broken": false
+        },
+        {
+            "key": "Nexx",
+            "broken": false
+        },
+        {
+            "key": "NexxEmbed",
+            "broken": false
+        },
+        {
+            "key": "nfb",
+            "broken": false
+        },
+        {
+            "key": "nfb:series",
+            "broken": false
+        },
+        {
+            "key": "NFHSNetwork",
+            "broken": false
+        },
+        {
+            "key": "nfl.com",
+            "broken": false
+        },
+        {
+            "key": "nfl.com:article",
+            "broken": false
+        },
+        {
+            "key": "nfl.com:plus:episode",
+            "broken": false
+        },
+        {
+            "key": "nfl.com:plus:replay",
+            "broken": false
+        },
+        {
+            "key": "NhkForSchoolBangumi",
+            "broken": false
+        },
+        {
+            "key": "NhkForSchoolProgramList",
+            "broken": false
+        },
+        {
+            "key": "NhkForSchoolSubject",
+            "broken": false
+        },
+        {
+            "key": "NhkRadioNewsPage",
+            "broken": false
+        },
+        {
+            "key": "NhkRadiru",
+            "broken": false
+        },
+        {
+            "key": "NhkRadiruLive",
+            "broken": false
+        },
+        {
+            "key": "NhkVod",
+            "broken": false
+        },
+        {
+            "key": "NhkVodProgram",
+            "broken": false
+        },
+        {
+            "key": "nhl.com",
+            "broken": false
+        },
+        {
+            "key": "nick.com",
+            "broken": false
+        },
+        {
+            "key": "niconico",
+            "broken": false
+        },
+        {
+            "key": "niconico:history",
+            "broken": false
+        },
+        {
+            "key": "niconico:live",
+            "broken": false
+        },
+        {
+            "key": "niconico:playlist",
+            "broken": false
+        },
+        {
+            "key": "niconico:series",
+            "broken": false
+        },
+        {
+            "key": "niconico:tag",
+            "broken": false
+        },
+        {
+            "key": "NiconicoChannelPlus",
+            "broken": false
+        },
+        {
+            "key": "NiconicoChannelPlus:channel:lives",
+            "broken": false
+        },
+        {
+            "key": "NiconicoChannelPlus:channel:videos",
+            "broken": false
+        },
+        {
+            "key": "NiconicoUser",
+            "broken": false
+        },
+        {
+            "key": "nicovideo:search",
+            "broken": false
+        },
+        {
+            "key": "nicovideo:search:date",
+            "broken": false
+        },
+        {
+            "key": "nicovideo:search_url",
+            "broken": false
+        },
+        {
+            "key": "NinaProtocol",
+            "broken": false
+        },
+        {
+            "key": "Nintendo",
+            "broken": false
+        },
+        {
+            "key": "Nitter",
+            "broken": false
+        },
+        {
+            "key": "njoy",
+            "broken": false
+        },
+        {
+            "key": "njoy:embed",
+            "broken": false
+        },
+        {
+            "key": "NobelPrize",
+            "broken": false
+        },
+        {
+            "key": "NoicePodcast",
+            "broken": false
+        },
+        {
+            "key": "NonkTube",
+            "broken": false
+        },
+        {
+            "key": "NoodleMagazine",
+            "broken": false
+        },
+        {
+            "key": "NOSNLArticle",
+            "broken": false
+        },
+        {
+            "key": "Nova",
+            "broken": false
+        },
+        {
+            "key": "NovaEmbed",
+            "broken": false
+        },
+        {
+            "key": "NovaPlay",
+            "broken": false
+        },
+        {
+            "key": "NowCanal",
+            "broken": false
+        },
+        {
+            "key": "nowness",
+            "broken": false
+        },
+        {
+            "key": "nowness:playlist",
+            "broken": false
+        },
+        {
+            "key": "nowness:series",
+            "broken": false
+        },
+        {
+            "key": "Noz",
+            "broken": true
+        },
+        {
+            "key": "npo",
+            "broken": false
+        },
+        {
+            "key": "npo.nl:live",
+            "broken": false
+        },
+        {
+            "key": "npo.nl:radio",
+            "broken": false
+        },
+        {
+            "key": "npo.nl:radio:fragment",
+            "broken": false
+        },
+        {
+            "key": "Npr",
+            "broken": false
+        },
+        {
+            "key": "NRK",
+            "broken": false
+        },
+        {
+            "key": "NRKPlaylist",
+            "broken": false
+        },
+        {
+            "key": "NRKRadioPodkast",
+            "broken": false
+        },
+        {
+            "key": "NRKSkole",
+            "broken": false
+        },
+        {
+            "key": "NRKTV",
+            "broken": false
+        },
+        {
+            "key": "NRKTVDirekte",
+            "broken": false
+        },
+        {
+            "key": "NRKTVEpisode",
+            "broken": false
+        },
+        {
+            "key": "NRKTVEpisodes",
+            "broken": false
+        },
+        {
+            "key": "NRKTVSeason",
+            "broken": false
+        },
+        {
+            "key": "NRKTVSeries",
+            "broken": false
+        },
+        {
+            "key": "NRLTV",
+            "broken": true
+        },
+        {
+            "key": "nts.live",
+            "broken": false
+        },
+        {
+            "key": "ntv.ru",
+            "broken": false
+        },
+        {
+            "key": "NubilesPorn",
+            "broken": false
+        },
+        {
+            "key": "Nuvid",
+            "broken": false
+        },
+        {
+            "key": "NYTimes",
+            "broken": false
+        },
+        {
+            "key": "NYTimesArticle",
+            "broken": false
+        },
+        {
+            "key": "NYTimesCookingGuide",
+            "broken": false
+        },
+        {
+            "key": "NYTimesCookingRecipe",
+            "broken": false
+        },
+        {
+            "key": "nzherald",
+            "broken": false
+        },
+        {
+            "key": "NZOnScreen",
+            "broken": false
+        },
+        {
+            "key": "NZZ",
+            "broken": false
+        },
+        {
+            "key": "ocw.mit.edu",
+            "broken": false
+        },
+        {
+            "key": "Odnoklassniki",
+            "broken": false
+        },
+        {
+            "key": "OfTV",
+            "broken": false
+        },
+        {
+            "key": "OfTVPlaylist",
+            "broken": false
+        },
+        {
+            "key": "OktoberfestTV",
+            "broken": false
+        },
+        {
+            "key": "OlympicsReplay",
+            "broken": false
+        },
+        {
+            "key": "on24",
+            "broken": false
+        },
+        {
+            "key": "OnDemandChinaEpisode",
+            "broken": false
+        },
+        {
+            "key": "OnDemandKorea",
+            "broken": false
+        },
+        {
+            "key": "OnDemandKoreaProgram",
+            "broken": false
+        },
+        {
+            "key": "OneFootball",
+            "broken": false
+        },
+        {
+            "key": "OnePlacePodcast",
+            "broken": false
+        },
+        {
+            "key": "onet.pl",
+            "broken": false
+        },
+        {
+            "key": "onet.tv",
+            "broken": false
+        },
+        {
+            "key": "onet.tv:channel",
+            "broken": false
+        },
+        {
+            "key": "OnetMVP",
+            "broken": false
+        },
+        {
+            "key": "onsen",
+            "broken": false
+        },
+        {
+            "key": "Opencast",
+            "broken": false
+        },
+        {
+            "key": "OpencastPlaylist",
+            "broken": false
+        },
+        {
+            "key": "openrec",
+            "broken": false
+        },
+        {
+            "key": "openrec:capture",
+            "broken": false
+        },
+        {
+            "key": "openrec:movie",
+            "broken": false
+        },
+        {
+            "key": "orf:fm4:story",
+            "broken": false
+        },
+        {
+            "key": "orf:iptv",
+            "broken": false
+        },
+        {
+            "key": "orf:on",
+            "broken": false
+        },
+        {
+            "key": "orf:podcast",
+            "broken": false
+        },
+        {
+            "key": "orf:radio",
+            "broken": false
+        },
+        {
+            "key": "OsnatelTV",
+            "broken": false
+        },
+        {
+            "key": "OsnatelTVLive",
+            "broken": false
+        },
+        {
+            "key": "OsnatelTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "OutsideTV",
+            "broken": false
+        },
+        {
+            "key": "OwnCloud",
+            "broken": false
+        },
+        {
+            "key": "PacktPub",
+            "broken": false
+        },
+        {
+            "key": "PacktPubCourse",
+            "broken": false
+        },
+        {
+            "key": "PalcoMP3:artist",
+            "broken": false
+        },
+        {
+            "key": "PalcoMP3:song",
+            "broken": false
+        },
+        {
+            "key": "PalcoMP3:video",
+            "broken": false
+        },
+        {
+            "key": "PandaTv",
+            "broken": false
+        },
+        {
+            "key": "Panopto",
+            "broken": false
+        },
+        {
+            "key": "PanoptoList",
+            "broken": false
+        },
+        {
+            "key": "PanoptoPlaylist",
+            "broken": false
+        },
+        {
+            "key": "ParamountPressExpress",
+            "broken": false
+        },
+        {
+            "key": "Parler",
+            "broken": false
+        },
+        {
+            "key": "parliamentlive.tv",
+            "broken": false
+        },
+        {
+            "key": "Parlview",
+            "broken": false
+        },
+        {
+            "key": "parti:livestream",
+            "broken": false
+        },
+        {
+            "key": "parti:video",
+            "broken": false
+        },
+        {
+            "key": "patreon",
+            "broken": false
+        },
+        {
+            "key": "patreon:campaign",
+            "broken": false
+        },
+        {
+            "key": "pbs",
+            "broken": false
+        },
+        {
+            "key": "PBSKids",
+            "broken": false
+        },
+        {
+            "key": "PearVideo",
+            "broken": false
+        },
+        {
+            "key": "PeekVids",
+            "broken": false
+        },
+        {
+            "key": "peer.tv",
+            "broken": false
+        },
+        {
+            "key": "PeerTube",
+            "broken": false
+        },
+        {
+            "key": "PeerTube:Playlist",
+            "broken": false
+        },
+        {
+            "key": "peloton",
+            "broken": false
+        },
+        {
+            "key": "peloton:live",
+            "broken": false
+        },
+        {
+            "key": "PerformGroup",
+            "broken": false
+        },
+        {
+            "key": "periscope",
+            "broken": false
+        },
+        {
+            "key": "periscope:user",
+            "broken": false
+        },
+        {
+            "key": "PGATour",
+            "broken": false
+        },
+        {
+            "key": "PhilharmonieDeParis",
+            "broken": false
+        },
+        {
+            "key": "phoenix.de",
+            "broken": false
+        },
+        {
+            "key": "Photobucket",
+            "broken": false
+        },
+        {
+            "key": "PiaLive",
+            "broken": false
+        },
+        {
+            "key": "Piapro",
+            "broken": false
+        },
+        {
+            "key": "picarto",
+            "broken": false
+        },
+        {
+            "key": "picarto:vod",
+            "broken": false
+        },
+        {
+            "key": "Piksel",
+            "broken": false
+        },
+        {
+            "key": "Pinkbike",
+            "broken": false
+        },
+        {
+            "key": "Pinterest",
+            "broken": false
+        },
+        {
+            "key": "PinterestCollection",
+            "broken": false
+        },
+        {
+            "key": "Piracy",
+            "broken": false
+        },
+        {
+            "key": "Platzi",
+            "broken": false
+        },
+        {
+            "key": "PlatziCourse",
+            "broken": false
+        },
+        {
+            "key": "play.tv",
+            "broken": false
+        },
+        {
+            "key": "player.sky.it",
+            "broken": false
+        },
+        {
+            "key": "PlayerFm",
+            "broken": false
+        },
+        {
+            "key": "PlaySuisse",
+            "broken": false
+        },
+        {
+            "key": "Playtvak",
+            "broken": false
+        },
+        {
+            "key": "PlayVids",
+            "broken": false
+        },
+        {
+            "key": "pluralsight",
+            "broken": false
+        },
+        {
+            "key": "pluralsight:course",
+            "broken": false
+        },
+        {
+            "key": "PlutoTV",
+            "broken": true
+        },
+        {
+            "key": "PlyrEmbed",
+            "broken": false
+        },
+        {
+            "key": "PodbayFM",
+            "broken": false
+        },
+        {
+            "key": "PodbayFMChannel",
+            "broken": false
+        },
+        {
+            "key": "Podchaser",
+            "broken": false
+        },
+        {
+            "key": "podomatic",
+            "broken": true
+        },
+        {
+            "key": "PokerGo",
+            "broken": false
+        },
+        {
+            "key": "PokerGoCollection",
+            "broken": false
+        },
+        {
+            "key": "PolsatGo",
+            "broken": false
+        },
+        {
+            "key": "PolskieRadio",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:audition",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:category",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:legacy",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:player",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:podcast",
+            "broken": false
+        },
+        {
+            "key": "polskieradio:podcast:list",
+            "broken": false
+        },
+        {
+            "key": "Popcorntimes",
+            "broken": false
+        },
+        {
+            "key": "PopcornTV",
+            "broken": false
+        },
+        {
+            "key": "Pornbox",
+            "broken": false
+        },
+        {
+            "key": "PornerBros",
+            "broken": false
+        },
+        {
+            "key": "PornFlip",
+            "broken": false
+        },
+        {
+            "key": "PornHub",
+            "broken": false
+        },
+        {
+            "key": "PornHubPagedVideoList",
+            "broken": false
+        },
+        {
+            "key": "PornHubPlaylist",
+            "broken": false
+        },
+        {
+            "key": "PornHubUser",
+            "broken": false
+        },
+        {
+            "key": "PornHubUserVideosUpload",
+            "broken": false
+        },
+        {
+            "key": "Pornotube",
+            "broken": false
+        },
+        {
+            "key": "PornoVoisines",
+            "broken": true
+        },
+        {
+            "key": "PornoXO",
+            "broken": true
+        },
+        {
+            "key": "PornTop",
+            "broken": false
+        },
+        {
+            "key": "PornTube",
+            "broken": false
+        },
+        {
+            "key": "Pr0gramm",
+            "broken": false
+        },
+        {
+            "key": "PrankCast",
+            "broken": false
+        },
+        {
+            "key": "PrankCastPost",
+            "broken": false
+        },
+        {
+            "key": "PremiershipRugby",
+            "broken": false
+        },
+        {
+            "key": "PressTV",
+            "broken": false
+        },
+        {
+            "key": "ProjectVeritas",
+            "broken": true
+        },
+        {
+            "key": "PRXAccount",
+            "broken": false
+        },
+        {
+            "key": "PRXSeries",
+            "broken": false
+        },
+        {
+            "key": "prxseries:search",
+            "broken": false
+        },
+        {
+            "key": "prxstories:search",
+            "broken": false
+        },
+        {
+            "key": "PRXStory",
+            "broken": false
+        },
+        {
+            "key": "puhutv",
+            "broken": false
+        },
+        {
+            "key": "puhutv:serie",
+            "broken": false
+        },
+        {
+            "key": "Pyvideo",
+            "broken": false
+        },
+        {
+            "key": "QDance",
+            "broken": false
+        },
+        {
+            "key": "QingTing",
+            "broken": false
+        },
+        {
+            "key": "qqmusic",
+            "broken": false
+        },
+        {
+            "key": "qqmusic:album",
+            "broken": false
+        },
+        {
+            "key": "qqmusic:mv",
+            "broken": false
+        },
+        {
+            "key": "qqmusic:playlist",
+            "broken": false
+        },
+        {
+            "key": "qqmusic:singer",
+            "broken": false
+        },
+        {
+            "key": "qqmusic:toplist",
+            "broken": false
+        },
+        {
+            "key": "QuantumTV",
+            "broken": false
+        },
+        {
+            "key": "QuantumTVLive",
+            "broken": false
+        },
+        {
+            "key": "QuantumTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "R7",
+            "broken": true
+        },
+        {
+            "key": "R7Article",
+            "broken": true
+        },
+        {
+            "key": "Radiko",
+            "broken": false
+        },
+        {
+            "key": "RadikoRadio",
+            "broken": false
+        },
+        {
+            "key": "radio.de",
+            "broken": true
+        },
+        {
+            "key": "Radio1Be",
+            "broken": false
+        },
+        {
+            "key": "radiocanada",
+            "broken": false
+        },
+        {
+            "key": "radiocanada:audiovideo",
+            "broken": false
+        },
+        {
+            "key": "radiofrance",
+            "broken": false
+        },
+        {
+            "key": "RadioFranceLive",
+            "broken": false
+        },
+        {
+            "key": "RadioFrancePodcast",
+            "broken": false
+        },
+        {
+            "key": "RadioFranceProfile",
+            "broken": false
+        },
+        {
+            "key": "RadioFranceProgramSchedule",
+            "broken": false
+        },
+        {
+            "key": "RadioJavan",
+            "broken": true
+        },
+        {
+            "key": "radiokapital",
+            "broken": false
+        },
+        {
+            "key": "radiokapital:show",
+            "broken": false
+        },
+        {
+            "key": "RadioRadicale",
+            "broken": false
+        },
+        {
+            "key": "RadioZetPodcast",
+            "broken": false
+        },
+        {
+            "key": "radlive",
+            "broken": false
+        },
+        {
+            "key": "radlive:channel",
+            "broken": false
+        },
+        {
+            "key": "radlive:season",
+            "broken": false
+        },
+        {
+            "key": "Rai",
+            "broken": false
+        },
+        {
+            "key": "RaiCultura",
+            "broken": false
+        },
+        {
+            "key": "RaiNews",
+            "broken": false
+        },
+        {
+            "key": "RaiPlay",
+            "broken": false
+        },
+        {
+            "key": "RaiPlayLive",
+            "broken": false
+        },
+        {
+            "key": "RaiPlayPlaylist",
+            "broken": false
+        },
+        {
+            "key": "RaiPlaySound",
+            "broken": false
+        },
+        {
+            "key": "RaiPlaySoundLive",
+            "broken": false
+        },
+        {
+            "key": "RaiPlaySoundPlaylist",
+            "broken": false
+        },
+        {
+            "key": "RaiSudtirol",
+            "broken": false
+        },
+        {
+            "key": "RayWenderlich",
+            "broken": false
+        },
+        {
+            "key": "RayWenderlichCourse",
+            "broken": false
+        },
+        {
+            "key": "RbgTum",
+            "broken": false
+        },
+        {
+            "key": "RbgTumCourse",
+            "broken": false
+        },
+        {
+            "key": "RbgTumNewCourse",
+            "broken": false
+        },
+        {
+            "key": "RCS",
+            "broken": false
+        },
+        {
+            "key": "RCSEmbeds",
+            "broken": false
+        },
+        {
+            "key": "RCSVarious",
+            "broken": false
+        },
+        {
+            "key": "RCTIPlus",
+            "broken": false
+        },
+        {
+            "key": "RCTIPlusSeries",
+            "broken": false
+        },
+        {
+            "key": "RCTIPlusTV",
+            "broken": false
+        },
+        {
+            "key": "RDS",
+            "broken": true
+        },
+        {
+            "key": "RedBull",
+            "broken": false
+        },
+        {
+            "key": "RedBullEmbed",
+            "broken": false
+        },
+        {
+            "key": "RedBullTV",
+            "broken": false
+        },
+        {
+            "key": "RedBullTVRrnContent",
+            "broken": false
+        },
+        {
+            "key": "Reddit",
+            "broken": false
+        },
+        {
+            "key": "RedGifs",
+            "broken": false
+        },
+        {
+            "key": "RedGifsSearch",
+            "broken": false
+        },
+        {
+            "key": "RedGifsUser",
+            "broken": false
+        },
+        {
+            "key": "RedTube",
+            "broken": false
+        },
+        {
+            "key": "RENTV",
+            "broken": true
+        },
+        {
+            "key": "RENTVArticle",
+            "broken": true
+        },
+        {
+            "key": "Restudy",
+            "broken": true
+        },
+        {
+            "key": "Reuters",
+            "broken": true
+        },
+        {
+            "key": "ReverbNation",
+            "broken": false
+        },
+        {
+            "key": "RideHome",
+            "broken": false
+        },
+        {
+            "key": "RinseFM",
+            "broken": false
+        },
+        {
+            "key": "RinseFMArtistPlaylist",
+            "broken": false
+        },
+        {
+            "key": "RockstarGames",
+            "broken": true
+        },
+        {
+            "key": "Rokfin",
+            "broken": false
+        },
+        {
+            "key": "rokfin:channel",
+            "broken": false
+        },
+        {
+            "key": "rokfin:search",
+            "broken": false
+        },
+        {
+            "key": "rokfin:stack",
+            "broken": false
+        },
+        {
+            "key": "RoosterTeeth",
+            "broken": false
+        },
+        {
+            "key": "RoosterTeethSeries",
+            "broken": false
+        },
+        {
+            "key": "RottenTomatoes",
+            "broken": false
+        },
+        {
+            "key": "RoyaLive",
+            "broken": false
+        },
+        {
+            "key": "Rozhlas",
+            "broken": false
+        },
+        {
+            "key": "RozhlasVltava",
+            "broken": false
+        },
+        {
+            "key": "RTBF",
+            "broken": true
+        },
+        {
+            "key": "RTDocumentry",
+            "broken": false
+        },
+        {
+            "key": "RTDocumentryPlaylist",
+            "broken": false
+        },
+        {
+            "key": "rte",
+            "broken": false
+        },
+        {
+            "key": "rte:radio",
+            "broken": false
+        },
+        {
+            "key": "rtl.lu:article",
+            "broken": false
+        },
+        {
+            "key": "rtl.lu:tele-vod",
+            "broken": false
+        },
+        {
+            "key": "rtl.nl",
+            "broken": false
+        },
+        {
+            "key": "rtl2",
+            "broken": false
+        },
+        {
+            "key": "RTLLuLive",
+            "broken": false
+        },
+        {
+            "key": "RTLLuRadio",
+            "broken": false
+        },
+        {
+            "key": "Rtmp",
+            "broken": false
+        },
+        {
+            "key": "RTNews",
+            "broken": false
+        },
+        {
+            "key": "RTP",
+            "broken": false
+        },
+        {
+            "key": "RTRFM",
+            "broken": false
+        },
+        {
+            "key": "RTS",
+            "broken": true
+        },
+        {
+            "key": "RTVCKaltura",
+            "broken": false
+        },
+        {
+            "key": "RTVCPlay",
+            "broken": false
+        },
+        {
+            "key": "RTVCPlayEmbed",
+            "broken": false
+        },
+        {
+            "key": "rtve.es:alacarta",
+            "broken": false
+        },
+        {
+            "key": "rtve.es:audio",
+            "broken": false
+        },
+        {
+            "key": "rtve.es:live",
+            "broken": false
+        },
+        {
+            "key": "rtve.es:program",
+            "broken": false
+        },
+        {
+            "key": "rtve.es:television",
+            "broken": false
+        },
+        {
+            "key": "rtvslo.si",
+            "broken": false
+        },
+        {
+            "key": "rtvslo.si:show",
+            "broken": false
+        },
+        {
+            "key": "RudoVideo",
+            "broken": false
+        },
+        {
+            "key": "Rule34Video",
+            "broken": false
+        },
+        {
+            "key": "Rumble",
+            "broken": false
+        },
+        {
+            "key": "RumbleChannel",
+            "broken": false
+        },
+        {
+            "key": "RumbleEmbed",
+            "broken": false
+        },
+        {
+            "key": "Ruptly",
+            "broken": false
+        },
+        {
+            "key": "rutube",
+            "broken": false
+        },
+        {
+            "key": "rutube:channel",
+            "broken": false
+        },
+        {
+            "key": "rutube:embed",
+            "broken": false
+        },
+        {
+            "key": "rutube:movie",
+            "broken": false
+        },
+        {
+            "key": "rutube:person",
+            "broken": false
+        },
+        {
+            "key": "rutube:playlist",
+            "broken": false
+        },
+        {
+            "key": "rutube:tags",
+            "broken": false
+        },
+        {
+            "key": "Ruutu",
+            "broken": true
+        },
+        {
+            "key": "Ruv",
+            "broken": false
+        },
+        {
+            "key": "ruv.is:spila",
+            "broken": false
+        },
+        {
+            "key": "S4C",
+            "broken": false
+        },
+        {
+            "key": "S4CSeries",
+            "broken": false
+        },
+        {
+            "key": "safari",
+            "broken": false
+        },
+        {
+            "key": "safari:api",
+            "broken": false
+        },
+        {
+            "key": "safari:course",
+            "broken": false
+        },
+        {
+            "key": "Saitosan",
+            "broken": true
+        },
+        {
+            "key": "SAKTV",
+            "broken": false
+        },
+        {
+            "key": "SAKTVLive",
+            "broken": false
+        },
+        {
+            "key": "SAKTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "SaltTV",
+            "broken": false
+        },
+        {
+            "key": "SaltTVLive",
+            "broken": false
+        },
+        {
+            "key": "SaltTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "SampleFocus",
+            "broken": false
+        },
+        {
+            "key": "Sangiin",
+            "broken": false
+        },
+        {
+            "key": "SangiinInstruction",
+            "broken": false
+        },
+        {
+            "key": "Sapo",
+            "broken": false
+        },
+        {
+            "key": "SaucePlus",
+            "broken": false
+        },
+        {
+            "key": "SaucePlusChannel",
+            "broken": false
+        },
+        {
+            "key": "SBS",
+            "broken": false
+        },
+        {
+            "key": "sbs.co.kr",
+            "broken": false
+        },
+        {
+            "key": "sbs.co.kr:allvod_program",
+            "broken": false
+        },
+        {
+            "key": "sbs.co.kr:programs_vod",
+            "broken": false
+        },
+        {
+            "key": "schooltv",
+            "broken": false
+        },
+        {
+            "key": "ScienceChannel",
+            "broken": false
+        },
+        {
+            "key": "Screen9",
+            "broken": false
+        },
+        {
+            "key": "Screencast",
+            "broken": false
+        },
+        {
+            "key": "Screencastify",
+            "broken": false
+        },
+        {
+            "key": "ScreencastOMatic",
+            "broken": false
+        },
+        {
+            "key": "ScreenRec",
+            "broken": false
+        },
+        {
+            "key": "ScrippsNetworks",
+            "broken": false
+        },
+        {
+            "key": "scrippsnetworks:watch",
+            "broken": false
+        },
+        {
+            "key": "Scrolller",
+            "broken": false
+        },
+        {
+            "key": "sejm",
+            "broken": true
+        },
+        {
+            "key": "Sen",
+            "broken": false
+        },
+        {
+            "key": "SenalColombiaLive",
+            "broken": true
+        },
+        {
+            "key": "senate.gov",
+            "broken": false
+        },
+        {
+            "key": "senate.gov:isvp",
+            "broken": false
+        },
+        {
+            "key": "Servus",
+            "broken": false
+        },
+        {
+            "key": "Sexu",
+            "broken": true
+        },
+        {
+            "key": "SeznamZpravy",
+            "broken": false
+        },
+        {
+            "key": "SeznamZpravyArticle",
+            "broken": false
+        },
+        {
+            "key": "Shahid",
+            "broken": false
+        },
+        {
+            "key": "ShahidShow",
+            "broken": false
+        },
+        {
+            "key": "SharePoint",
+            "broken": false
+        },
+        {
+            "key": "ShemarooMe",
+            "broken": false
+        },
+        {
+            "key": "Shiey",
+            "broken": false
+        },
+        {
+            "key": "ShowRoomLive",
+            "broken": false
+        },
+        {
+            "key": "ShugiinItvLive",
+            "broken": false
+        },
+        {
+            "key": "ShugiinItvLiveRoom",
+            "broken": false
+        },
+        {
+            "key": "ShugiinItvVod",
+            "broken": false
+        },
+        {
+            "key": "SibnetEmbed",
+            "broken": false
+        },
+        {
+            "key": "simplecast",
+            "broken": false
+        },
+        {
+            "key": "simplecast:episode",
+            "broken": false
+        },
+        {
+            "key": "simplecast:podcast",
+            "broken": false
+        },
+        {
+            "key": "Sina",
+            "broken": false
+        },
+        {
+            "key": "Skeb",
+            "broken": false
+        },
+        {
+            "key": "sky.it",
+            "broken": false
+        },
+        {
+            "key": "sky:news",
+            "broken": false
+        },
+        {
+            "key": "sky:news:story",
+            "broken": false
+        },
+        {
+            "key": "sky:sports",
+            "broken": false
+        },
+        {
+            "key": "sky:sports:news",
+            "broken": false
+        },
+        {
+            "key": "SkylineWebcams",
+            "broken": true
+        },
+        {
+            "key": "skynewsarabia:article",
+            "broken": true
+        },
+        {
+            "key": "skynewsarabia:video",
+            "broken": true
+        },
+        {
+            "key": "SkyNewsAU",
+            "broken": false
+        },
+        {
+            "key": "Slideshare",
+            "broken": false
+        },
+        {
+            "key": "SlidesLive",
+            "broken": false
+        },
+        {
+            "key": "Slutload",
+            "broken": false
+        },
+        {
+            "key": "smotrim",
+            "broken": false
+        },
+        {
+            "key": "smotrim:audio",
+            "broken": false
+        },
+        {
+            "key": "smotrim:live",
+            "broken": false
+        },
+        {
+            "key": "smotrim:playlist",
+            "broken": false
+        },
+        {
+            "key": "SnapchatSpotlight",
+            "broken": false
+        },
+        {
+            "key": "SoftWhiteUnderbelly",
+            "broken": false
+        },
+        {
+            "key": "Sohu",
+            "broken": false
+        },
+        {
+            "key": "SohuV",
+            "broken": false
+        },
+        {
+            "key": "SonyLIV",
+            "broken": false
+        },
+        {
+            "key": "SonyLIVSeries",
+            "broken": false
+        },
+        {
+            "key": "soop",
+            "broken": false
+        },
+        {
+            "key": "soop:catchstory",
+            "broken": false
+        },
+        {
+            "key": "soop:live",
+            "broken": false
+        },
+        {
+            "key": "soop:user",
+            "broken": false
+        },
+        {
+            "key": "soundcloud",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:playlist",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:related",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:search",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:set",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:trackstation",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:user",
+            "broken": false
+        },
+        {
+            "key": "soundcloud:user:permalink",
+            "broken": false
+        },
+        {
+            "key": "SoundcloudEmbed",
+            "broken": false
+        },
+        {
+            "key": "soundgasm",
+            "broken": false
+        },
+        {
+            "key": "soundgasm:profile",
+            "broken": false
+        },
+        {
+            "key": "southpark.cc.com",
+            "broken": false
+        },
+        {
+            "key": "southpark.cc.com:español",
+            "broken": false
+        },
+        {
+            "key": "southpark.de",
+            "broken": false
+        },
+        {
+            "key": "southpark.lat",
+            "broken": false
+        },
+        {
+            "key": "southparkstudios.co.uk",
+            "broken": false
+        },
+        {
+            "key": "southparkstudios.com.br",
+            "broken": false
+        },
+        {
+            "key": "southparkstudios.nu",
+            "broken": false
+        },
+        {
+            "key": "SovietsCloset",
+            "broken": false
+        },
+        {
+            "key": "SovietsClosetPlaylist",
+            "broken": false
+        },
+        {
+            "key": "SpankBang",
+            "broken": false
+        },
+        {
+            "key": "SpankBangPlaylist",
+            "broken": false
+        },
+        {
+            "key": "Spiegel",
+            "broken": false
+        },
+        {
+            "key": "Sport5",
+            "broken": false
+        },
+        {
+            "key": "SportBox",
+            "broken": true
+        },
+        {
+            "key": "sporteurope",
+            "broken": false
+        },
+        {
+            "key": "Spreaker",
+            "broken": false
+        },
+        {
+            "key": "SpreakerShow",
+            "broken": false
+        },
+        {
+            "key": "SproutVideo",
+            "broken": false
+        },
+        {
+            "key": "sr:mediathek",
+            "broken": false
+        },
+        {
+            "key": "SRGSSR",
+            "broken": false
+        },
+        {
+            "key": "SRGSSRPlay",
+            "broken": false
+        },
+        {
+            "key": "StacommuLive",
+            "broken": false
+        },
+        {
+            "key": "StacommuVOD",
+            "broken": false
+        },
+        {
+            "key": "StagePlusVODConcert",
+            "broken": false
+        },
+        {
+            "key": "startrek",
+            "broken": false
+        },
+        {
+            "key": "startv",
+            "broken": false
+        },
+        {
+            "key": "Steam",
+            "broken": false
+        },
+        {
+            "key": "SteamCommunity",
+            "broken": false
+        },
+        {
+            "key": "SteamCommunityBroadcast",
+            "broken": false
+        },
+        {
+            "key": "StoryFire",
+            "broken": false
+        },
+        {
+            "key": "StoryFireSeries",
+            "broken": false
+        },
+        {
+            "key": "StoryFireUser",
+            "broken": false
+        },
+        {
+            "key": "Streaks",
+            "broken": false
+        },
+        {
+            "key": "Streamable",
+            "broken": false
+        },
+        {
+            "key": "StreamCZ",
+            "broken": false
+        },
+        {
+            "key": "StreetVoice",
+            "broken": false
+        },
+        {
+            "key": "Stripchat",
+            "broken": false
+        },
+        {
+            "key": "stv:player",
+            "broken": false
+        },
+        {
+            "key": "stvr",
+            "broken": false
+        },
+        {
+            "key": "Subsplash",
+            "broken": false
+        },
+        {
+            "key": "subsplash:playlist",
+            "broken": false
+        },
+        {
+            "key": "Substack",
+            "broken": false
+        },
+        {
+            "key": "SunPorno",
+            "broken": false
+        },
+        {
+            "key": "sverigesradio:episode",
+            "broken": false
+        },
+        {
+            "key": "sverigesradio:publication",
+            "broken": false
+        },
+        {
+            "key": "svt:page",
+            "broken": false
+        },
+        {
+            "key": "svt:play",
+            "broken": false
+        },
+        {
+            "key": "svt:play:series",
+            "broken": false
+        },
+        {
+            "key": "Syfy",
+            "broken": false
+        },
+        {
+            "key": "SztvHu",
+            "broken": false
+        },
+        {
+            "key": "t-online.de",
+            "broken": true
+        },
+        {
+            "key": "Tagesschau",
+            "broken": true
+        },
+        {
+            "key": "TapTapApp",
+            "broken": false
+        },
+        {
+            "key": "TapTapAppIntl",
+            "broken": false
+        },
+        {
+            "key": "TapTapMoment",
+            "broken": false
+        },
+        {
+            "key": "TapTapPostIntl",
+            "broken": false
+        },
+        {
+            "key": "tarangplus:episodes",
+            "broken": false
+        },
+        {
+            "key": "tarangplus:playlist",
+            "broken": false
+        },
+        {
+            "key": "tarangplus:video",
+            "broken": false
+        },
+        {
+            "key": "Tass",
+            "broken": true
+        },
+        {
+            "key": "TBS",
+            "broken": false
+        },
+        {
+            "key": "TBSJPEpisode",
+            "broken": false
+        },
+        {
+            "key": "TBSJPPlaylist",
+            "broken": false
+        },
+        {
+            "key": "TBSJPProgram",
+            "broken": false
+        },
+        {
+            "key": "Teachable",
+            "broken": true
+        },
+        {
+            "key": "TeachableCourse",
+            "broken": false
+        },
+        {
+            "key": "teachertube",
+            "broken": true
+        },
+        {
+            "key": "teachertube:user:collection",
+            "broken": true
+        },
+        {
+            "key": "TeachingChannel",
+            "broken": true
+        },
+        {
+            "key": "Teamcoco",
+            "broken": false
+        },
+        {
+            "key": "TeamTreeHouse",
+            "broken": false
+        },
+        {
+            "key": "techtv.mit.edu",
+            "broken": false
+        },
+        {
+            "key": "TedEmbed",
+            "broken": false
+        },
+        {
+            "key": "TedPlaylist",
+            "broken": false
+        },
+        {
+            "key": "TedSeries",
+            "broken": false
+        },
+        {
+            "key": "TedTalk",
+            "broken": false
+        },
+        {
+            "key": "Tele13",
+            "broken": false
+        },
+        {
+            "key": "Tele5",
+            "broken": false
+        },
+        {
+            "key": "TeleBruxelles",
+            "broken": false
+        },
+        {
+            "key": "TelecaribePlay",
+            "broken": false
+        },
+        {
+            "key": "Telecinco",
+            "broken": false
+        },
+        {
+            "key": "Telegraaf",
+            "broken": false
+        },
+        {
+            "key": "telegram:embed",
+            "broken": false
+        },
+        {
+            "key": "TeleMB",
+            "broken": true
+        },
+        {
+            "key": "Telemundo",
+            "broken": true
+        },
+        {
+            "key": "TeleQuebec",
+            "broken": false
+        },
+        {
+            "key": "TeleQuebecEmission",
+            "broken": false
+        },
+        {
+            "key": "TeleQuebecLive",
+            "broken": false
+        },
+        {
+            "key": "TeleQuebecSquat",
+            "broken": false
+        },
+        {
+            "key": "TeleQuebecVideo",
+            "broken": false
+        },
+        {
+            "key": "TeleTask",
+            "broken": true
+        },
+        {
+            "key": "Telewebion",
+            "broken": true
+        },
+        {
+            "key": "TennisTV",
+            "broken": false
+        },
+        {
+            "key": "TestURL",
+            "broken": false
+        },
+        {
+            "key": "TF1",
+            "broken": false
+        },
+        {
+            "key": "TFO",
+            "broken": true
+        },
+        {
+            "key": "theatercomplextown:ppv",
+            "broken": false
+        },
+        {
+            "key": "theatercomplextown:vod",
+            "broken": false
+        },
+        {
+            "key": "TheChosen",
+            "broken": false
+        },
+        {
+            "key": "TheChosenGroup",
+            "broken": true
+        },
+        {
+            "key": "TheGuardianPodcast",
+            "broken": false
+        },
+        {
+            "key": "TheGuardianPodcastPlaylist",
+            "broken": false
+        },
+        {
+            "key": "TheHighWire",
+            "broken": false
+        },
+        {
+            "key": "TheIntercept",
+            "broken": false
+        },
+        {
+            "key": "ThePlatform",
+            "broken": false
+        },
+        {
+            "key": "ThePlatformFeed",
+            "broken": false
+        },
+        {
+            "key": "TheStar",
+            "broken": false
+        },
+        {
+            "key": "TheSun",
+            "broken": false
+        },
+        {
+            "key": "TheWeatherChannel",
+            "broken": false
+        },
+        {
+            "key": "ThisAmericanLife",
+            "broken": false
+        },
+        {
+            "key": "ThisOldHouse",
+            "broken": false
+        },
+        {
+            "key": "ThisVid",
+            "broken": false
+        },
+        {
+            "key": "ThisVidMember",
+            "broken": false
+        },
+        {
+            "key": "ThisVidPlaylist",
+            "broken": false
+        },
+        {
+            "key": "ThreeSpeak",
+            "broken": false
+        },
+        {
+            "key": "ThreeSpeakUser",
+            "broken": false
+        },
+        {
+            "key": "TikTok",
+            "broken": false
+        },
+        {
+            "key": "tiktok:collection",
+            "broken": false
+        },
+        {
+            "key": "tiktok:effect",
+            "broken": true
+        },
+        {
+            "key": "tiktok:live",
+            "broken": false
+        },
+        {
+            "key": "tiktok:sound",
+            "broken": true
+        },
+        {
+            "key": "tiktok:tag",
+            "broken": true
+        },
+        {
+            "key": "tiktok:user",
+            "broken": false
+        },
+        {
+            "key": "TLC",
+            "broken": false
+        },
+        {
+            "key": "TMZ",
+            "broken": false
+        },
+        {
+            "key": "TNAFlix",
+            "broken": false
+        },
+        {
+            "key": "TNAFlixNetworkEmbed",
+            "broken": false
+        },
+        {
+            "key": "toggle",
+            "broken": false
+        },
+        {
+            "key": "toggo",
+            "broken": false
+        },
+        {
+            "key": "tokfm:audition",
+            "broken": false
+        },
+        {
+            "key": "tokfm:podcast",
+            "broken": false
+        },
+        {
+            "key": "ToonGoggles",
+            "broken": false
+        },
+        {
+            "key": "tou.tv",
+            "broken": false
+        },
+        {
+            "key": "toutiao",
+            "broken": false
+        },
+        {
+            "key": "Toypics",
+            "broken": true
+        },
+        {
+            "key": "ToypicsUser",
+            "broken": true
+        },
+        {
+            "key": "TravelChannel",
+            "broken": false
+        },
+        {
+            "key": "Trovo",
+            "broken": false
+        },
+        {
+            "key": "TrovoChannelClip",
+            "broken": false
+        },
+        {
+            "key": "TrovoChannelVod",
+            "broken": false
+        },
+        {
+            "key": "TrovoVod",
+            "broken": false
+        },
+        {
+            "key": "TrtCocukVideo",
+            "broken": false
+        },
+        {
+            "key": "TrtWorld",
+            "broken": false
+        },
+        {
+            "key": "TrueID",
+            "broken": false
+        },
+        {
+            "key": "TruNews",
+            "broken": false
+        },
+        {
+            "key": "Truth",
+            "broken": false
+        },
+        {
+            "key": "ttinglive",
+            "broken": false
+        },
+        {
+            "key": "Tube8",
+            "broken": true
+        },
+        {
+            "key": "TubeTuGraz",
+            "broken": false
+        },
+        {
+            "key": "TubeTuGrazSeries",
+            "broken": false
+        },
+        {
+            "key": "tubitv",
+            "broken": false
+        },
+        {
+            "key": "tubitv:series",
+            "broken": false
+        },
+        {
+            "key": "Tumblr",
+            "broken": false
+        },
+        {
+            "key": "tunein:embed",
+            "broken": false
+        },
+        {
+            "key": "tunein:podcast",
+            "broken": false
+        },
+        {
+            "key": "tunein:podcast:program",
+            "broken": false
+        },
+        {
+            "key": "tunein:shortener",
+            "broken": false
+        },
+        {
+            "key": "tunein:station",
+            "broken": false
+        },
+        {
+            "key": "tv.dfb.de",
+            "broken": false
+        },
+        {
+            "key": "TV2",
+            "broken": false
+        },
+        {
+            "key": "TV2Article",
+            "broken": false
+        },
+        {
+            "key": "TV2DK",
+            "broken": false
+        },
+        {
+            "key": "TV2DKBornholmPlay",
+            "broken": false
+        },
+        {
+            "key": "tv2play.hu",
+            "broken": false
+        },
+        {
+            "key": "tv2playseries.hu",
+            "broken": false
+        },
+        {
+            "key": "TV4",
+            "broken": false
+        },
+        {
+            "key": "TV5MONDE",
+            "broken": false
+        },
+        {
+            "key": "tv5unis",
+            "broken": false
+        },
+        {
+            "key": "tv5unis:video",
+            "broken": false
+        },
+        {
+            "key": "tv8.it",
+            "broken": false
+        },
+        {
+            "key": "tv8.it:live",
+            "broken": false
+        },
+        {
+            "key": "tv8.it:playlist",
+            "broken": false
+        },
+        {
+            "key": "TVANouvelles",
+            "broken": false
+        },
+        {
+            "key": "TVANouvellesArticle",
+            "broken": false
+        },
+        {
+            "key": "tvaplus",
+            "broken": false
+        },
+        {
+            "key": "TVC",
+            "broken": false
+        },
+        {
+            "key": "TVCArticle",
+            "broken": false
+        },
+        {
+            "key": "TVer",
+            "broken": false
+        },
+        {
+            "key": "tver:olympic",
+            "broken": false
+        },
+        {
+            "key": "tvigle",
+            "broken": false
+        },
+        {
+            "key": "TVIPlayer",
+            "broken": false
+        },
+        {
+            "key": "TVN24",
+            "broken": true
+        },
+        {
+            "key": "tvnoe",
+            "broken": false
+        },
+        {
+            "key": "TVO",
+            "broken": false
+        },
+        {
+            "key": "tvopengr:embed",
+            "broken": false
+        },
+        {
+            "key": "tvopengr:watch",
+            "broken": false
+        },
+        {
+            "key": "tvp",
+            "broken": false
+        },
+        {
+            "key": "tvp:embed",
+            "broken": false
+        },
+        {
+            "key": "tvp:stream",
+            "broken": false
+        },
+        {
+            "key": "tvp:vod",
+            "broken": false
+        },
+        {
+            "key": "tvp:vod:series",
+            "broken": false
+        },
+        {
+            "key": "TVPlayHome",
+            "broken": false
+        },
+        {
+            "key": "tvw",
+            "broken": false
+        },
+        {
+            "key": "tvw:news",
+            "broken": false
+        },
+        {
+            "key": "tvw:tvchannels",
+            "broken": false
+        },
+        {
+            "key": "Tweakers",
+            "broken": false
+        },
+        {
+            "key": "TwitCasting",
+            "broken": false
+        },
+        {
+            "key": "TwitCastingLive",
+            "broken": false
+        },
+        {
+            "key": "TwitCastingUser",
+            "broken": false
+        },
+        {
+            "key": "twitch:clips",
+            "broken": false
+        },
+        {
+            "key": "twitch:collection",
+            "broken": false
+        },
+        {
+            "key": "twitch:stream",
+            "broken": false
+        },
+        {
+            "key": "twitch:videos",
+            "broken": false
+        },
+        {
+            "key": "twitch:videos:clips",
+            "broken": false
+        },
+        {
+            "key": "twitch:videos:collections",
+            "broken": false
+        },
+        {
+            "key": "twitch:vod",
+            "broken": false
+        },
+        {
+            "key": "twitter",
+            "broken": false
+        },
+        {
+            "key": "twitter:amplify",
+            "broken": false
+        },
+        {
+            "key": "twitter:broadcast",
+            "broken": false
+        },
+        {
+            "key": "twitter:card",
+            "broken": false
+        },
+        {
+            "key": "twitter:shortener",
+            "broken": false
+        },
+        {
+            "key": "twitter:spaces",
+            "broken": false
+        },
+        {
+            "key": "Txxx",
+            "broken": false
+        },
+        {
+            "key": "udemy",
+            "broken": false
+        },
+        {
+            "key": "udemy:course",
+            "broken": false
+        },
+        {
+            "key": "UDNEmbed",
+            "broken": false
+        },
+        {
+            "key": "UFCTV",
+            "broken": false
+        },
+        {
+            "key": "ukcolumn",
+            "broken": true
+        },
+        {
+            "key": "UlizaPlayer",
+            "broken": false
+        },
+        {
+            "key": "UlizaPortal",
+            "broken": false
+        },
+        {
+            "key": "umg:de",
+            "broken": false
+        },
+        {
+            "key": "UnicodeBOM",
+            "broken": false
+        },
+        {
+            "key": "Unistra",
+            "broken": false
+        },
+        {
+            "key": "UnitedNationsWebTv",
+            "broken": false
+        },
+        {
+            "key": "Unity",
+            "broken": true
+        },
+        {
+            "key": "uol.com.br",
+            "broken": false
+        },
+        {
+            "key": "uplynk",
+            "broken": false
+        },
+        {
+            "key": "uplynk:preplay",
+            "broken": false
+        },
+        {
+            "key": "Urort",
+            "broken": true
+        },
+        {
+            "key": "URPlay",
+            "broken": false
+        },
+        {
+            "key": "USANetwork",
+            "broken": false
+        },
+        {
+            "key": "USAToday",
+            "broken": false
+        },
+        {
+            "key": "ustream",
+            "broken": false
+        },
+        {
+            "key": "ustream:channel",
+            "broken": false
+        },
+        {
+            "key": "ustudio",
+            "broken": false
+        },
+        {
+            "key": "ustudio:embed",
+            "broken": false
+        },
+        {
+            "key": "Varzesh3",
+            "broken": true
+        },
+        {
+            "key": "Vbox7",
+            "broken": false
+        },
+        {
+            "key": "Veo",
+            "broken": false
+        },
+        {
+            "key": "Vevo",
+            "broken": false
+        },
+        {
+            "key": "VevoPlaylist",
+            "broken": false
+        },
+        {
+            "key": "VGTV",
+            "broken": true
+        },
+        {
+            "key": "vh1.com",
+            "broken": false
+        },
+        {
+            "key": "vhx:embed",
+            "broken": false
+        },
+        {
+            "key": "vice",
+            "broken": true
+        },
+        {
+            "key": "vice:article",
+            "broken": true
+        },
+        {
+            "key": "vice:show",
+            "broken": true
+        },
+        {
+            "key": "Viddler",
+            "broken": true
+        },
+        {
+            "key": "Videa",
+            "broken": false
+        },
+        {
+            "key": "video.arnes.si",
+            "broken": false
+        },
+        {
+            "key": "video.google:search",
+            "broken": false
+        },
+        {
+            "key": "video.sky.it",
+            "broken": false
+        },
+        {
+            "key": "video.sky.it:live",
+            "broken": false
+        },
+        {
+            "key": "VideoKenPlayer",
+            "broken": false
+        },
+        {
+            "key": "VideoPress",
+            "broken": false
+        },
+        {
+            "key": "Vidflex",
+            "broken": false
+        },
+        {
+            "key": "Vidio",
+            "broken": false
+        },
+        {
+            "key": "VidioLive",
+            "broken": false
+        },
+        {
+            "key": "VidioPremier",
+            "broken": false
+        },
+        {
+            "key": "VidLii",
+            "broken": false
+        },
+        {
+            "key": "Vidly",
+            "broken": false
+        },
+        {
+            "key": "vids.io",
+            "broken": false
+        },
+        {
+            "key": "Vidyard",
+            "broken": false
+        },
+        {
+            "key": "viewlift",
+            "broken": false
+        },
+        {
+            "key": "viewlift:embed",
+            "broken": false
+        },
+        {
+            "key": "ViewSource",
+            "broken": false
+        },
+        {
+            "key": "Viidea",
+            "broken": false
+        },
+        {
+            "key": "vimeo",
+            "broken": false
+        },
+        {
+            "key": "vimeo:album",
+            "broken": false
+        },
+        {
+            "key": "vimeo:channel",
+            "broken": false
+        },
+        {
+            "key": "vimeo:event",
+            "broken": false
+        },
+        {
+            "key": "vimeo:group",
+            "broken": false
+        },
+        {
+            "key": "vimeo:likes",
+            "broken": false
+        },
+        {
+            "key": "vimeo:ondemand",
+            "broken": false
+        },
+        {
+            "key": "vimeo:pro",
+            "broken": false
+        },
+        {
+            "key": "vimeo:review",
+            "broken": false
+        },
+        {
+            "key": "vimeo:user",
+            "broken": false
+        },
+        {
+            "key": "vimeo:watchlater",
+            "broken": false
+        },
+        {
+            "key": "ViMP",
+            "broken": false
+        },
+        {
+            "key": "ViMP:Playlist",
+            "broken": false
+        },
+        {
+            "key": "Viously",
+            "broken": false
+        },
+        {
+            "key": "Viqeo",
+            "broken": true
+        },
+        {
+            "key": "Visir",
+            "broken": false
+        },
+        {
+            "key": "Viu",
+            "broken": false
+        },
+        {
+            "key": "viu:ott",
+            "broken": false
+        },
+        {
+            "key": "viu:playlist",
+            "broken": false
+        },
+        {
+            "key": "ViuOTTIndonesia",
+            "broken": false
+        },
+        {
+            "key": "vk",
+            "broken": false
+        },
+        {
+            "key": "vk:uservideos",
+            "broken": false
+        },
+        {
+            "key": "vk:wallpost",
+            "broken": false
+        },
+        {
+            "key": "VKPlay",
+            "broken": false
+        },
+        {
+            "key": "VKPlayLive",
+            "broken": false
+        },
+        {
+            "key": "vm.tiktok",
+            "broken": false
+        },
+        {
+            "key": "Vocaroo",
+            "broken": false
+        },
+        {
+            "key": "VODPlatform",
+            "broken": false
+        },
+        {
+            "key": "voicy",
+            "broken": true
+        },
+        {
+            "key": "voicy:channel",
+            "broken": true
+        },
+        {
+            "key": "volejtv:category",
+            "broken": false
+        },
+        {
+            "key": "volejtv:club",
+            "broken": false
+        },
+        {
+            "key": "volejtv:match",
+            "broken": false
+        },
+        {
+            "key": "VoxMedia",
+            "broken": false
+        },
+        {
+            "key": "VoxMediaVolume",
+            "broken": false
+        },
+        {
+            "key": "vpro",
+            "broken": false
+        },
+        {
+            "key": "vqq:series",
+            "broken": false
+        },
+        {
+            "key": "vqq:video",
+            "broken": false
+        },
+        {
+            "key": "vrsquare",
+            "broken": false
+        },
+        {
+            "key": "vrsquare:channel",
+            "broken": false
+        },
+        {
+            "key": "vrsquare:search",
+            "broken": false
+        },
+        {
+            "key": "vrsquare:section",
+            "broken": false
+        },
+        {
+            "key": "VRT",
+            "broken": false
+        },
+        {
+            "key": "vrtmax",
+            "broken": false
+        },
+        {
+            "key": "VTM",
+            "broken": false
+        },
+        {
+            "key": "VTV",
+            "broken": false
+        },
+        {
+            "key": "VTVGo",
+            "broken": false
+        },
+        {
+            "key": "VTXTV",
+            "broken": false
+        },
+        {
+            "key": "VTXTVLive",
+            "broken": false
+        },
+        {
+            "key": "VTXTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "Walla",
+            "broken": false
+        },
+        {
+            "key": "WalyTV",
+            "broken": false
+        },
+        {
+            "key": "WalyTVLive",
+            "broken": false
+        },
+        {
+            "key": "WalyTVRecordings",
+            "broken": false
+        },
+        {
+            "key": "washingtonpost",
+            "broken": false
+        },
+        {
+            "key": "washingtonpost:article",
+            "broken": false
+        },
+        {
+            "key": "wat.tv",
+            "broken": false
+        },
+        {
+            "key": "WatchESPN",
+            "broken": false
+        },
+        {
+            "key": "WDR",
+            "broken": false
+        },
+        {
+            "key": "WDRElefant",
+            "broken": false
+        },
+        {
+            "key": "WDRPage",
+            "broken": false
+        },
+        {
+            "key": "web.archive:youtube",
+            "broken": false
+        },
+        {
+            "key": "Webcamerapl",
+            "broken": false
+        },
+        {
+            "key": "Webcaster",
+            "broken": false
+        },
+        {
+            "key": "WebcasterFeed",
+            "broken": false
+        },
+        {
+            "key": "WebOfStories",
+            "broken": false
+        },
+        {
+            "key": "WebOfStoriesPlaylist",
+            "broken": false
+        },
+        {
+            "key": "Weibo",
+            "broken": false
+        },
+        {
+            "key": "WeiboUser",
+            "broken": false
+        },
+        {
+            "key": "WeiboVideo",
+            "broken": false
+        },
+        {
+            "key": "WeiqiTV",
+            "broken": true
+        },
+        {
+            "key": "wetv:episode",
+            "broken": false
+        },
+        {
+            "key": "WeTvSeries",
+            "broken": false
+        },
+        {
+            "key": "Weverse",
+            "broken": false
+        },
+        {
+            "key": "WeverseLive",
+            "broken": false
+        },
+        {
+            "key": "WeverseLiveTab",
+            "broken": false
+        },
+        {
+            "key": "WeverseMedia",
+            "broken": false
+        },
+        {
+            "key": "WeverseMediaTab",
+            "broken": false
+        },
+        {
+            "key": "WeverseMoment",
+            "broken": false
+        },
+        {
+            "key": "WeVidi",
+            "broken": false
+        },
+        {
+            "key": "whowatch",
+            "broken": false
+        },
+        {
+            "key": "Whyp",
+            "broken": false
+        },
+        {
+            "key": "wikimedia.org",
+            "broken": false
+        },
+        {
+            "key": "Wimbledon",
+            "broken": false
+        },
+        {
+            "key": "WimTV",
+            "broken": false
+        },
+        {
+            "key": "WinSportsVideo",
+            "broken": false
+        },
+        {
+            "key": "Wistia",
+            "broken": false
+        },
+        {
+            "key": "WistiaChannel",
+            "broken": false
+        },
+        {
+            "key": "WistiaPlaylist",
+            "broken": false
+        },
+        {
+            "key": "wnl",
+            "broken": false
+        },
+        {
+            "key": "wordpress:mb.miniAudioPlayer",
+            "broken": false
+        },
+        {
+            "key": "wordpress:playlist",
+            "broken": false
+        },
+        {
+            "key": "WorldStarHipHop",
+            "broken": false
+        },
+        {
+            "key": "wppilot",
+            "broken": false
+        },
+        {
+            "key": "wppilot:channels",
+            "broken": false
+        },
+        {
+            "key": "WrestleUniversePPV",
+            "broken": false
+        },
+        {
+            "key": "WrestleUniverseVOD",
+            "broken": false
+        },
+        {
+            "key": "WSJ",
+            "broken": false
+        },
+        {
+            "key": "WSJArticle",
+            "broken": false
+        },
+        {
+            "key": "WWE",
+            "broken": false
+        },
+        {
+            "key": "wyborcza:video",
+            "broken": false
+        },
+        {
+            "key": "WyborczaPodcast",
+            "broken": false
+        },
+        {
+            "key": "wykop:dig",
+            "broken": false
+        },
+        {
+            "key": "wykop:dig:comment",
+            "broken": false
+        },
+        {
+            "key": "wykop:post",
+            "broken": false
+        },
+        {
+            "key": "wykop:post:comment",
+            "broken": false
+        },
+        {
+            "key": "XboxClips",
+            "broken": false
+        },
+        {
+            "key": "XHamster",
+            "broken": false
+        },
+        {
+            "key": "XHamsterEmbed",
+            "broken": false
+        },
+        {
+            "key": "XHamsterUser",
+            "broken": false
+        },
+        {
+            "key": "XiaoHongShu",
+            "broken": false
+        },
+        {
+            "key": "ximalaya",
+            "broken": false
+        },
+        {
+            "key": "ximalaya:album",
+            "broken": false
+        },
+        {
+            "key": "Xinpianchang",
+            "broken": false
+        },
+        {
+            "key": "XMinus",
+            "broken": true
+        },
+        {
+            "key": "XNXX",
+            "broken": false
+        },
+        {
+            "key": "XVideos",
+            "broken": false
+        },
+        {
+            "key": "xvideos:quickies",
+            "broken": false
+        },
+        {
+            "key": "XXXYMovies",
+            "broken": false
+        },
+        {
+            "key": "yahoo",
+            "broken": false
+        },
+        {
+            "key": "yahoo:japannews",
+            "broken": false
+        },
+        {
+            "key": "yahoo:search",
+            "broken": false
+        },
+        {
+            "key": "YandexDisk",
+            "broken": false
+        },
+        {
+            "key": "yandexmusic:album",
+            "broken": false
+        },
+        {
+            "key": "yandexmusic:artist:albums",
+            "broken": false
+        },
+        {
+            "key": "yandexmusic:artist:tracks",
+            "broken": false
+        },
+        {
+            "key": "yandexmusic:playlist",
+            "broken": false
+        },
+        {
+            "key": "yandexmusic:track",
+            "broken": false
+        },
+        {
+            "key": "YandexVideo",
+            "broken": false
+        },
+        {
+            "key": "YandexVideoPreview",
+            "broken": false
+        },
+        {
+            "key": "YapFiles",
+            "broken": true
+        },
+        {
+            "key": "Yappy",
+            "broken": true
+        },
+        {
+            "key": "YappyProfile",
+            "broken": false
+        },
+        {
+            "key": "yfanefa",
+            "broken": false
+        },
+        {
+            "key": "YleAreena",
+            "broken": false
+        },
+        {
+            "key": "YouJizz",
+            "broken": false
+        },
+        {
+            "key": "youku",
+            "broken": false
+        },
+        {
+            "key": "youku:show",
+            "broken": false
+        },
+        {
+            "key": "YouNowChannel",
+            "broken": false
+        },
+        {
+            "key": "YouNowLive",
+            "broken": false
+        },
+        {
+            "key": "YouNowMoment",
+            "broken": false
+        },
+        {
+            "key": "YouPorn",
+            "broken": false
+        },
+        {
+            "key": "YouPornCategory",
+            "broken": false
+        },
+        {
+            "key": "YouPornChannel",
+            "broken": false
+        },
+        {
+            "key": "YouPornCollection",
+            "broken": false
+        },
+        {
+            "key": "YouPornStar",
+            "broken": false
+        },
+        {
+            "key": "YouPornTag",
+            "broken": false
+        },
+        {
+            "key": "YouPornVideos",
+            "broken": false
+        },
+        {
+            "key": "youtube",
+            "broken": false
+        },
+        {
+            "key": "youtube:clip",
+            "broken": false
+        },
+        {
+            "key": "youtube:consent",
+            "broken": false
+        },
+        {
+            "key": "youtube:favorites",
+            "broken": false
+        },
+        {
+            "key": "youtube:history",
+            "broken": false
+        },
+        {
+            "key": "youtube:music:search_url",
+            "broken": false
+        },
+        {
+            "key": "youtube:notif",
+            "broken": false
+        },
+        {
+            "key": "youtube:playlist",
+            "broken": false
+        },
+        {
+            "key": "youtube:recommended",
+            "broken": false
+        },
+        {
+            "key": "youtube:search",
+            "broken": false
+        },
+        {
+            "key": "youtube:search_url",
+            "broken": false
+        },
+        {
+            "key": "youtube:shorts:pivot:audio",
+            "broken": false
+        },
+        {
+            "key": "youtube:subscriptions",
+            "broken": false
+        },
+        {
+            "key": "youtube:tab",
+            "broken": false
+        },
+        {
+            "key": "youtube:truncated_id",
+            "broken": false
+        },
+        {
+            "key": "youtube:truncated_url",
+            "broken": false
+        },
+        {
+            "key": "youtube:user",
+            "broken": false
+        },
+        {
+            "key": "youtube:watchlater",
+            "broken": false
+        },
+        {
+            "key": "YoutubeLivestreamEmbed",
+            "broken": false
+        },
+        {
+            "key": "YoutubeYtBe",
+            "broken": false
+        },
+        {
+            "key": "Zaiko",
+            "broken": false
+        },
+        {
+            "key": "ZaikoETicket",
+            "broken": false
+        },
+        {
+            "key": "Zapiks",
+            "broken": false
+        },
+        {
+            "key": "Zattoo",
+            "broken": false
+        },
+        {
+            "key": "ZattooLive",
+            "broken": false
+        },
+        {
+            "key": "ZattooMovies",
+            "broken": false
+        },
+        {
+            "key": "ZattooRecordings",
+            "broken": false
+        },
+        {
+            "key": "zdf",
+            "broken": false
+        },
+        {
+            "key": "zdf:channel",
+            "broken": false
+        },
+        {
+            "key": "ZeeNews",
+            "broken": true
+        },
+        {
+            "key": "ZenPorn",
+            "broken": false
+        },
+        {
+            "key": "ZetlandDKArticle",
+            "broken": false
+        },
+        {
+            "key": "Zhihu",
+            "broken": false
+        },
+        {
+            "key": "zingmp3",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:album",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:chart-home",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:chart-music-video",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:hub",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:liveradio",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:podcast",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:podcast-episode",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:user",
+            "broken": false
+        },
+        {
+            "key": "zingmp3:week-chart",
+            "broken": false
+        },
+        {
+            "key": "zoom",
+            "broken": false
+        },
+        {
+            "key": "Zype",
+            "broken": false
+        },
+        {
+            "key": "generic",
+            "broken": false
+        }
+    ],
+    "rolloutTop20": [
+        {
+            "siteId": "youtube",
+            "rank": 1,
+            "demandScore": 100,
+            "primaryExtractorKey": "youtube",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "tiktok",
+            "rank": 2,
+            "demandScore": 95,
+            "primaryExtractorKey": "TikTok",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "instagram",
+            "rank": 3,
+            "demandScore": 92,
+            "primaryExtractorKey": "Instagram",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "facebook",
+            "rank": 4,
+            "demandScore": 90,
+            "primaryExtractorKey": "facebook",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "twitter",
+            "rank": 5,
+            "demandScore": 88,
+            "primaryExtractorKey": "twitter",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "twitch",
+            "rank": 6,
+            "demandScore": 85,
+            "primaryExtractorKey": "twitch:vod",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "vimeo",
+            "rank": 7,
+            "demandScore": 82,
+            "primaryExtractorKey": "vimeo",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "dailymotion",
+            "rank": 8,
+            "demandScore": 80,
+            "primaryExtractorKey": "dailymotion",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "reddit",
+            "rank": 9,
+            "demandScore": 78,
+            "primaryExtractorKey": "Reddit",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "rumble",
+            "rank": 10,
+            "demandScore": 76,
+            "primaryExtractorKey": "Rumble",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "bilibili",
+            "rank": 11,
+            "demandScore": 74,
+            "primaryExtractorKey": "BiliBili",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "soundcloud",
+            "rank": 12,
+            "demandScore": 72,
+            "primaryExtractorKey": "soundcloud",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "bbc",
+            "rank": 13,
+            "demandScore": 65,
+            "primaryExtractorKey": "bbc",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "pbs",
+            "rank": 14,
+            "demandScore": 62,
+            "primaryExtractorKey": "pbs",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "nbc",
+            "rank": 15,
+            "demandScore": 60,
+            "primaryExtractorKey": "NBC",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "vk",
+            "rank": 16,
+            "demandScore": 58,
+            "primaryExtractorKey": "vk",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "streamable",
+            "rank": 17,
+            "demandScore": 55,
+            "primaryExtractorKey": "Streamable",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "linkedin",
+            "rank": 18,
+            "demandScore": 52,
+            "primaryExtractorKey": "LinkedIn",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "bandcamp",
+            "rank": 19,
+            "demandScore": 50,
+            "primaryExtractorKey": "Bandcamp",
+            "extractorPresent": true
+        },
+        {
+            "siteId": "mixcloud",
+            "rank": 20,
+            "demandScore": 48,
+            "primaryExtractorKey": "mixcloud",
+            "extractorPresent": true
+        }
+    ]
+}

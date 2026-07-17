@@ -1,0 +1,66 @@
+# Dependabot — automated dependency updates.
+#
+# Why this matters here: every third-party GitHub Action is pinned to a full
+# commit SHA (see .github/workflows/*.yml and .github/actions/setup-workspace).
+# SHA pins are immutable, so the `github-actions` updater is what keeps them
+# current — it bumps the SHA and rewrites the trailing `# vX.Y.Z` comment on
+# each `uses:` line (including the composite action). Without this, pinning would
+# silently freeze us on stale, eventually-vulnerable versions.
+#
+# Docs: https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-reference
+version: 2
+
+updates:
+  # ── GitHub Actions: workflows + the composite action under .github/actions/ ──
+  # `directory: /` scans .github/workflows/*.yml and repo-local action.yml files.
+  # `cooldown` is not supported for this ecosystem, so it is intentionally absent.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+      timezone: Etc/UTC
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: ci
+    groups:
+      # Collapse all action bumps into a single weekly PR — low review overhead.
+      actions:
+        patterns:
+          - '*'
+
+  # ── npm / pnpm (pnpm-lock.yaml lives at the repo root) ──
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+      timezone: Etc/UTC
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: deps
+      prefix-development: deps-dev
+      include: scope
+    # Let a freshly-published release settle before adopting it — limits exposure
+    # to a compromised or broken publish (the supply-chain risk SHA-pinning targets).
+    cooldown:
+      default-days: 5
+      semver-major-days: 14
+      semver-minor-days: 5
+      semver-patch-days: 3
+    groups:
+      # Routine dev-tooling bumps (minor/patch) collapse into one PR …
+      dev-minor-patch:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+      # … and routine runtime bumps (minor/patch) into another. Majors stay
+      # individual so breaking upgrades (Electron, React, Vite, …) get focused review.
+      prod-minor-patch:
+        dependency-type: production
+        update-types:
+          - minor
+          - patch

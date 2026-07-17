@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "السطر {{line}}: أدخل رابط http(s) صالحًا.",
+    "multilineBatchLineProhibited": "السطر {{line}}: التنزيل من هذا المضيف غير مسموح به.",
+    "multilineBatchLineUnsupported": "السطر {{line}}: تنسيق الرابط غير مدعوم لهذا الموقع.",
+    "multilineBatchLineYoutubeUnsupported": "السطر {{line}}: تنسيق رابط YouTube غير مدعوم.",
+    "mediaUrlRequired": "أدخل رابط http(s) صالحًا للمتابعة.",
+    "mediaUrlProhibitedContent": "لا يمكن تنزيل مواقع الفيديو للبالغين باستخدام هذا التطبيق.",
+    "mediaUrlUnsupported": "تنسيق الرابط غير مدعوم لهذا الموقع. جرّب رابط فيديو أو قائمة تشغيل مباشر.",
+    "youtubeUrlUnsupported": "تنسيق رابط YouTube غير مدعوم. استخدم روابط المشاهدة أو Shorts أو youtu.be أو قوائم التشغيل أو القنوات."
+}

@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "पंक्ति {{line}}: एक मान्य http(s) URL दर्ज करें।",
+    "multilineBatchLineProhibited": "पंक्ति {{line}}: इस होस्ट से डाउनलोड की अनुमति नहीं है।",
+    "multilineBatchLineUnsupported": "पंक्ति {{line}}: इस साइट के लिए असमर्थित URL प्रारूप।",
+    "multilineBatchLineYoutubeUnsupported": "पंक्ति {{line}}: असमर्थित YouTube URL प्रारूप।",
+    "mediaUrlRequired": "जारी रखने के लिए मान्य http(s) URL दर्ज करें।",
+    "mediaUrlProhibitedContent": "इस ऐप के साथ वयस्क वीडियो साइटें डाउनलोड नहीं की जा सकतीं।",
+    "mediaUrlUnsupported": "इस साइट के लिए असमर्थित URL प्रारूप। सीधे वीडियो या प्लेलिस्ट लिंक आज़माएँ।",
+    "youtubeUrlUnsupported": "असमर्थित YouTube URL प्रारूप। watch, shorts, youtu.be, प्लेलिस्ट या चैनल लिंक उपयोग करें।"
+}

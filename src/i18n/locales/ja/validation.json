@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "{{line}} 行目：有効な http(s) URL を入力してください。",
+    "multilineBatchLineProhibited": "{{line}} 行目：このホストからのダウンロードは許可されていません。",
+    "multilineBatchLineUnsupported": "{{line}} 行目：このサイトでサポートされていない URL 形式です。",
+    "multilineBatchLineYoutubeUnsupported": "{{line}} 行目：サポートされていない YouTube URL 形式です。",
+    "mediaUrlRequired": "続行するには有効な http(s) URL を入力してください。",
+    "mediaUrlProhibitedContent": "アダルト動画サイトはこのアプリではダウンロードできません。",
+    "mediaUrlUnsupported": "このサイトではサポートされていない URL 形式です。動画またはプレイリストへの直接リンクを試してください。",
+    "youtubeUrlUnsupported": "サポートされていない YouTube URL 形式です。視聴、ショート、youtu.be、プレイリスト、チャンネルのリンクを使用してください。"
+}

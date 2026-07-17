@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "搜索 YouTube",
+        "placeholder": "搜索 YouTube...",
+        "noResults": "未找到结果",
+        "searching": "搜索中...",
+        "addToQueue": "下载",
+        "added": "已添加",
+        "loadMore": "加载更多结果",
+        "usageUnlimited": "无限搜索",
+        "failed": "搜索失败",
+        "inputLabel": "搜索 YouTube"
+    }
+}

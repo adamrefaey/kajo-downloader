@@ -1,0 +1,197 @@
+name: Build
+
+# Full desktop packaging only runs when triggered manually (Actions → Build → Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write # upload-artifact
+  id-token: write # required for SLSA provenance attestation and GitHub artifact attestation
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    name: Package (${{ matrix.job_name }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            platform: macos
+            arch: x64
+            script: build:mac:x64
+            job_name: macos x64
+          - os: macos-latest
+            platform: macos
+            arch: arm64
+            script: build:mac:arm64
+            job_name: macos arm64
+          - os: windows-latest
+            platform: windows
+            arch: x64
+            script: build:win:x64
+            job_name: windows x64
+          - os: windows-latest
+            platform: windows
+            arch: arm64
+            script: build:win:arm64
+            job_name: windows arm64
+          - os: ubuntu-latest
+            platform: linux
+            arch: x64
+            linux_ext: deb
+            linux_artifact_glob: '*.deb'
+            script: build:linux:x64:deb
+            job_name: linux x64 deb
+          - os: ubuntu-latest
+            platform: linux
+            arch: x64
+            linux_ext: rpm
+            linux_artifact_glob: '*.rpm'
+            script: build:linux:x64:rpm
+            job_name: linux x64 rpm
+          - os: ubuntu-latest
+            platform: linux
+            arch: x64
+            linux_ext: appimage
+            linux_artifact_glob: '*.AppImage'
+            script: build:linux:x64:appimage
+            job_name: linux x64 AppImage
+          - os: ubuntu-latest
+            platform: linux
+            arch: arm64
+            linux_ext: deb
+            linux_artifact_glob: '*.deb'
+            script: build:linux:arm64:deb
+            job_name: linux arm64 deb
+          - os: ubuntu-latest
+            platform: linux
+            arch: arm64
+            linux_ext: rpm
+            linux_artifact_glob: '*.rpm'
+            script: build:linux:arm64:rpm
+            job_name: linux arm64 rpm
+          - os: ubuntu-latest
+            platform: linux
+            arch: arm64
+            linux_ext: appimage
+            linux_artifact_glob: '*.AppImage'
+            script: build:linux:arm64:appimage
+            job_name: linux arm64 AppImage
+    defaults:
+      run:
+        shell: bash
+    # format() keeps the literal out of static analysis so the IDE does not reject `production` when
+    # the GitHub Environment is missing from its cached API list (runtime value is still `production`).
+    # Vars/secrets for this job resolve from the `production` environment (and org/repo fallbacks).
+    environment: ${{ format('{0}', 'production') }}
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Project homepage URL — baked into the renderer bundle (openExternal HTTPS allowlist).
+      KAJO_WEBSITE_URL: ${{ vars.KAJO_WEBSITE_URL || 'https://github.com/adamrefaey/kajo-downloader' }}
+      # Optional generic auto-update feed override; otherwise the electron-builder GitHub
+      # Releases provider (`publish` in electron-builder.config.mjs) supplies the app-update.yml feed.
+      KAJO_AUTO_UPDATE_FEED_URL: ${{ vars.KAJO_AUTO_UPDATE_FEED_URL }}
+      # ── macOS code signing ────────────────────────────────────────────────────
+      # CSC_NAME: electron-builder standard env for certificate CN (also accepted as
+      # APPLE_SIGNING_IDENTITY by electron-builder.config.mjs). Notarization runs only when
+      # APPLE_ID + APPLE_APP_SPECIFIC_PASSWORD + APPLE_TEAM_ID are all set.
+      CSC_NAME: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+      APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+      APPLE_ID: ${{ secrets.APPLE_ID }}
+      APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      # ── Windows code signing ──────────────────────────────────────────────────
+      # CSC_LINK / CSC_KEY_PASSWORD: electron-builder standard env vars for the PFX certificate.
+      # WIN_* are applied to signtoolOptions only when non-empty (electron-builder.config.mjs).
+      CSC_LINK: ${{ secrets.WIN_CSC_LINK }}
+      CSC_KEY_PASSWORD: ${{ secrets.WIN_CSC_KEY_PASSWORD }}
+      WIN_CERTIFICATE_SUBJECT_NAME: ${{ secrets.WIN_CERTIFICATE_SUBJECT_NAME }}
+      WIN_PUBLISHER_NAME: ${{ secrets.WIN_PUBLISHER_NAME }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Install Linux packaging dependencies
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fakeroot dpkg-dev libarchive-tools rpm
+
+      - name: Build and package
+        run: pnpm run ${{ matrix.script }}
+
+      - name: Upload Windows installer
+        if: matrix.platform == 'windows'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: build-${{ matrix.platform }}-${{ matrix.arch }}
+          path: release/*.exe
+          if-no-files-found: error
+
+      - name: Attest Windows installer provenance
+        if: matrix.platform == 'windows'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: release/*.exe
+
+      - name: Generate SBOM for Windows installer
+        if: matrix.platform == 'windows'
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: release/
+          artifact-name: sbom-${{ matrix.platform }}-${{ matrix.arch }}.spdx.json
+          output-file: sbom-${{ matrix.platform }}-${{ matrix.arch }}.spdx.json
+
+      - name: Upload macOS disk image
+        if: matrix.platform == 'macos'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: build-${{ matrix.platform }}-${{ matrix.arch }}
+          path: release/*.dmg
+          if-no-files-found: error
+
+      - name: Attest macOS disk image provenance
+        if: matrix.platform == 'macos'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: release/*.dmg
+
+      - name: Generate SBOM for macOS disk image
+        if: matrix.platform == 'macos'
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: release/
+          artifact-name: sbom-${{ matrix.platform }}-${{ matrix.arch }}.spdx.json
+          output-file: sbom-${{ matrix.platform }}-${{ matrix.arch }}.spdx.json
+
+      - name: Upload Linux package
+        if: matrix.platform == 'linux'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: build-${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.linux_ext }}
+          path: release/${{ matrix.linux_artifact_glob }}
+          if-no-files-found: error
+
+      - name: Attest Linux package provenance
+        if: matrix.platform == 'linux'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: release/${{ matrix.linux_artifact_glob }}
+
+      - name: Generate SBOM for Linux package
+        if: matrix.platform == 'linux'
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: release/
+          artifact-name: sbom-${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.linux_ext }}.spdx.json
+          output-file: sbom-${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.linux_ext }}.spdx.json

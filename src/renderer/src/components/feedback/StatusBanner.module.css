@@ -1,0 +1,25 @@
+.root {
+    border-inline-start: 3px solid #4f84d8;
+    border-radius: 8px;
+    background: #1a2029;
+    padding: 10px 12px;
+}
+
+.head strong {
+    font-size: 14px;
+}
+
+.root p {
+    margin: 5px 0 0;
+    color: var(--text-dim);
+    font-size: 12px;
+}
+
+.success {
+    border-inline-start-color: var(--green);
+}
+
+.warning,
+.danger {
+    border-inline-start-color: #da1e28;
+}

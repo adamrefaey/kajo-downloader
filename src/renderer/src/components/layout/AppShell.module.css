@@ -1,0 +1,485 @@
+.shell,
+.desktopAppShell {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+
+.windowDragRegion {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 32px;
+    -webkit-app-region: drag;
+    z-index: 100;
+}
+
+.frame {
+    max-width: 1240px;
+    min-height: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 4px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+
+/* macOS: symmetric inline padding so content stays centered; same value LTR/RTL (traffic lights sit in the extra inset). */
+.desktopAppShell:global(.platform-macos) {
+    --app-macos-frame-inline: 76px;
+}
+
+.desktopAppShell:global(.platform-macos) .frame {
+    padding-inline: var(--app-macos-frame-inline);
+}
+
+.shellFooter {
+    margin-top: auto;
+    padding: 10px 8px 6px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-faint);
+}
+
+.shellFooterDisclaimer {
+    margin: 0 auto 8px;
+    max-width: 42rem;
+    padding: 0 12px;
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--text-faint);
+}
+
+.shellFooterAttribution {
+    margin: 0;
+}
+
+.shellFooterLink {
+    color: var(--green-dim);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.shellFooterLink:hover {
+    color: var(--green);
+}
+
+.titlebar {
+    -webkit-app-region: drag;
+}
+
+.titlebarDragStrip {
+    min-height: 26px;
+}
+
+.titlebarContent {
+    -webkit-app-region: no-drag;
+}
+
+.titlebarShell {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "main controls";
+    gap: 8px 28px;
+    align-items: center;
+    min-width: 0;
+    border: 1px solid rgb(255 255 255 / 9%);
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(28 32 40 / 96%), rgb(18 21 28 / 98%));
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 5%),
+        0 1px 0 rgb(0 0 0 / 35%);
+    padding: 10px 18px;
+}
+
+.titlebarShell:has(> .titlebarMeta) {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-areas: "main trailing controls";
+}
+
+.titlebarMain {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    flex-shrink: 0;
+}
+
+.titlebarLogo {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 10%) inset;
+}
+
+.titlebarLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.titlebarBrand h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+
+.titlebarBrand p {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: var(--text-faint);
+}
+
+/* :global(.badge) → shared.css */
+
+.titlebarControls {
+    grid-area: controls;
+    min-width: 0;
+}
+
+.preferencesPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* Below fixed .windowDragRegion (32px); horizontal inset comes from .frame */
+    padding: 28px 0 6px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    /* Drag the window from the top chrome; trailing controls opt out below. */
+    -webkit-app-region: drag;
+    width: 100%;
+    max-width: min(var(--app-main-column-max-width), 100%);
+    box-sizing: border-box;
+    /* Keep main column centered in both LTR and RTL (RTL would otherwise align to inline-start / right). */
+    margin-inline: auto;
+}
+
+.preferencesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+    min-height: 0;
+}
+
+.preferencesHeaderTrailing {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-width: 0;
+    -webkit-app-region: no-drag;
+}
+
+.preferencesBrand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.preferencesBrandIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 8%) inset;
+}
+
+.preferencesBrandIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.preferencesBrandTitle {
+    margin: 0;
+    font-size: clamp(19px, 2.1vw, 24px);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+
+.preferencesAuthCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 14px;
+    min-width: min(300px, 100%);
+    max-width: 100%;
+    padding: 8px 12px;
+    border: 1px solid rgb(255 255 255 / 9%);
+    border-radius: 10px;
+    background:
+        linear-gradient(180deg, rgb(21 27 36 / 90%), rgb(14 18 24 / 94%)),
+        radial-gradient(140% 130% at 100% 0%, rgb(79 140 255 / 12%), transparent 48%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.titlebarMeta :global(.ghost-button):global(.topbar-text-action) {
+    min-height: 30px;
+    min-width: 72px;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border-color: rgb(255 255 255 / 14%);
+    background: rgb(14 17 22 / 90%);
+    color: var(--text);
+}
+
+.preferencesPanel :global(.ghost-button):global(.topbar-text-action):hover:not(:disabled),
+.titlebarMeta :global(.ghost-button):global(.topbar-text-action):hover:not(:disabled) {
+    background: rgb(22 27 34 / 95%);
+    border-color: rgb(255 255 255 / 20%);
+}
+
+.preferencesPanel :global(.ghost-button):global(.topbar-text-action) {
+    min-height: 30px;
+    min-width: 0;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    border-color: rgb(255 255 255 / 14%);
+    background: rgb(13 17 22 / 90%);
+    color: var(--text);
+}
+
+.preferencesPanel :global(.ghost-button.topbar-text-action--accent) {
+    border-color: color-mix(in srgb, var(--green) 50%, rgb(255 255 255 / 12%));
+    background: color-mix(in srgb, var(--green) 14%, rgb(13 17 22 / 92%));
+    color: var(--text);
+}
+
+.preferencesPanel :global(.ghost-button.topbar-text-action--accent):hover:not(:disabled) {
+    border-color: color-mix(in srgb, var(--green) 65%, rgb(255 255 255 / 16%));
+    background: color-mix(in srgb, var(--green) 22%, rgb(22 27 34 / 95%));
+}
+
+.preferencesPanel :global(.ghost-button).preferencesHistoryButton {
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    padding: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+}
+
+.preferencesPanel :global(.ghost-button).preferencesSettingsButton {
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    padding: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+}
+
+.preferencesPanel :global(.ghost-button).preferencesSessionsButton {
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    padding: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+}
+
+.preferencesHistoryIcon {
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+.preferencesSettingsIcon {
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+.preferencesSessionsIcon {
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+.preferencesAuthActions {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.titlebarMeta {
+    grid-area: trailing;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.workspace {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+}
+
+.primaryColumn,
+.queueColumn,
+.queueAnchored {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+}
+
+.primaryColumn > :global(.panel) {
+    width: 100%;
+    max-width: min(var(--app-main-column-max-width), 100%);
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1280px) {
+    .titlebarShell,
+    .titlebarShell:has(> .titlebarMeta) {
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-areas: "main controls";
+    }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --app-main-column-max-width: 920px;
+    }
+
+    .frame {
+        padding: 5px 12px 14px;
+    }
+
+    .desktopAppShell:global(.platform-macos) {
+        --app-macos-frame-inline: 72px;
+    }
+}
+
+@media (max-width: 920px) {
+    .titlebarBrand h1 {
+        font-size: 22px;
+    }
+
+    .preferencesHeader {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .preferencesAuthCard {
+        min-width: 0;
+    }
+
+    :root {
+        --app-main-column-max-width: 840px;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame {
+        padding: 4px 8px 12px;
+        gap: 8px;
+    }
+
+    .desktopAppShell:global(.platform-macos) {
+        --app-macos-frame-inline: 12px;
+    }
+
+    .titlebarShell {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .titlebarMain {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    .titlebarBrand h1 {
+        font-size: 23px;
+    }
+
+    .preferencesPanel {
+        padding: 24px 0 6px;
+    }
+
+    .preferencesAuthCard {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px 10px;
+        padding-block: 8px;
+    }
+
+    .preferencesAuthActions {
+        justify-content: flex-end;
+        flex: 0 1 auto;
+    }
+
+    .preferencesAuthActions
+        :global(.ghost-button.topbar-text-action):not(.preferencesHistoryButton):not(
+            .preferencesSettingsButton
+        ):not(.preferencesSessionsButton) {
+        flex: 0 0 auto;
+        min-width: 0;
+    }
+
+    .preferencesAuthActions :global(.ghost-button).preferencesHistoryButton,
+    .preferencesAuthActions :global(.ghost-button).preferencesSettingsButton,
+    .preferencesAuthActions :global(.ghost-button).preferencesSessionsButton {
+        flex: 0 0 30px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .frame {
+        padding: 3px 6px 10px;
+        gap: 6px;
+    }
+
+    .desktopAppShell:global(.platform-macos) {
+        --app-macos-frame-inline: 10px;
+    }
+}
