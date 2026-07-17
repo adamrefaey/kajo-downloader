@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "Linha {{line}}: introduza um URL http(s) válido.",
+    "multilineBatchLineProhibited": "Linha {{line}}: não são permitidas transferências deste servidor.",
+    "multilineBatchLineUnsupported": "Linha {{line}}: formato de URL não suportado para este site.",
+    "multilineBatchLineYoutubeUnsupported": "Linha {{line}}: formato de URL do YouTube não suportado.",
+    "mediaUrlRequired": "Digite uma URL http(s) válida para continuar.",
+    "mediaUrlProhibitedContent": "Sites de vídeo adulto não podem ser baixados com este aplicativo.",
+    "mediaUrlUnsupported": "Formato de URL não suportado para este site. Tente um link direto de vídeo ou playlist.",
+    "youtubeUrlUnsupported": "Formato de URL do YouTube não suportado. Use links de watch, shorts, youtu.be, playlist ou canal."
+}

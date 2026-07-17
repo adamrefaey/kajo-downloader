@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "YouTube durchsuchen",
+        "placeholder": "YouTube durchsuchen...",
+        "noResults": "Keine Ergebnisse gefunden",
+        "searching": "Suche läuft...",
+        "addToQueue": "Herunterladen",
+        "added": "Hinzugefügt",
+        "loadMore": "Mehr Ergebnisse laden",
+        "usageUnlimited": "Unbegrenzte Suchen",
+        "failed": "Suche fehlgeschlagen",
+        "inputLabel": "YouTube durchsuchen"
+    }
+}

@@ -1,0 +1,17 @@
+.modal {
+    max-width: min(640px, 100%);
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modalHead {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.modalBody {
+    margin-top: 4px;
+}

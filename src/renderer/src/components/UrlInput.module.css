@@ -1,0 +1,186 @@
+.section {
+    border: 1px dashed rgb(98 106 120 / 52%);
+    border-radius: 14px;
+    background:
+        linear-gradient(180deg, rgb(32 36 44 / 92%), rgb(23 27 34 / 96%)),
+        radial-gradient(130% 100% at 50% 0%, rgb(255 255 255 / 7%), transparent 52%);
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 6%),
+        0 10px 36px rgb(0 0 0 / 22%);
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 14px;
+    padding: 6px 8px;
+}
+
+.sectionEmbedded {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.combo {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(68 76 90 / 88%);
+    background: rgb(14 17 22);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.combo:focus-within {
+    border-color: rgb(46 200 120 / 55%);
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 5%),
+        0 0 0 1px rgb(46 200 120 / 22%);
+}
+
+.combo.hasError {
+    border-color: rgb(220 90 100 / 65%);
+}
+
+.combo.hasError:focus-within {
+    border-color: rgb(232 100 110 / 75%);
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 5%),
+        0 0 0 1px rgb(232 100 110 / 22%);
+}
+
+.combo :global(.input) {
+    flex: 1 1 0%;
+    min-width: 0;
+    min-height: 48px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: rgb(18 22 28);
+    box-shadow: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    color: var(--text);
+    resize: vertical;
+    field-sizing: content;
+    max-height: 220px;
+    line-height: 1.45;
+}
+
+.combo :global(.input)::placeholder {
+    color: rgb(132 140 152);
+}
+
+/* Physical right edge: matches RTL chrome */
+:global(html[dir="rtl"]) .combo :global(.input),
+:global(html[dir="rtl"]) .combo :global(.input)::placeholder {
+    text-align: right;
+}
+
+.combo :global(.input):focus-visible {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.submit {
+    min-width: 126px;
+    white-space: nowrap;
+}
+
+.combo .submit {
+    flex: 0 0 auto;
+    align-self: stretch;
+    min-height: 48px;
+    min-width: 120px;
+    margin: 0;
+    padding: 0 20px;
+    border: none;
+    border-radius: 0;
+    border-inline-start: 1px solid rgb(0 0 0 / 32%);
+    background: linear-gradient(180deg, #22e066, #11b358);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 22%);
+}
+
+.combo .submit:hover:not(:disabled) {
+    background: linear-gradient(180deg, #36ec78, #14c45f);
+    color: #ffffff;
+}
+
+.combo .submit:disabled {
+    opacity: 0.48;
+    color: rgb(255 255 255 / 95%);
+}
+
+@media (max-width: 1200px) {
+    .section:not(.sectionEmbedded) {
+        margin: 8px 0 12px;
+    }
+
+    .section {
+        padding: 16px 22px 20px;
+    }
+
+    .combo :global(.input),
+    .combo .submit {
+        min-height: 46px;
+    }
+
+    .combo :global(.input) {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 920px) {
+    .section {
+        padding: 14px 20px 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .combo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 768px) {
+    .section:not(.sectionEmbedded) {
+        margin: 6px 0;
+    }
+
+    .section {
+        padding: 12px 16px 16px;
+    }
+
+    .combo .submit {
+        border-inline-start: none;
+        border-block-start: 1px solid rgb(0 0 0 / 32%);
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .section {
+        padding: 10px 14px 14px;
+    }
+
+    .combo :global(.input),
+    .combo .submit {
+        min-height: 44px;
+    }
+
+    .combo :global(.input) {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}

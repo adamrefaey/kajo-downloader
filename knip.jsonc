@@ -1,0 +1,27 @@
+{
+    "$schema": "https://unpkg.com/knip@6/schema.json",
+    // Electron-vite overrides the main entry to electron/main.ts via rolldownOptions.input,
+    // which knip's plugins can't infer — so the process entrypoints are listed explicitly.
+    "entry": [
+        // electron-vite remaps main/preload via rolldown input — list them explicitly.
+        "electron/main.ts",
+        "electron/preload.ts",
+        "viteReactWithCompiler.ts",
+        "build/afterPack.mjs",
+        "electron-builder.config.mjs",
+        "scripts/*.mjs"
+    ],
+    "project": ["electron/**/*.ts", "src/**/*.{ts,tsx}", "scripts/**/*.mjs", "*.{ts,mjs}"],
+    // Report an export only when no OTHER module imports it; co-located helpers used
+    // within their own file are not dead code.
+    "ignoreExportsUsedInFile": true,
+    "ignoreDependencies": [
+        // Referenced by string literal in electron.vite.config.ts (cssMinify: 'lightningcss').
+        "lightningcss",
+        // Runtime requires from bundled main (conf/ajv subpaths stay external in out/main).
+        "ajv",
+        "ajv-formats"
+    ],
+    // External system binaries spawned at runtime — not npm packages.
+    "ignoreBinaries": ["brew", "which", "taskkill", "yt-dlp"]
+}

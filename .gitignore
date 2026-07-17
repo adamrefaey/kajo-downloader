@@ -1,0 +1,32 @@
+node_modules
+.DS_Store
+*.log*
+.cursor/
+.claude/
+.vscode/
+.firecrawl/
+*.dmg
+
+# TypeScript incremental build info (local cache; do not commit)
+*.tsbuildinfo
+
+# Local secrets (OAuth, API URLs) — never commit; copy from .env.example
+.env
+dist/
+out/
+release/
+.webpack/
+coverage/
+resources/.cache/
+resources/bin/*
+!resources/bin/.gitkeep
+resources/.tmp/
+.pnpm-store/
+.deploy-test/
+.tmp-ytdlp/
+
+# Local Electron test profile (recreated at runtime by the dev/test store)
+.kajo-test-user-data/
+
+# PBKDF2 salt generated at runtime by safeStorageHelpers (must not ship in app.asar)
+fallback-key-salt

@@ -1,0 +1,115 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow-x: clip;
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.previewSlot {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin-top: 0;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.gridVirtual {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.virtualScroll {
+    max-height: min(70vh, 840px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    min-width: 0;
+}
+
+.virtualScrollInner {
+    contain: content;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 980px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 4px;
+    padding: 0 2px;
+}
+
+.paginationStatus {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.paginationActions {
+    display: flex;
+    gap: 8px;
+}
+
+.emptyState {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 32px 16px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-dim);
+    border-radius: 10px;
+    border: 1px dashed rgb(255 255 255 / 10%);
+    background: rgb(0 0 0 / 15%);
+}

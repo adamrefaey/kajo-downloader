@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "Les mises à jour automatiques concernent la version installée. Les builds de développement n’utilisent pas le canal de mise à jour.",
+    "disabledMessage": "La recherche de mises à jour est désactivée pour cette installation.",
+    "linuxPackageManagedMessage": "Les mises à jour intégrées sont disponibles pour AppImage. Mettez à jour les paquets .deb/.rpm via le gestionnaire de paquets système.",
+    "latestMessage": "Vous utilisez la dernière version.",
+    "availablePrefix": "La version {{version}} est disponible.",
+    "availableTailAuto": " Elle est téléchargée en arrière-plan ; vous serez invité à l’installer quand elle sera prête.",
+    "availableTailManual": " Activez les téléchargements automatiques ou installez la mise à jour selon votre processus de publication.",
+    "checkFailedTitle": "Échec de la recherche de mises à jour",
+    "readyTitle": "Mise à jour prête — {{appName}}",
+    "readyMessage": "Une nouvelle version a été téléchargée. Redémarrez maintenant pour terminer l’installation, ou choisissez Plus tard pour installer à la fermeture.",
+    "restart": "Redémarrer",
+    "later": "Plus tard"
+}

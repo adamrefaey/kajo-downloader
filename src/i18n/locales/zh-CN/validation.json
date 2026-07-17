@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "第 {{line}} 行：请输入有效的 http(s) 网址。",
+    "multilineBatchLineProhibited": "第 {{line}} 行：不允许从此主机下载。",
+    "multilineBatchLineUnsupported": "第 {{line}} 行：此网站不支持该网址格式。",
+    "multilineBatchLineYoutubeUnsupported": "第 {{line}} 行：不支持的 YouTube 网址格式。",
+    "mediaUrlRequired": "请输入有效的 http(s) 网址以继续。",
+    "mediaUrlProhibitedContent": "本应用不支持从成人视频网站下载。",
+    "mediaUrlUnsupported": "此网站不支持该网址格式。请尝试直接的视频或播放列表链接。",
+    "youtubeUrlUnsupported": "不支持的 YouTube 网址格式。请使用观看页、Shorts、youtu.be、播放列表或频道链接。"
+}

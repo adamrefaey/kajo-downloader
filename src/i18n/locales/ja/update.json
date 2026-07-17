@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "自動更新はインストール済みのリリースに適用されます。開発ビルドは更新チャンネルを使用しません。",
+    "disabledMessage": "このインストールでは更新チェックが無効です。",
+    "linuxPackageManagedMessage": "アプリ内更新は AppImage 版で利用できます。.deb/.rpm パッケージはシステムのパッケージマネージャで更新してください。",
+    "latestMessage": "最新バージョンを使用しています。",
+    "availablePrefix": "バージョン {{version}} が利用可能です。",
+    "availableTailAuto": " バックグラウンドでダウンロード中です。インストールの準備ができたら案内されます。",
+    "availableTailManual": " 自動ダウンロードを有効にするか、リリース手順に従って更新をインストールしてください。",
+    "checkFailedTitle": "更新の確認に失敗しました",
+    "readyTitle": "更新の準備完了 — {{appName}}",
+    "readyMessage": "新しいバージョンがダウンロードされました。今すぐ再起動してインストールを完了するか、「後で」を選んで終了時にインストールしてください。",
+    "restart": "再起動",
+    "later": "後で"
+}

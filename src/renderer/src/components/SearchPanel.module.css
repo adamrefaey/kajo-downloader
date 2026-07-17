@@ -1,0 +1,230 @@
+/* --- YouTube search panel --- */
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.searchRow {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.searchInput {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 10%);
+    background: rgb(18 22 28 / 80%);
+    color: var(--text);
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.searchInput::placeholder {
+    color: var(--text-dim);
+}
+
+.searchInput:focus {
+    border-color: rgb(103 132 180 / 55%);
+}
+
+.searchBtn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 10%);
+    background: linear-gradient(180deg, rgb(55 95 160 / 90%), rgb(40 70 130 / 95%));
+    color: #fff;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.12s ease;
+}
+
+.searchBtn:hover {
+    opacity: 0.9;
+}
+
+.searchBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.resultRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background 0.1s ease;
+}
+
+.resultRow:hover {
+    background: rgb(255 255 255 / 4%);
+}
+
+.thumb {
+    width: 80px;
+    height: 45px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: rgb(30 35 45);
+    flex-shrink: 0;
+}
+
+.thumbPlaceholder {
+    width: 80px;
+    height: 45px;
+    border-radius: 6px;
+    background: rgb(30 35 45);
+    flex-shrink: 0;
+}
+
+.resultInfo {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.resultTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultMeta {
+    font-size: 11px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loadMoreBtn {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 9px 0;
+    border-radius: 8px;
+    border: 1px solid rgb(255 255 255 / 8%);
+    background: transparent;
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition:
+        background 0.12s ease,
+        color 0.12s ease;
+}
+
+.loadMoreBtn:hover {
+    background: rgb(255 255 255 / 5%);
+    color: var(--text);
+}
+
+.downloadBtn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(255 255 255 / 10%);
+    background: rgb(40 50 65 / 80%);
+    color: var(--text);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.12s ease;
+}
+
+.downloadBtn:hover {
+    background: rgb(55 70 90 / 80%);
+}
+
+.downloadBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.usageFooter {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: center;
+    padding-top: 4px;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 24px 16px;
+    color: var(--text-dim);
+    font-size: 13px;
+}
+
+.errorState {
+    text-align: center;
+    padding: 12px 16px;
+    color: rgb(230 130 130);
+    font-size: 12px;
+}
+
+.skeletonRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+}
+
+.skeletonThumb {
+    width: 80px;
+    height: 45px;
+    border-radius: 6px;
+    background: rgb(40 45 55);
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skeletonText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.skeletonLine {
+    height: 12px;
+    border-radius: 4px;
+    background: rgb(40 45 55);
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skeletonLineShort {
+    width: 60%;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

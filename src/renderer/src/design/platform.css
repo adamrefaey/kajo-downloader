@@ -1,0 +1,137 @@
+body[data-platform="macos"] {
+    --app-font:
+        "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        sans-serif;
+    --app-shell-max-width: 1240px;
+    --app-frame-radius: 22px;
+    --app-panel-radius: 18px;
+    --app-control-radius: 12px;
+    --app-toolbar-padding: 14px 18px 16px;
+    --app-heading-size: clamp(30px, 3.8vw, 36px);
+    --app-heading-weight: 610;
+    --app-heading-letter-spacing: -0.035em;
+    --app-subheading-size: 14px;
+    --app-subheading-weight: 460;
+    --app-frame-border: color-mix(in srgb, var(--border-strong) 66%, transparent);
+    --app-frame-shadow:
+        0 32px 80px color-mix(in srgb, #02040a 62%, transparent),
+        inset 0 1px 0 color-mix(in srgb, #fff 16%, transparent);
+    --app-panel-bg: color-mix(in srgb, var(--surface-panel) 72%, transparent);
+    --app-panel-bg-elevated: color-mix(in srgb, var(--surface-glass-strong) 80%, transparent);
+    --app-panel-bg-inset: color-mix(in srgb, var(--surface-inset) 86%, transparent);
+    --app-frame-backdrop: blur(28px);
+    --app-toolbar-backdrop: blur(18px);
+    --app-divider-color: color-mix(in srgb, var(--divider) 62%, transparent);
+}
+
+body[data-platform="windows"] {
+    --app-font: "Segoe UI Variable Text", "Segoe UI", sans-serif;
+    --app-shell-max-width: 1180px;
+    --app-shell-gap: 16px;
+    --app-panel-padding: 16px;
+    --app-toolbar-padding: 12px 15px 14px;
+    --app-input-height: 40px;
+    --app-button-height: 38px;
+    --app-heading-size: clamp(27px, 3.4vw, 32px);
+    --app-heading-weight: 680;
+    --app-heading-letter-spacing: -0.018em;
+    --app-subheading-size: 13px;
+    --app-subheading-weight: 500;
+    --app-bg-layer-1: radial-gradient(1060px 560px at 52% -70px, #2d87ff5c, transparent 66%);
+    --app-bg-layer-2: radial-gradient(760px 460px at -3% 104%, #14294a9e, transparent 72%);
+    --app-bg-layer-3: linear-gradient(160deg, #081220, #090f18);
+    --app-frame-border: color-mix(in srgb, #9db7dd 36%, transparent);
+    --app-frame-shadow: 0 24px 58px color-mix(in srgb, #030915 56%, transparent);
+    --app-frame-radius: 16px;
+    --app-panel-bg: color-mix(in srgb, #152136 86%, transparent);
+    --app-panel-bg-elevated: color-mix(in srgb, #1b2940 88%, transparent);
+    --app-panel-bg-inset: color-mix(in srgb, #101b2f 92%, transparent);
+    --app-panel-border: color-mix(in srgb, #8aa5cb 36%, transparent);
+    --app-divider-color: color-mix(in srgb, #7f98bc 46%, transparent);
+    --app-panel-radius: 14px;
+    --app-control-radius: 10px;
+    --app-control-bg: color-mix(in srgb, #101b2f 90%, transparent);
+    --app-control-bg-hover: color-mix(in srgb, #162540 92%, transparent);
+    --app-control-bg-focus: color-mix(in srgb, #1d2e4b 92%, transparent);
+    --app-control-border: color-mix(in srgb, #7693bd 46%, transparent);
+    --app-control-border-hover: color-mix(in srgb, #9db7dd 60%, transparent);
+    --app-control-shadow: inset 0 1px 0 color-mix(in srgb, #fff 8%, transparent);
+    --app-button-primary-bg: linear-gradient(180deg, #4b9eff, #2b73d6);
+    --app-button-primary-bg-hover: linear-gradient(180deg, #63abff, #3a84eb);
+    --app-button-ghost-bg: color-mix(in srgb, #1a2a42 82%, transparent);
+    --app-button-ghost-bg-hover: color-mix(in srgb, #223551 88%, transparent);
+    --app-button-ghost-border: color-mix(in srgb, #8aa5cb 56%, transparent);
+    --app-chip-neutral: color-mix(in srgb, #2a3e5f 84%, transparent);
+    --app-progress-track: color-mix(in srgb, #10203a 92%, transparent);
+    --app-progress-fill: linear-gradient(90deg, #34bf7c, #2f88ef);
+    --app-hover-translate-y: -1px;
+    --app-frame-backdrop: blur(12px);
+    --app-toolbar-backdrop: blur(8px);
+    --app-toolbar-border: color-mix(in srgb, #8aa5cb 28%, transparent);
+    --app-toolbar-bg: linear-gradient(
+        180deg,
+        color-mix(in srgb, #1a2942 90%, transparent),
+        color-mix(in srgb, #122038 92%, transparent)
+    );
+    --app-toolbar-shadow: 0 10px 22px color-mix(in srgb, #040b17 34%, transparent);
+}
+
+body[data-platform="linux"] {
+    --app-font: "Noto Sans", "Ubuntu", "Cantarell", sans-serif;
+    --app-shell-max-width: 1160px;
+    --app-shell-gap: 14px;
+    --app-panel-padding: 15px;
+    --app-toolbar-padding: 11px 14px 13px;
+    --app-input-height: 39px;
+    --app-button-height: 37px;
+    --app-heading-size: clamp(26px, 3.4vw, 31px);
+    --app-heading-weight: 600;
+    --app-heading-letter-spacing: -0.015em;
+    --app-subheading-size: 13px;
+    --app-subheading-weight: 470;
+    --app-bg-layer-1: radial-gradient(
+        1020px 560px at 52% -74px,
+        color-mix(in srgb, #6f8aff 28%, transparent),
+        transparent 68%
+    );
+    --app-bg-layer-2: radial-gradient(
+        700px 420px at -4% 106%,
+        color-mix(in srgb, #2e2f47 58%, transparent),
+        transparent 74%
+    );
+    --app-bg-layer-3: linear-gradient(160deg, #111523, #0d1220);
+    --app-frame-border: color-mix(in srgb, #8c95ad 30%, transparent);
+    --app-frame-shadow: 0 18px 44px color-mix(in srgb, #000 44%, transparent);
+    --app-frame-radius: 13px;
+    --app-panel-bg: color-mix(in srgb, #1c2130 90%, transparent);
+    --app-panel-bg-elevated: color-mix(in srgb, #252a3b 90%, transparent);
+    --app-panel-bg-inset: color-mix(in srgb, #131827 92%, transparent);
+    --app-panel-border: color-mix(in srgb, #909ab1 34%, transparent);
+    --app-divider-color: color-mix(in srgb, #8b96ad 52%, transparent);
+    --app-panel-radius: 12px;
+    --app-control-radius: 9px;
+    --app-control-bg: color-mix(in srgb, #131827 92%, transparent);
+    --app-control-bg-hover: color-mix(in srgb, #1a2133 94%, transparent);
+    --app-control-bg-focus: color-mix(in srgb, #20283b 94%, transparent);
+    --app-control-border: color-mix(in srgb, #8c96b0 42%, transparent);
+    --app-control-border-hover: color-mix(in srgb, #a3adc4 58%, transparent);
+    --app-control-shadow: inset 0 1px 0 color-mix(in srgb, #fff 6%, transparent);
+    --app-button-primary-bg: linear-gradient(180deg, #4f7ef0, #415fc4);
+    --app-button-primary-bg-hover: linear-gradient(180deg, #628cf6, #4f73db);
+    --app-button-ghost-bg: color-mix(in srgb, #252c3d 84%, transparent);
+    --app-button-ghost-bg-hover: color-mix(in srgb, #2e3649 92%, transparent);
+    --app-button-ghost-border: color-mix(in srgb, #9ba6bf 46%, transparent);
+    --app-chip-neutral: color-mix(in srgb, #343c50 84%, transparent);
+    --app-progress-track: color-mix(in srgb, #171e30 94%, transparent);
+    --app-progress-fill: linear-gradient(90deg, #39b27b, #5886ea);
+    --app-hover-translate-y: -1px;
+    --app-frame-backdrop: blur(6px);
+    --app-toolbar-backdrop: blur(3px);
+    --app-toolbar-border: color-mix(in srgb, #9da6ba 22%, transparent);
+    --app-toolbar-bg: linear-gradient(
+        180deg,
+        color-mix(in srgb, #242a3a 92%, transparent),
+        color-mix(in srgb, #1c2232 94%, transparent)
+    );
+    --app-toolbar-shadow: 0 6px 14px color-mix(in srgb, #000 22%, transparent);
+}

@@ -1,0 +1,10 @@
+{
+    "multilineBatchLineInvalid": "Zeile {{line}}: Geben Sie eine gültige http(s)-URL ein.",
+    "multilineBatchLineProhibited": "Zeile {{line}}: Downloads von diesem Host sind nicht erlaubt.",
+    "multilineBatchLineUnsupported": "Zeile {{line}}: Nicht unterstütztes URL-Format für diese Website.",
+    "multilineBatchLineYoutubeUnsupported": "Zeile {{line}}: Nicht unterstütztes YouTube-URL-Format.",
+    "mediaUrlRequired": "Geben Sie eine gültige http(s)-URL ein, um fortzufahren.",
+    "mediaUrlProhibitedContent": "Von Erwachsenen-Videoseiten kann mit dieser App nicht heruntergeladen werden.",
+    "mediaUrlUnsupported": "Nicht unterstütztes URL-Format für diese Website. Versuchen Sie einen direkten Video- oder Playlist-Link.",
+    "youtubeUrlUnsupported": "Nicht unterstütztes YouTube-URL-Format. Nutzen Sie Watch-, Shorts-, youtu.be-, Playlist- oder Kanal-Links."
+}

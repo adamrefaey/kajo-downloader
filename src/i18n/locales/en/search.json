@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "Search YouTube",
+        "placeholder": "Search YouTube...",
+        "noResults": "No results found",
+        "searching": "Searching...",
+        "addToQueue": "Download",
+        "added": "Added",
+        "loadMore": "Load more results",
+        "usageUnlimited": "Unlimited searches",
+        "failed": "Search failed",
+        "inputLabel": "Search YouTube"
+    }
+}

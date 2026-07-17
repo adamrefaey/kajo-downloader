@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "Поиск на YouTube",
+        "placeholder": "Поиск на YouTube...",
+        "noResults": "Ничего не найдено",
+        "searching": "Поиск...",
+        "addToQueue": "Скачать",
+        "added": "Добавлено",
+        "loadMore": "Загрузить ещё результаты",
+        "usageUnlimited": "Безлимитный поиск",
+        "failed": "Ошибка поиска",
+        "inputLabel": "Поиск на YouTube"
+    }
+}

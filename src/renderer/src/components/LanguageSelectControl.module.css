@@ -1,0 +1,76 @@
+.root {
+    position: relative;
+    width: 100%;
+}
+
+.trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: start;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.triggerInner {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.flag {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chevron {
+    opacity: 0.65;
+    flex-shrink: 0;
+}
+
+/* Portaled to document.body; top/left/width set inline (above .settings-overlay z-index 1001). */
+.list {
+    position: fixed;
+    z-index: 1102;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    max-height: min(50vh, 280px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--panel-2);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 45%);
+}
+
+.option {
+    display: block;
+    width: 100%;
+    text-align: start;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.option:hover,
+.option:focus-visible {
+    background: rgb(255 255 255 / 8%);
+}
+
+.optionInner {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}

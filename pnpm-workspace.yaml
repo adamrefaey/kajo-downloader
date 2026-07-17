@@ -1,0 +1,32 @@
+# Single-package repo: no workspace members. pnpm 11 reads project settings here
+# (not from package.json#pnpm or non-auth .npmrc keys).
+
+shamefullyHoist: true
+publicHoistPattern:
+  - '*vitest*'
+  - '@vitest/*'
+
+allowBuilds:
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+
+# Dev toolchain we intentionally pin to latest; exempt from default 24h release-age gate.
+minimumReleaseAgeExclude:
+  - '@types/node'
+  - '@typescript/native-preview'
+  - '@typescript/native-preview-darwin-arm64'
+  - '@typescript/native-preview-darwin-x64'
+  - '@typescript/native-preview-linux-arm64'
+  - '@typescript/native-preview-linux-arm'
+  - '@typescript/native-preview-linux-x64'
+  - '@typescript/native-preview-win32-arm64'
+  - '@typescript/native-preview-win32-x64'
+  - lint-staged@17.0.8
+
+overrides:
+  '@asamuzakjp/css-color>lru-cache': 11.2.7
+  lodash: '>=4.18.1'
+  smol-toml: '>=1.6.1'
+  zod-validation-error: ^4.0.2
+  tar: '>=7.5.11'

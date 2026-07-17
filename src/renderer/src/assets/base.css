@@ -1,0 +1,13 @@
+/* Universal reset only — typography and `body` live in `global.css` (after tokens/platform). */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kajo Downloader</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--
+      CSP meta tag is intentionally omitted here.
+      Production: enforced via session.webRequest.onHeadersReceived in mainWindowTray.ts.
+      Development: a relaxed policy (allowing Vite HMR) is applied in mainWindowTray.ts.
+    -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

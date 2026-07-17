@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "Automatic updates apply to the installed release. Development builds do not use the update channel.",
+    "disabledMessage": "Update checks are disabled for this installation.",
+    "linuxPackageManagedMessage": "In-app updates are available for the AppImage build. Install updates for .deb/.rpm packages with your system package manager.",
+    "latestMessage": "You are running the latest version.",
+    "availablePrefix": "Version {{version}} is available.",
+    "availableTailAuto": " It is downloading in the background; you will be prompted when it is ready to install.",
+    "availableTailManual": " Enable automatic downloads or install the update using your release process.",
+    "checkFailedTitle": "Update check failed",
+    "readyTitle": "Update ready — {{appName}}",
+    "readyMessage": "A new version has been downloaded. Restart now to finish installing, or choose Later to install on quit.",
+    "restart": "Restart",
+    "later": "Later"
+}

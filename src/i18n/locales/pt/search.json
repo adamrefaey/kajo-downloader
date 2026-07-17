@@ -1,0 +1,14 @@
+{
+    "search": {
+        "title": "Buscar no YouTube",
+        "placeholder": "Buscar no YouTube...",
+        "noResults": "Nenhum resultado encontrado",
+        "searching": "Buscando...",
+        "addToQueue": "Baixar",
+        "added": "Adicionado",
+        "loadMore": "Carregar mais resultados",
+        "usageUnlimited": "Buscas ilimitadas",
+        "failed": "Falha na busca",
+        "inputLabel": "Buscar no YouTube"
+    }
+}

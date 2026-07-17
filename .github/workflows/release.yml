@@ -1,0 +1,272 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Git tag (e.g. v1.2.0). Must exist on the remote and match package.json version.'
+        required: true
+        type: string
+      release_name:
+        description: 'Release title (defaults to tag)'
+        required: false
+        type: string
+      draft:
+        description: 'Create as draft release'
+        required: true
+        type: boolean
+        default: true
+      prerelease:
+        description: 'Mark as prerelease'
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate tag and version
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      version: ${{ steps.check.outputs.version }}
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 1
+
+      - name: Verify tag and package.json version
+        id: check
+        shell: bash
+        env:
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]]; then
+            echo "::error::Tag must look like v1.2.3 or v1.2.3-beta.1 (got: $TAG)"
+            exit 1
+          fi
+          VERSION="$(node -p "require('./package.json').version")"
+          if [[ "v${VERSION}" != "$TAG" ]]; then
+            echo "::error::Tag $TAG must match package.json version (expected v${VERSION})"
+            exit 1
+          fi
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+  build:
+    # One job per OS builds both arches in a single electron-builder invocation so
+    # latest*.yml lists every arch (separate matrix legs would overwrite updater metadata).
+    name: Release build (${{ matrix.platform }})
+    needs: validate
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 120
+    # Signing secrets (APPLE_*, WIN_*) and KAJO_* vars resolve from the `production` GitHub
+    # Environment. format() keeps the literal out of static analysis (mirrors build.yml).
+    environment: ${{ format('{0}', 'production') }}
+    permissions:
+      contents: read
+      id-token: write # SLSA provenance attestation
+      attestations: write # artifact attestation upload
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            platform: macos
+            script: build:mac
+          - os: windows-latest
+            platform: windows
+            script: build:win
+          - os: ubuntu-latest
+            platform: linux
+            script: build:linux
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      KAJO_AUTO_UPDATE_FEED_URL: ${{ vars.KAJO_AUTO_UPDATE_FEED_URL }}
+      # Project homepage URL — baked into the renderer bundle (openExternal HTTPS allowlist).
+      KAJO_WEBSITE_URL: ${{ vars.KAJO_WEBSITE_URL || 'https://github.com/adamrefaey/kajo-downloader' }}
+      # ── macOS code signing + notarization ─────────────────────────────────────
+      # CSC_NAME / APPLE_SIGNING_IDENTITY → optional `mac.identity` in electron-builder.config.mjs
+      #   (e.g. "Developer ID Application: Your Name (TEAMID)"). The .p12 itself is imported into an
+      #   ephemeral keychain by the "Import Apple Developer ID certificate" step below.
+      # Notarization runs via notarytool only when APPLE_ID + APPLE_APP_SPECIFIC_PASSWORD +
+      #   APPLE_TEAM_ID are all set. If secrets are empty (a fork), signing/notarization are omitted
+      #   and the release still completes with an unsigned package.
+      CSC_NAME: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+      APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+      APPLE_ID: ${{ secrets.APPLE_ID }}
+      APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      APPLE_CERTIFICATE_BASE64: ${{ secrets.APPLE_CERTIFICATE_BASE64 }}
+      APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+      # ── Windows code signing ──────────────────────────────────────────────────
+      # electron-builder reads CSC_LINK (base64 .pfx) + CSC_KEY_PASSWORD; WIN_* feed signtoolOptions
+      # when non-empty.
+      CSC_LINK: ${{ secrets.WIN_CSC_LINK }}
+      CSC_KEY_PASSWORD: ${{ secrets.WIN_CSC_KEY_PASSWORD }}
+      WIN_CERTIFICATE_SUBJECT_NAME: ${{ secrets.WIN_CERTIFICATE_SUBJECT_NAME }}
+      WIN_PUBLISHER_NAME: ${{ secrets.WIN_PUBLISHER_NAME }}
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 1
+
+      - name: Setup workspace
+        uses: ./.github/actions/setup-workspace
+
+      - name: Install Linux packaging dependencies
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fakeroot dpkg-dev libarchive-tools rpm
+
+      - name: Import Apple Developer ID certificate (macOS)
+        # Auto-skips on forks / runs without the cert secret — electron-builder then produces an
+        # unsigned ad-hoc build instead of failing. env.* (set from the secret at job level) is
+        # referenced here because `if:` cannot read `secrets.*` directly.
+        if: matrix.platform == 'macos' && env.APPLE_CERTIFICATE_BASE64 != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          KEYCHAIN_PATH="$RUNNER_TEMP/app-signing.keychain-db"
+          CERT_PATH="$RUNNER_TEMP/developer-id.p12"
+          KEYCHAIN_PASSWORD="$(openssl rand -base64 24)"
+
+          # Decode the base64 .p12 (GitHub's documented macOS-runner idiom).
+          echo -n "$APPLE_CERTIFICATE_BASE64" | base64 --decode -o "$CERT_PATH"
+
+          # Ephemeral keychain; -lut 21600 keeps it unlocked through the (slow) notarization wait.
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+
+          # Import the Developer ID Application cert; authorise codesign to use it non-interactively.
+          security import "$CERT_PATH" -P "$APPLE_CERTIFICATE_PASSWORD" \
+            -k "$KEYCHAIN_PATH" -T /usr/bin/codesign -T /usr/bin/security
+          security set-key-partition-list -S apple-tool:,apple: -s \
+            -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH" >/dev/null
+
+          # Point the keychain search list at this keychain so electron-builder finds the identity.
+          security list-keychains -d user -s "$KEYCHAIN_PATH"
+
+          rm -f "$CERT_PATH"
+          echo "Imported signing identities:"
+          security find-identity -v -p codesigning "$KEYCHAIN_PATH"
+
+      - name: Build and package
+        run: pnpm run ${{ matrix.script }}
+
+      - name: Clean up signing keychain (macOS)
+        if: always() && matrix.platform == 'macos'
+        shell: bash
+        run: |
+          security delete-keychain "$RUNNER_TEMP/app-signing.keychain-db" 2>/dev/null || true
+          rm -f "$RUNNER_TEMP/developer-id.p12" 2>/dev/null || true
+
+      - name: Upload Windows installers
+        if: matrix.platform == 'windows'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-${{ matrix.platform }}-${{ inputs.tag }}
+          # Include electron-updater metadata (latest.yml) + blockmaps for differential updates.
+          path: |
+            release/*.exe
+            release/*.yml
+            release/*.blockmap
+          if-no-files-found: error
+
+      - name: Upload macOS disk images
+        if: matrix.platform == 'macos'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-${{ matrix.platform }}-${{ inputs.tag }}
+          path: |
+            release/*.dmg
+            release/*.yml
+            release/*.blockmap
+          if-no-files-found: error
+
+      - name: Upload Linux packages
+        if: matrix.platform == 'linux'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-${{ matrix.platform }}-${{ inputs.tag }}
+          path: |
+            release/*.deb
+            release/*.rpm
+            release/*.AppImage
+            release/*.yml
+            release/*.blockmap
+          if-no-files-found: error
+
+      # Supply-chain attestation parity with build.yml: SLSA provenance + SBOM for every
+      # released artifact (released binaries are the ones users actually install).
+      - name: Attest Windows installer provenance
+        if: matrix.platform == 'windows'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: release/*.exe
+
+      - name: Attest macOS disk image provenance
+        if: matrix.platform == 'macos'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: release/*.dmg
+
+      - name: Attest Linux package provenance
+        if: matrix.platform == 'linux'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: |
+            release/*.deb
+            release/*.rpm
+            release/*.AppImage
+
+      - name: Generate SBOM (${{ matrix.platform }})
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: release/
+          artifact-name: sbom-${{ matrix.platform }}.spdx.json
+          output-file: sbom-${{ matrix.platform }}.spdx.json
+
+  publish:
+    name: Publish GitHub Release
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Download all platform artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: release-*-${{ inputs.tag }}
+          path: release-assets
+          merge-multiple: true
+
+      - name: Generate SHA256 checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd release-assets
+          find . -type f ! -name 'SHA256SUMS' -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Create GitHub Release and upload assets
+        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3.0.1
+        with:
+          tag_name: ${{ inputs.tag }}
+          name: ${{ inputs.release_name != '' && inputs.release_name || inputs.tag }}
+          draft: ${{ inputs.draft }}
+          prerelease: ${{ inputs.prerelease }}
+          generate_release_notes: true
+          files: |
+            release-assets/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

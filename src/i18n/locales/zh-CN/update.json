@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "自动更新适用于已安装的正式版本。开发构建不使用更新通道。",
+    "disabledMessage": "此安装已禁用更新检查。",
+    "linuxPackageManagedMessage": "应用内更新适用于 AppImage。请通过系统包管理器更新 .deb/.rpm 包。",
+    "latestMessage": "您正在使用最新版本。",
+    "availablePrefix": "版本 {{version}} 可用。",
+    "availableTailAuto": " 正在后台下载；准备好安装时会提示您。",
+    "availableTailManual": " 请启用自动下载，或按您的发布流程安装更新。",
+    "checkFailedTitle": "检查更新失败",
+    "readyTitle": "更新已就绪 — {{appName}}",
+    "readyMessage": "新版本已下载。立即重启以完成安装，或选择稍后退出时再安装。",
+    "restart": "重启",
+    "later": "稍后"
+}

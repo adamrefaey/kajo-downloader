@@ -1,0 +1,14 @@
+{
+    "devBuildMessage": "Automatische Updates gelten für die installierte Release-Version. Entwicklungs-Builds nutzen keinen Update-Kanal.",
+    "disabledMessage": "Update-Prüfungen sind für diese Installation deaktiviert.",
+    "linuxPackageManagedMessage": "In-App-Updates sind für die AppImage-Version verfügbar. Aktualisieren Sie .deb/.rpm-Pakete über Ihren System-Paketmanager.",
+    "latestMessage": "Sie verwenden die neueste Version.",
+    "availablePrefix": "Version {{version}} ist verfügbar.",
+    "availableTailAuto": " Sie wird im Hintergrund heruntergeladen; Sie werden zur Installation aufgefordert, sobald sie bereit ist.",
+    "availableTailManual": " Aktivieren Sie automatische Downloads oder installieren Sie das Update über Ihren Release-Prozess.",
+    "checkFailedTitle": "Update-Prüfung fehlgeschlagen",
+    "readyTitle": "Update bereit — {{appName}}",
+    "readyMessage": "Eine neue Version wurde heruntergeladen. Jetzt neu starten, um die Installation abzuschließen, oder „Später“ wählen und beim Beenden installieren.",
+    "restart": "Neu starten",
+    "later": "Später"
+}

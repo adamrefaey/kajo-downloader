@@ -1,0 +1,59 @@
+/* Shared modal shell: grid overlay + backdrop hit target + modal slot */
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+.overlaySettingsZ {
+    z-index: 1001;
+}
+
+.overlayPickerZ {
+    z-index: 1002;
+}
+
+.overlayGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    place-items: center;
+}
+
+.backdropHit {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: stretch stretch;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.modal {
+    max-width: min(720px, 100%);
+}
+
+.modalInGrid {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.modalHead {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 12px;
+}
